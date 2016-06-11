@@ -1,0 +1,22 @@
+<div class="menu-checkout">
+    <ul>
+        <li class="active" >
+            <a href="<?php echo $this->url->get('shoping-cart') ?>">
+                <span class="number-menu">01</span>
+                <h3>Giỏ Hàng</h3>
+            </a>
+        </li>
+        <li <?php if($this->dispatcher->getControllerName()=='checkout'){ echo ' class="active" '; } ?> >
+            <a <?php if (!empty($user)) { ?> href="<?php echo $this->url->get("checkout") ?>" <?php } else { ?> href="<?php echo $this->url->get("user?redirect=checkout") ?>" <?php } ?>>
+                <span class="number-menu">02</span>
+                <h3>Thanh Toán</h3>
+            </a>
+        </li>
+        <li <?php if($this->dispatcher->getActionName()=='paymentsuccess'){ echo ' class="active" '; } ?> >
+            <a href="javascript:;">
+                <span class="number-menu">03</span>
+                <h3>Đặt Hàng Thành Công</h3>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,17 @@
+<?php
+if ($listCategory) {
+    foreach ($listCategory as $lica) {
+        ?>
+        <li>
+            <a onclick="filterCategoryProduct('category',<?php echo $lica->ct_id ?>,$(this));"
+               href="javascript:;">
+                        <span class="clothers-chose">
+                        <i class="fa fa-circle fa-1" aria-hidden="true"></i>
+                            <?php echo $lica->ct_name ?>
+                            </span>
+            </a>
+        </li>
+        <?php
+    }
+}
+?>

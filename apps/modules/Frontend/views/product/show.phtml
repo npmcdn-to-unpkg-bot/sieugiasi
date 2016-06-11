@@ -1,0 +1,207 @@
+<div class="wrapper">
+    <div id="mainDivBody" class="main-vertical-body main-body-wrapper row-fluid">
+        <div class="productPage__generalContainer lazyProductPage-js">
+
+            <div class="row-fluid home_ficha">
+                <div class="pull-left breadcrumb_container">
+                    <a href="<?php echo $this->url->get('category-product?munafacturer=') . $product->CategoryModel->ManufacturerModel->ma_id ?>"
+                       style="text-decoration: none; ">
+                        <span id="Form:SVFichaProducto:SVFilA:j_id_as" style="cursor: pointer;"
+                              class="breadcrumb"><?php echo $product->CategoryModel->ManufacturerModel->ma_name; ?></span>
+                    </a>
+                    <span class="breadcrumb separator"> &gt; </span>
+                    <a href="<?php echo isset($product->CategoryModel) ? $this->url->get('category-product?gender=') . $product->showParentCategory()->ct_seo_link.'&munafacturer='.$product->CategoryModel->ManufacturerModel->ma_id : '' ?>" style="text-decoration: none; ">
+                        <span id="Form:SVFichaProducto:SVFilA:j_id_as" style="cursor: pointer;"
+                              class="breadcrumb"><?php echo $product->showParentCategory()->ct_name; ?></span>
+                    </a>
+                    <span class="breadcrumb separator"> &gt; </span>
+                    <a href="<?php echo isset($product->CategoryModel) ? $this->url->get('category-product?category=') . $product->CategoryModel->ct_id : '' ?>"
+                       style="text-decoration: none; ">
+                        <span id="Form:SVFichaProducto:SVFilA:j_id_av" style="cursor: pointer;"
+                              class="breadcrumb"><?php echo isset($product->CategoryModel) ? $product->CategoryModel->ct_name : ''; ?></span>
+                    </a>
+                    <span class="breadcrumb separator"> &gt; </span>
+                    <span class="breadcrumb"><?php echo $product->pr_name; ?></span>
+                </div>
+            </div>
+
+            <div class="row-fluid noBorders">
+                <div id="gallery-product" class="imagenes-contenedor">
+                    <div id="carousel" class="flexslider">
+                        <ul class="slides">
+                            <?php $gallery = $product->showGalleryDefault();
+                            if (isset($gallery) && !empty($gallery)) {
+                                foreach ($gallery as $gla) { ?>
+                                    <li>
+                                        <img
+                                            src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                                    </li>
+                                <?php }
+                            } ?>
+                        </ul>
+                    </div>
+                    <div id="slider" class="flexslider">
+                        <ul class="slides">
+                            <?php $gallery = $product->showGalleryDefault();
+                            if (isset($gallery) && !empty($gallery)) {
+                                foreach ($gallery as $gla) { ?>
+                                    <li>
+                                        <img id="jzoom" class="jzoom"
+                                             src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"
+                                             data-pimg="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                                    </li>
+                                <?php }
+                            } ?>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="datos_ficha_producto span5 pull-right">
+                    <div class="cabecera_producto_height_fix">
+                        <div class="cabecera_producto row-fluid">
+
+                            <div class="info_cabecera_producto">
+                                <div itemprop="name" class="nombreProducto row-fluid">
+                                    <h1>
+                                        <?php echo $product->pr_name ?>
+                                    </h1>
+                                </div>
+
+                                <div class="referenciaProducto row-fluid">
+                                    <?php echo $product->pr_public_id ?>
+
+                                </div>
+                            </div>
+                            <div class="precio_cabecera_producto">
+                                <?php $pricePromotion = $product->showPricePromotion();
+                                if ($pricePromotion) { ?>
+                                    <div class="precioProducto row-fluid">
+                                        <?php echo $product->showPricePromotion(); ?>
+                                    </div>
+                                    <div  style="text-decoration: line-through;font-size: 13px;" class="precioProducto row-fluid promotion">
+                                        <?php echo $product->showPrice() ?>
+                                    </div>
+                                <?php } else { ?>
+                                    <div class="precioProducto row-fluid">
+                                        <?php echo $product->showPrice() ?>
+                                    </div>
+                                <?php } ?>
+
+                                <div class="ficha_warning span12">
+                                    <?php echo $product->pr_decription ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto_color row-fluid productColor__container">
+                        <div class="producto_color_texto span12">
+                            <p class="producto_title_color">Colour:
+                            </p>
+                        </div>
+                        <div class="product-list-colors product-list-colors-detail">
+                            <?php
+                            $listColor = $product->showColor();
+                            if (!empty($listColor)) {
+                                foreach ($listColor as $key => $color) {
+                                    ?>
+                                    <div data-rel="<?php echo $color->plo_id ?>"
+                                         onclick="changeColorGallery(<?php echo $product->pr_id ?>,<?php echo $color->plo_id ?>,this)"
+                                         class="color <?php echo $key == 0 ? ' color--selected ' : '' ?> ">
+                                        <a href="javascript:;" class="other-color"
+                                           style="background-color: <?php echo $color->plo_detail ?>"></a>
+                                    </div>
+                                <?php }
+                            } ?>
+                        </div>
+                    </div>
+
+                    <div class="productPage__actionContainer stock_false">
+
+                        <div class="selector_tallas row-fluid priceSelector__container">
+
+                            <input id="_mng_talla_disp63000052" name="_mng_talla_disp63000052" value="false"
+                                   type="hidden">
+                                    <span id="_mng_idtalla63000052"><input id="Form:SVFichaProducto:size:j_id_ev"
+                                                                           name="Form:SVFichaProducto:size:j_id_ev"
+                                                                           value="" type="hidden">
+                                    </span>
+                            <select class="select-filter-detail size-product">
+                                <option selected="selected" value="-1" name="false">Choose your size</option>
+                                <?php
+                                $listSize = $product->showSize();
+                                if (!empty($listSize)) {
+                                    foreach ($listSize as $key => $size) {
+                                        ?>
+                                        <option data-gtm-size="XS " name="false"
+                                                value="<?php echo $key ?>"><?php echo "Size : " . $size ?></b>
+                                        </option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
+
+                            <div class="eu_size span5 hidden_mobile">
+                                <a target="_blank"
+                                   href="<?php echo $this->url->get() . "product/size-guide/" . $product->pr_seo_link; ?>"
+                                   class="eu_text">Sizes guide</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="shop_wishlist row-fluid no_loged productExtra__container">
+                        <a data-rel="<?php echo $product->pr_id ?>" href="javascript:;"
+                           class="btn-add-wishlist btn-add-cart">Thêm Vào Giỏ Hàng</a>
+                        <div id="bocataTallaNoSelWish" style="display: none" class="error bubble_message">
+                            <span class="flecha icono">^</span>Choose your size before adding the item to your Wishlist.
+                        </div>
+                    </div>
+                    <div class="addThisButtons rowfluid clearfix socialProduct__container">
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <script type="text/javascript"
+                                src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571ca9f3d29cb3c0"></script>
+                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                        <div class="addthis_sharing_toolbox"></div>
+                    </div>
+                    <div class="description-filter-detail-area">
+                        <div id="accordian-filter-detail">
+                            <ul>
+                                <?php if (isset($product->ProductAttributeModel)) {
+                                    foreach ($product->ProductAttributeModel as $atribute) {
+                                        ?>
+                                        <li class="">
+                                            <h3><?php echo $atribute->hpa_name ?></h3>
+                                            <ul style="display: none">
+                                                <li>
+                                                    <?php echo $atribute->hpa_description ?>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    <?php }
+                                } ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="orther-product-detail-area">
+            <?php if (isset($ortherProduct)) {
+                foreach ($ortherProduct as $orther) {
+                    ?>
+                    <div class="orther-product">
+                        <a href="<?php echo $this->url->get() . "product/show/" . $orther->pr_seo_link; ?>">
+                            <img src="<?php echo $orther->showImage() ?>"
+                                 alt="">
+                            <span class="productList__name"> <?php echo $orther->pr_name ?></span>
+                            <span class="productList__price"><?php echo $orther->showPrice() ?></span>
+                        </a>
+                    </div>
+                <?php }
+            } ?>
+        </div>
+    </div>
+</div>

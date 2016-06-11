@@ -1,0 +1,7 @@
+<p class="new-store">Hệ Thống Cửa Hàng :</p>
+<?php if ($store) {
+    foreach ($store as $sto) { ?>
+        <p class="shop-location" style="color: #777777;font-size: 14px;"><?php echo $sto->ag_address ?></p>
+        <?php
+    }
+} ?>

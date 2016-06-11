@@ -1,0 +1,122 @@
+[Sat, 30 Jan 16 02:24:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_member_vip' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 02:24:42 +0000][INFO] DESCRIBE `hq_member_vip`
+[Sat, 30 Jan 16 02:24:42 +0000][INFO] SELECT `hq_member_vip`.`mv_id`, `hq_member_vip`.`mv_name`, `hq_member_vip`.`mv_secret`, `hq_member_vip`.`mv_nickname`, `hq_member_vip`.`mv_last_login`, `hq_member_vip`.`mv_permission` FROM `hq_member_vip` WHERE `hq_member_vip`.`mv_name` = :username LIMIT :APL0
+[Sat, 30 Jan 16 02:35:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 02:35:02 +0000][INFO] DESCRIBE `hq_content_group`
+[Sat, 30 Jan 16 02:35:02 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_created_date` >= :from_date
+[Sat, 30 Jan 16 02:35:11 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 02:35:11 +0000][INFO] DESCRIBE `hq_content_group`
+[Sat, 30 Jan 16 02:35:11 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Sat, 30 Jan 16 02:35:18 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 02:35:18 +0000][INFO] DESCRIBE `hq_content`
+[Sat, 30 Jan 16 02:35:18 +0000][INFO] SELECT `hq_content`.`hc_id`, `hq_content`.`hc_hcg_id`, `hq_content`.`hc_hcg_key`, `hq_content`.`hc_description`, `hq_content`.`hc_title`, `hq_content`.`hc_created_date` FROM `hq_content` WHERE `hq_content`.`hc_created_date` >= :from_date
+[Sat, 30 Jan 16 02:35:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 02:35:20 +0000][INFO] DESCRIBE `hq_content_group`
+[Sat, 30 Jan 16 02:35:20 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Sat, 30 Jan 16 05:14:52 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_member_vip' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:14:52 +0000][INFO] DESCRIBE `hq_member_vip`
+[Sat, 30 Jan 16 05:14:52 +0000][INFO] SELECT `hq_member_vip`.`mv_id`, `hq_member_vip`.`mv_name`, `hq_member_vip`.`mv_secret`, `hq_member_vip`.`mv_nickname`, `hq_member_vip`.`mv_last_login`, `hq_member_vip`.`mv_permission` FROM `hq_member_vip` WHERE `hq_member_vip`.`mv_name` = :username LIMIT :APL0
+[Sat, 30 Jan 16 05:23:16 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:23:16 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:30:21 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:30:21 +0000][INFO] DESCRIBE `hq_content_group`
+[Sat, 30 Jan 16 05:30:21 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_created_date` >= :from_date
+[Sat, 30 Jan 16 05:32:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:32:32 +0000][INFO] DESCRIBE `hq_content_group`
+[Sat, 30 Jan 16 05:32:32 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Sat, 30 Jan 16 05:32:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:32:35 +0000][INFO] DESCRIBE `hq_content_group`
+[Sat, 30 Jan 16 05:32:35 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Sat, 30 Jan 16 05:48:21 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:48:21 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:50:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:50:08 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:50:40 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:50:40 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:51:41 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:51:41 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:52:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:52:20 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:52:21 +0000][INFO] INSERT INTO `hq_demo` (`htd_title`, `htd_content`, `htd_created_date`) VALUES (?, ?, ?)
+[Sat, 30 Jan 16 05:52:29 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:52:29 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:52:29 +0000][INFO] SELECT `hq_demo`.`htd_id`, `hq_demo`.`htd_title`, `hq_demo`.`htd_content`, `hq_demo`.`htd_created_date` FROM `hq_demo` WHERE `hq_demo`.`htd_created_date` >= :from_date
+[Sat, 30 Jan 16 05:52:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_demo' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 05:52:32 +0000][INFO] DESCRIBE `hq_demo`
+[Sat, 30 Jan 16 05:52:32 +0000][INFO] SELECT `hq_demo`.`htd_id`, `hq_demo`.`htd_title`, `hq_demo`.`htd_content`, `hq_demo`.`htd_created_date` FROM `hq_demo` WHERE `hq_demo`.`htd_id` = :id LIMIT :APL0
+[Sat, 30 Jan 16 08:46:52 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:46:52 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:46:52 +0000][INFO] INSERT INTO `hq_website` (`hw_link`, `hw_link_circle`, `hw_created_date`) VALUES (?, ?, ?)
+[Sat, 30 Jan 16 08:46:59 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:46:59 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:46:59 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` WHERE `hq_website`.`hw_created_date` >= :from_date
+[Sat, 30 Jan 16 08:47:16 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:47:16 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:47:16 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` WHERE `hq_website`.`hw_created_date` >= :from_date
+[Sat, 30 Jan 16 08:47:17 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:47:17 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:47:17 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` WHERE `hq_website`.`hw_id` = :id LIMIT :APL0
+[Sat, 30 Jan 16 08:47:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:47:20 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:47:20 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` WHERE `hq_website`.`hw_id` = :id LIMIT :APL0
+[Sat, 30 Jan 16 08:47:25 +0000][INFO] UPDATE `hq_website` SET `hw_link` = ?, `hw_link_circle` = ? WHERE hw_id='1'
+[Sat, 30 Jan 16 08:47:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:47:51 +0000][INFO] DESCRIBE `hq_website_group`
+[Sat, 30 Jan 16 08:47:51 +0000][INFO] SELECT `hq_website_group`.`hwg_id`, `hq_website_group`.`hwg_name`, `hq_website_group`.`hwg_created_date` FROM `hq_website_group` WHERE `hq_website_group`.`hwg_created_date` >= :from_date
+[Sat, 30 Jan 16 08:58:52 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:58:52 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:58:52 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 08:59:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:59:02 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:59:02 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` WHERE `hq_website`.`hw_created_date` >= :from_date
+[Sat, 30 Jan 16 08:59:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:59:27 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:59:27 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 08:59:30 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:59:30 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:59:30 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 08:59:53 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 08:59:53 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 08:59:53 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:00:01 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:00:01 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:00:01 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:00:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:00:13 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:00:13 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:00:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:00:28 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:00:28 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:02:00 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:02:00 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:02:00 +0000][INFO] INSERT INTO `hq_website` (`hw_link`, `hw_link_circle`, `hw_created_date`) VALUES (?, ?, ?)
+[Sat, 30 Jan 16 09:02:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:02:12 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:02:12 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:03:10 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:03:10 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:03:10 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:04:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:04:32 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:04:32 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:04:59 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:04:59 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:04:59 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:06:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:06:33 +0000][INFO] DESCRIBE `hq_website_group`
+[Sat, 30 Jan 16 09:06:33 +0000][INFO] INSERT INTO `hq_website_group` (`hwg_name`, `hwg_list_web`, `hwg_created_date`) VALUES (?, ?, ?)
+[Sat, 30 Jan 16 09:06:40 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:06:40 +0000][INFO] DESCRIBE `hq_website_group`
+[Sat, 30 Jan 16 09:06:40 +0000][INFO] SELECT `hq_website_group`.`hwg_id`, `hq_website_group`.`hwg_name`, `hq_website_group`.`hwg_list_web`, `hq_website_group`.`hwg_created_date` FROM `hq_website_group` WHERE `hq_website_group`.`hwg_created_date` >= :from_date
+[Sat, 30 Jan 16 09:06:43 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:06:43 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:06:43 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:06:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:06:44 +0000][INFO] DESCRIBE `hq_website_group`
+[Sat, 30 Jan 16 09:06:44 +0000][INFO] SELECT `hq_website_group`.`hwg_id`, `hq_website_group`.`hwg_name`, `hq_website_group`.`hwg_list_web`, `hq_website_group`.`hwg_created_date` FROM `hq_website_group` WHERE `hq_website_group`.`hwg_id` = :id LIMIT :APL0
+[Sat, 30 Jan 16 09:07:09 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:07:09 +0000][INFO] DESCRIBE `hq_website`
+[Sat, 30 Jan 16 09:07:09 +0000][INFO] SELECT `hq_website`.`hw_id`, `hq_website`.`hw_link`, `hq_website`.`hw_link_circle`, `hq_website`.`hw_created_date` FROM `hq_website` ORDER BY `hq_website`.`hw_link` ASC
+[Sat, 30 Jan 16 09:07:09 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_website_group' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 30 Jan 16 09:07:09 +0000][INFO] DESCRIBE `hq_website_group`
+[Sat, 30 Jan 16 09:07:09 +0000][INFO] SELECT `hq_website_group`.`hwg_id`, `hq_website_group`.`hwg_name`, `hq_website_group`.`hwg_list_web`, `hq_website_group`.`hwg_created_date` FROM `hq_website_group` WHERE `hq_website_group`.`hwg_id` = :id LIMIT :APL0

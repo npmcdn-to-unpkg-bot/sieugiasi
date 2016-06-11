@@ -1,0 +1,86 @@
+<div class="header-systemstore-area">
+    <h1>Hệ thống các chi nhánh của Ninomaxx</h1>
+    <div class="search-system">
+        <form method="post">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input name="keyword" type="text" class="input-search-system"
+                   placeholder="Nhập tên đường ,tỉnh thành hoặc quận huyện">
+        </form>
+    </div>
+    <p>Vd: Quận 7, Hải Phòng, Huỳnh Tấn Phát</p>
+</div>
+<div class="wrapper">
+    <div class="main-contact-area">
+        <p class="new-store">Mới Khai Trương : <span
+                style="color: #777777;font-size: 14px;"><?php echo $lastStore->ag_address ?></span>
+        </p>
+        <div id="infomation-store">
+            <?php if (isset($store)) { ?>
+                <p class="new-store">Hệ Thống Cửa Hàng :</p>
+
+                <?php foreach ($store as $sto) { ?>
+                    <p class="shop-location" style="color: #777777;font-size: 14px;"><?php echo $sto->ag_address ?></p>
+                    <?php
+                }
+            } ?>
+        </div>
+        <div class="province-area">
+            <?php if ($system) {
+                foreach ($system as $sy) {
+                    if (count($sy->AgencyModel) > 0) { ?>
+                        <a onclick="searchStore(<?php echo $sy->zp_id ?>,null)" href="javascript:;"
+                           class="shop-location"><?php echo $sy->zp_name; ?>
+                            (<?php echo count($sy->AgencyModel); ?>)</a>
+                    <?php }
+                }
+            } ?>
+        </div>
+        <div class="system-store-content">
+            <div class="store-content-left">
+                <img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>system-map.jpg" alt="">
+            </div>
+            <div class="store-content-right">
+                Philosophy is considered a science but it is difficult to say, when one has to compare with an ordinary
+                science, for example biology, or chemistry. This is a question that turns into a burning problem among
+                the scientists and linguists all over the world.
+                Can philosophy be a science? What does philosophy operate with? It operates with categories, which can
+                be as wide and as interchangeable as one can only imagine.
+                Ordinary science operates with definitions, which are quite limited in their field of research. Ordinary
+                science uses terms and laws of that very science to continue the research, uniting with the others in
+                very rare cases. Philosophy gets into the sense of every science trying to achieve results.
+
+                We also can not call philosophy a supra-science, for it also uses hypothesis and arguments to state the
+                opinion.
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="system-store-category-product">
+            <h1>Các mặt hàng đang kinh doanh tại NINOMAXX </h1>
+            <?php
+            if ($category) {
+                foreach ($category as $lica) {
+                    ?>
+                    <a onclick="filterCategoryProduct('category',<?php echo $lica->ct_id ?>);" href="javascript:;"
+                       class="ct-product-system"><?php echo $lica->ct_name ?></a>
+                    <?php
+                }
+            }
+            ?>
+        </div>
+        <?php if ($slider) { ?>
+            <div class="slider-system-store dg-container">
+                <div class="dg-wrapper">
+                    <?php foreach ($slider as $key => $slide) { ?>
+                        <a href="<?php echo $this->url->get() . $slide->ba_link ?>"><img
+                                src="<?php echo $slide->ba_image_link ?>" alt=""></a>
+                    <?php } ?>
+
+                </div>
+                <nav>
+                    <span class="dg-prev">&lt;</span>
+                    <span class="dg-next">&gt;</span>
+                </nav>
+            </div>
+        <?php } ?>
+    </div>
+</div>

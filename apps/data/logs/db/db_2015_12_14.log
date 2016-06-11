@@ -1,0 +1,675 @@
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:09:51 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:09:54 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:10:18 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:18 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:18 +0000][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '4' LIMIT :APL0
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '5' LIMIT :APL0
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '6' LIMIT :APL0
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '7' LIMIT :APL0
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:19 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:20 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:10:22 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:11 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:13 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:25 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:26 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '8' LIMIT :APL0
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:42 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:11:44 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:10 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:12 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '9' LIMIT :APL0
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '10' LIMIT :APL0
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:56 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:57 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:12:58 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:14:35 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 03:14:36 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:15:32 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:15:33 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:07 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:08 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '7' LIMIT :APL0
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] UPDATE `hq_object` SET `bd_id` = ?, `u_id` = null, `ob_name` = null, `ob_description` = null, `ob_css_id` = ?, `ob_css_class` = ?, `ob_position_x` = ?, `ob_position_y` = ?, `ob_width` = ?, `ob_height` = ?, `ob_zindex` = ?, `ca_id` = null, `ob_create_date` = ?, `ob_edit_date` = ? WHERE `ob_id` = ?
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '11' LIMIT :APL0
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:20 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:27 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:28 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:50 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:16:51 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 11:17:13 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:29 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:31 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:32 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:33 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:34 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:47 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:49 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:50 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:45:51 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:46:53 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:46:54 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:01 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:02 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:03 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] DESCRIBE `hq_map_setting`
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] DESCRIBE `hq_object`
+[Mon, 14 Dec 15 17:47:05 +0000][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`

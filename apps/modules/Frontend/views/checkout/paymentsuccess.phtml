@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="shopping-cart-area">
+        <?php echo $this->partial('shoping-cart/menu') ?>
+        <img class="icon-order-susess" src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-big-order-susess.png" alt="">
+        <h1 class="text-order-susess">Đơn hàng của bạn đã thanh toán thành công.</h1>
+        <h1 class="text-order-susess">Xin Cảm Ơn</h1>
+        <div class="order-susess-btn-area">
+            <a href="<?php echo $this->url->get() ?>" class="btn-light">trang chủ</a>
+            <a href="<?php echo $this->url->get('category-product') ?>" class="btn-dark">Sản phẩm khác</a>
+        </div>
+    </div>
+</div>

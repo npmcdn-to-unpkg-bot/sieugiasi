@@ -1,0 +1,252 @@
+<div class="home-slider">
+    <ul class="slides">
+        <?php
+        if (count($sliders) > 0) {
+            foreach ($sliders as $slide) {
+                ?>
+                <li>
+                    <div style="background: url('<?php echo $slide->ba_image_link ?>') no-repeat top center"
+                         class="img-slider">
+                        <div class="info-slider">
+                            <h3><?php echo $slide->ba_name ?></h3>
+                            <p class="title-slider"><?php echo $slide->ba_description ?></p>
+                            <h4>Collection</h4>
+                            <a href='<?php echo $this->url->get() . $slide->ba_link ?>' class="btn-slider">Xem bộ sưu
+                                tập</a>
+                        </div>
+
+                    </div>
+                </li>
+                <?php
+            }
+        }
+        ?>
+
+    </ul>
+</div>
+<div class="wrapper">
+    <div class="home-product-feature-area">
+        <div class="header-home-product-feature">
+            <span class="name-area">Quý Cô Hàng Hiệu - NinoMaxx</span>
+            <h2>Phối Đồ Hoàn Hảo</h2>
+        </div>
+        <div class="main-home-product-feature">
+            <?php
+            if ($womanProduct) {
+                foreach ($womanProduct as $key => $woman) {
+                    if ($key < 5) {
+                        ?>
+                        <?php if ($key == 0) { ?>
+                            <div class="home-product-feature-center">
+                                <a href="<?php echo $this->url->get() . "product/show/" . $woman->pr_seo_link; ?>">
+                                    <img src="<?php echo $woman->showImage(); ?>" alt="">
+                                    <p class="name-product-feature"><?php echo $woman->pr_name ?>
+                                        -<?php echo $woman->showPrice(); ?></p>
+                                    <p class="btn-home-product-feature">Xem Tất Cả</p>
+                                </a>
+                            </div>
+                        <?php } else { ?>
+                            <div class="home-product-feature pr-feat<?php echo $key ?>">
+                                <a href="<?php echo $this->url->get() . "product/show/" . $woman->pr_seo_link; ?>">
+                                    <img src="<?php echo $woman->showImage(); ?>" alt="">
+                                    <p class="name-product-feature"><?php echo $woman->pr_name ?>
+                                        -<?php echo $woman->showPrice(); ?></p>
+                                    <p class="btn-home-product-feature">Xem Tất Cả</p>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                    }
+                }
+            }
+            ?>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="home-slider-product-area">
+        <div class="header-home-product-feature">
+            <span class="name-area">15 Sản Phẩm</span>
+            <h2>Sản Phẩm Mới của Nữ</h2>
+            <a href="" class="btn-view-all">Xem Tất Cả</a>
+        </div>
+        <div class="main-slider-product sli-pro1">
+            <ul class="slides">
+                <?php
+                if ($womanProduct) {
+                    foreach ($womanProduct as $key => $woman) {
+                        if ($key > 5) {
+                            ?>
+                            <li>
+                                <div class="slider-product">
+                                    <a href="<?php echo $this->url->get() . "product/show/" . $woman->pr_seo_link; ?>">
+                                        <img src="<?php echo $woman->showImage(); ?>" alt="">
+                                        <p class="name-product-slider"><?php echo $woman->pr_name ?></p>
+                                        <?php $pricePromotion = $woman->showPricePromotion();
+                                        if ($pricePromotion) { ?>
+                                            <p class="price"><?php echo $woman->showPricePromotion(); ?></p>
+                                            <p style="text-decoration: line-through;font-size: 13px;"
+                                               class="price"><?php echo $woman->showPrice(); ?></p>
+                                        <?php } else { ?>
+                                            <p class="price"><?php echo $woman->showPrice(); ?></p>
+                                        <?php } ?>
+
+                                        <ul class="product-size">
+                                            <?php
+                                            $listSizeWoman = $woman->showSize();
+                                            if (!empty($listSizeWoman)) {
+                                                foreach ($listSizeWoman as $size) {
+//                                                    ?>
+                                                    <li><?php echo $size ?></li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </a>
+                                    <a data-rel="<?php echo $woman->pr_id ?>" href="javascript:;"
+                                       class="add-cart btn-add-cart">Lưu vào giỏ hàng</a>
+                                </div>
+                            </li>
+                            <?php
+                        }
+                    }
+                }
+                ?>
+
+            </ul>
+        </div>
+        <div class="sli-pro1-custom-navigation custom-navigation">
+            <a href="javascript:;" class="flex-prev">
+                <img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>prev.png" alt="">
+            </a>
+            <a href="javascript:;" class="flex-next">
+                <img style="transform: rotate(180deg)"
+                     src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>prev.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="home-product-feature-area">
+        <div class="header-home-product-feature">
+            <span class="name-area">Bộ Sưu Tập - Denim</span>
+            <h2>Sản Phẩm Mới Của Nam</h2>
+        </div>
+        <div class="main-home-product-feature">
+            <?php
+            if ($manProduct) {
+                foreach ($manProduct as $key => $man) {
+                    if ($key < 5) {
+                        ?>
+                        <?php if ($key == 0) { ?>
+                            <div class="home-product-feature-center">
+                                <a href="<?php echo $this->url->get() . "product/show/" . $man->pr_seo_link; ?>">
+                                    <img src="<?php echo $man->showImage(); ?>" alt="">
+                                    <p class="name-product-feature"><?php echo $man->pr_name ?>
+                                        -<?php echo $man->showPrice(); ?></p>
+                                    <p class="btn-home-product-feature">Xem Tất Cả</p>
+                                </a>
+                            </div>
+                        <?php } else { ?>
+                            <div class="home-product-feature pr-feat<?php echo $key ?>">
+                                <a href="<?php echo $this->url->get() . "product/show/" . $man->pr_seo_link; ?>">
+                                    <img src="<?php echo $man->showImage(); ?>" alt="">
+                                    <p class="name-product-feature"><?php echo $man->pr_name ?>
+                                        -<?php echo $man->showPrice(); ?></p>
+                                    <p class="btn-home-product-feature">Xem Tất Cả</p>
+                                </a>
+                            </div>
+                            <?php
+                        }
+                    }
+                }
+            }
+            ?>
+
+        </div>
+    </div>
+    <div class="home-slider-product-area">
+        <div class="header-home-product-feature">
+            <span class="name-area">15 Sản Phẩm</span>
+            <h2>Sản Phẩm Mới của Nữ</h2>
+            <a href="" class="btn-view-all">Xem Tất Cả</a>
+        </div>
+        <div class="main-slider-product sli-pro2">
+            <ul class="slides">
+                <?php
+                if ($manProduct) {
+                    foreach ($manProduct as $key => $man) {
+                        if ($key > 5) {
+                            ?>
+                            <li>
+                                <div class="slider-product">
+                                    <a href="<?php echo $this->url->get() . "product/show/" . $man->pr_seo_link; ?>">
+                                        <img src="<?php echo $man->showImage(); ?>" alt="">
+                                        <p class="name-product-slider"><?php echo $man->pr_name ?></p>
+                                        <?php $pricePromotion = $man->showPricePromotion();
+                                        if ($pricePromotion) { ?>
+                                            <p class="price"><?php echo $man->showPricePromotion(); ?></p>
+                                            <p style="text-decoration: line-through;font-size: 13px;"
+                                               class="price"><?php echo $man->showPrice(); ?></p>
+                                        <?php } else { ?>
+                                            <p class="price"><?php echo $man->showPrice(); ?></p>
+                                        <?php } ?>
+                                        <ul class="product-size">
+                                            <?php
+                                            $listSizeMan = $man->showSize();
+                                            if (!empty($listSizeMan)) {
+                                                foreach ($listSizeMan as $size) {
+                                                    ?>
+                                                    <li><?php echo $size ?></li>
+                                                    <?php
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </a>
+                                    <a data-rel="<?php echo $man->pr_id ?>" href="javascript:;"
+                                       class="add-cart btn-add-cart">Lưu vào giỏ hàng</a>
+                                </div>
+                            </li>
+                            <?php
+                        }
+                    }
+                }
+                ?>
+
+            </ul>
+        </div>
+        <div class="sli-pro2-custom-navigation custom-navigation">
+            <a href="javascript:;" class="flex-prev">
+                <img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>prev.png" alt="">
+            </a>
+            <a href="javascript:;" class="flex-next">
+                <img style="transform: rotate(180deg)"
+                     src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>prev.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="home-news-area">
+    <div class="wrapper">
+        <h2>Blog NinoMaxx</h2>
+        <?php
+        if ($news) {
+            foreach ($news as $ne) {
+                ?>
+                <div class="home-news ">
+                    <a href="<?php echo $this->url->get() . $ne->showSeoLink(); ?>">
+                        <img src="<?php echo $ne->n_image_link; ?>" alt="">
+                        <p class="prefix-news"><?php echo isset($ne->NewsCategoryModel) ? $ne->NewsCategoryModel->nc_name : ''; ?></p>
+                        <h3><?php echo $ne->n_name; ?></h3>
+                        <p class="news-short-description">
+                            <?php echo $ne->n_short_description; ?>
+                        </p>
+                        <h4>Đọc Bài Viết</h4>
+                    </a>
+                </div>
+            <?php }
+        }
+        ?>
+
+        <div class="clearfix"></div>
+    </div>
+</div>

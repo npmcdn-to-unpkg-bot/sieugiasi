@@ -1,0 +1,24 @@
+<?php if (isset($gallery)) { ?>
+    <div id="carousel" class="flexslider">
+        <ul class="slides">
+            <?php foreach ($gallery as $gla) { ?>
+                <li>
+                    <img
+                        src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                </li>
+            <?php } ?>
+        </ul>
+    </div>
+    <div id="slider" class="flexslider">
+        <ul class="slides">
+            <?php foreach ($gallery as $gla) { ?>
+                <li>
+                    <img id="jzoom" class="jzoom"
+                         src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"
+                         data-pimg="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                </li>
+            <?php } ?>
+        </ul>
+    </div>
+<?php } ?>
+

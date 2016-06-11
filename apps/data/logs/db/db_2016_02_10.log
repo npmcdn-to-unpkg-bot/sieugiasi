@@ -1,0 +1,612 @@
+[Wed, 10 Feb 16 14:32:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_member_vip' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:32:32 +0000][INFO] DESCRIBE `hq_member_vip`
+[Wed, 10 Feb 16 14:32:32 +0000][INFO] SELECT `hq_member_vip`.`mv_id`, `hq_member_vip`.`mv_name`, `hq_member_vip`.`mv_secret`, `hq_member_vip`.`mv_nickname`, `hq_member_vip`.`mv_last_login`, `hq_member_vip`.`mv_permission` FROM `hq_member_vip` WHERE `hq_member_vip`.`mv_name` = :username LIMIT :APL0
+[Wed, 10 Feb 16 14:32:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:32:58 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:32:58 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:33:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:33:13 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:33:13 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:33:32 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:33:32 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:33:32 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:33:37 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:33:37 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:33:37 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:33:39 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:33:39 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:33:39 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:34:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:08 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:34:08 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:34:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:08 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:34:08 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:34:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:15 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:34:15 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:34:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:15 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:34:15 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:34:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:25 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:34:25 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:34:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:25 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:34:25 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:34:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:48 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:34:48 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:34:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:48 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:34:48 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:34:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:54 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:34:54 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:34:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:34:54 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:34:54 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:35:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:08 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:35:08 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:35:08 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:08 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:35:08 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:35:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:27 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:35:27 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:35:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:27 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:35:27 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:35:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:34 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:35:34 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:35:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:34 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:35:34 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:35:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:47 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:35:47 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:35:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:35:47 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:35:47 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:36:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:36:51 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:36:51 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:37:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:07 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:07 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:37:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:19 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:19 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:37:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:22 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:22 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:37:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:22 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:22 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:37:24 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:24 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:24 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:37:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:51 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:51 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:37:51 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:51 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:37:51 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:37:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:58 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:37:58 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:37:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:37:58 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:37:58 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:38:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:05 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:38:05 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:38:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:05 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:38:05 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:38:23 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:23 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:38:23 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:38:23 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:23 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:38:23 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:38:30 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:30 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:38:30 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:38:30 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:30 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:38:30 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:38:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:45 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:38:45 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:38:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:38:45 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:38:45 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:39:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:39:05 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:39:05 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:39:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:39:05 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:39:05 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:39:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:39:13 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:39:13 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:39:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:39:13 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:39:13 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:39:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:39:25 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:39:25 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:39:25 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:39:25 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:39:25 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:41:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:41:34 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:41:34 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:41:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:41:47 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:41:47 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:42:04 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:42:04 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:42:04 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:42:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:42:15 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:42:15 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:42:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:42:22 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:42:22 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:42:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:42:58 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:42:58 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:42:58 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:42:58 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:42:58 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:43:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:05 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:43:05 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:43:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:05 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:43:05 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:43:17 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:17 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:43:17 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:43:17 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:17 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:43:17 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:43:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:33 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:43:33 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:43:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:33 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:43:33 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:43:43 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:43 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:43:43 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:43:43 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:43 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:43:43 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:43:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:57 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:43:57 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:43:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:43:57 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:43:57 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:44:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:15 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:44:15 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:44:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:15 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:44:15 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:44:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:22 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:44:22 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:44:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:22 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:44:22 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:44:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:35 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:44:35 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:44:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:35 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:44:35 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:44:38 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:38 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:44:38 +0000][INFO] SELECT `hq_content`.`hc_id`, `hq_content`.`hc_hcg_id`, `hq_content`.`hc_hcg_key`, `hq_content`.`hc_description`, `hq_content`.`hc_title`, `hq_content`.`hc_created_date` FROM `hq_content` WHERE DATE(`hq_content`.`hc_created_date`) >= :from_date
+[Wed, 10 Feb 16 14:44:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:44 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:44:44 +0000][INFO] SELECT `hq_content`.`hc_id`, `hq_content`.`hc_hcg_id`, `hq_content`.`hc_hcg_key`, `hq_content`.`hc_description`, `hq_content`.`hc_title`, `hq_content`.`hc_created_date` FROM `hq_content` WHERE `hq_content`.`hc_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:44:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:44 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:44:44 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:44:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:44:48 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:44:48 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:44:48 +0000][INFO] UPDATE `hq_content` SET `hc_title` = ?, `hc_description` = ?, `hc_hcg_id` = ?, `hc_hcg_key` = ? WHERE hc_id='1483'
+[Wed, 10 Feb 16 14:47:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:47:19 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:47:19 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:47:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:47:33 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:47:33 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:47:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:47:45 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:47:45 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:47:53 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:47:53 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:47:53 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:47:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:47:56 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:47:56 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:48:18 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:18 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:48:18 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:48:18 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:18 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:48:18 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:48:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:26 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:48:26 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:48:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:26 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:48:26 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:48:37 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:37 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:48:37 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:48:37 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:37 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:48:37 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:48:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:56 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:48:56 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:48:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:48:56 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:48:56 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:49:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:03 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:49:03 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:49:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:03 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:49:03 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:49:14 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:14 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:49:14 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:49:14 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:14 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:49:14 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:49:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:36 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:49:36 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:49:36 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:36 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:49:36 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:49:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:45 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:49:45 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:49:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:45 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:49:45 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:49:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:56 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:49:56 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:49:56 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:49:56 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:49:56 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:51:55 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:51:55 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:51:55 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:51:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:51:57 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:51:57 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:53:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:53:03 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:53:03 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:53:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:53:15 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:53:15 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:53:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:53:31 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:53:31 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:53:35 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:53:35 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:53:35 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:53:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:53:44 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:53:44 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:54:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:07 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:54:07 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:54:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:07 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:54:07 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:54:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:13 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:54:13 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:54:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:13 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:54:13 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:54:24 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:24 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:54:24 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:54:24 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:24 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:54:24 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:54:40 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:41 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:54:41 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:54:41 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:41 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:54:41 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:54:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:48 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:54:48 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:54:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:54:48 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:54:48 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:55:04 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:04 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:55:04 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:55:04 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:04 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:55:04 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:55:21 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:21 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:55:21 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:55:21 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:21 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:55:21 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:55:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:28 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:55:28 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:55:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:28 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:55:28 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:55:39 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:39 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:55:39 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:55:39 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:55:39 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 14:55:39 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 14:57:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:57:27 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:57:27 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:58:13 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:58:13 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:58:13 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:58:28 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:58:28 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:58:28 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:58:46 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:58:46 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:58:46 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 14:59:01 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:59:01 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:59:01 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE DATE(`hq_content_group`.`hcg_created_date`) >= :from_date
+[Wed, 10 Feb 16 14:59:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:59:07 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:59:07 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:59:11 +0000][INFO] UPDATE `hq_content_group` SET `hcg_key` = ?, `hcg_main` = ?, `hcg_position` = ? WHERE hcg_id='523'
+[Wed, 10 Feb 16 14:59:18 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:59:18 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:59:18 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:59:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:59:20 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:59:20 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 14:59:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:59:26 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:59:26 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 14:59:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 14:59:33 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 14:59:33 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 15:00:24 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:00:24 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:00:24 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:00:24 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:00:24 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:00:24 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:00:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:00:34 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:00:34 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:00:34 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:00:34 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:00:34 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:00:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:00:45 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:00:45 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:00:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:00:45 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:00:45 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:01:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:01:19 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:01:19 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:01:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:01:19 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:01:19 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:01:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:01:27 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:01:27 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:01:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:01:27 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:01:27 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:01:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:01:48 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:01:48 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:01:48 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:01:48 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:01:48 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:02:10 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:02:10 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:02:10 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:02:10 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:02:10 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:02:10 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:02:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:02:20 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:02:20 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:02:20 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:02:20 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:02:20 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:02:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:02:44 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:02:44 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:02:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:02:44 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:02:44 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:06:24 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:06:24 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:06:24 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:06:44 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:06:44 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:06:44 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:06:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:06:57 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:06:57 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:07:04 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:07:04 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:07:04 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 15:07:06 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:07:06 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:07:06 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 15:08:02 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:08:03 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:08:03 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:08:03 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:08:03 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:08:03 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:08:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:08:15 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:08:15 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:08:15 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:08:15 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:08:15 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:08:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:08:26 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:08:26 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:08:26 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:08:26 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:08:26 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:09:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:09:05 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:09:05 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:09:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:09:05 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:09:05 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:09:16 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:09:16 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:09:16 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:09:16 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:09:16 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:09:16 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:09:29 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:09:29 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:09:29 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:09:29 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:09:29 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:09:29 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:10:19 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:10:19 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:10:19 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:10:19 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:10:19 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:10:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:10:33 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:10:33 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:10:33 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:10:33 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:10:33 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:10:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:10:54 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:10:54 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:10:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:10:54 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:10:54 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:12:37 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:12:37 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:12:37 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:12:52 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:12:52 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:12:52 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:13:06 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:13:06 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:13:06 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:15:18 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:15:18 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:15:18 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:17:54 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:17:54 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:17:54 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:18:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:18:07 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:18:07 +0000][INFO] INSERT INTO `hq_content_group` (`hcg_key`, `hcg_main`, `hcg_created_date`, `hcg_position`) VALUES (?, ?, ?, ?)
+[Wed, 10 Feb 16 15:18:16 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:18:16 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:18:16 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE DATE(`hq_content_group`.`hcg_created_date`) >= :from_date
+[Wed, 10 Feb 16 15:18:22 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:18:22 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:18:22 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:18:42 +0000][INFO] UPDATE `hq_content_group` SET `hcg_key` = ?, `hcg_main` = ?, `hcg_position` = ? WHERE hcg_id='530'
+[Wed, 10 Feb 16 15:18:45 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:18:45 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:18:45 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 15:18:47 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:18:47 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:18:47 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` ORDER BY `hq_content_group`.`hcg_id` DESC
+[Wed, 10 Feb 16 15:19:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:19:27 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:19:27 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:19:27 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:19:27 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:19:27 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:19:40 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:19:40 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:19:40 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:19:40 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:19:40 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:19:40 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:19:55 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:19:55 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:19:55 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:19:55 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:19:55 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:19:55 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:20:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:20:31 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:20:31 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:20:31 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:20:31 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:20:31 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:21:05 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:05 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:21:06 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:21:06 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:06 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:21:06 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:21:17 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:17 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:21:17 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:21:17 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:17 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:21:17 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:21:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:42 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:21:42 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:21:42 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:42 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:21:42 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:21:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:49 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:21:49 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:21:49 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:21:49 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:21:49 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:22:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:22:07 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:22:07 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE `hq_content_group`.`hcg_id` = :id LIMIT :APL0
+[Wed, 10 Feb 16 15:22:07 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:22:07 +0000][INFO] DESCRIBE `hq_content`
+[Wed, 10 Feb 16 15:22:07 +0000][INFO] INSERT INTO `hq_content` (`hc_hcg_id`, `hc_hcg_key`, `hc_description`, `hc_title`, `hc_created_date`) VALUES (?, ?, ?, ?, ?)
+[Wed, 10 Feb 16 15:25:57 +0000][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_content_group' AND `TABLE_SCHEMA` = DATABASE()
+[Wed, 10 Feb 16 15:25:57 +0000][INFO] DESCRIBE `hq_content_group`
+[Wed, 10 Feb 16 15:25:57 +0000][INFO] SELECT `hq_content_group`.`hcg_id`, `hq_content_group`.`hcg_key`, `hq_content_group`.`hcg_main`, `hq_content_group`.`hcg_created_date`, `hq_content_group`.`hcg_position` FROM `hq_content_group` WHERE DATE(`hq_content_group`.`hcg_created_date`) >= :from_date

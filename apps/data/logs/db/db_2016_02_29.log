@@ -1,0 +1,7 @@
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] DESCRIBE `hq_admin_role`
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] DESCRIBE `hq_admin_role`
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_admin_role' AND `TABLE_SCHEMA` = DATABASE()
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] DESCRIBE `hq_admin_role`
+[Mon, 29 Feb 16 09:20:48 +0100][INFO] SELECT `hq_admin_role`.`role_name` AS `role_name`, `hq_admin_role`.`role_ar_user` AS `role_ar_user` FROM `hq_admin_role`

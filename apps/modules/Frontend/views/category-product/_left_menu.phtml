@@ -1,0 +1,148 @@
+<div class="main-content-left">
+    <h2>Thương Hiệu</h2>
+    <ul>
+        <li>
+            <a class='active' href="<?php echo $this->url->get("category-product") ?>">
+                <div class="check">
+                    <div class="check-checked"></div>
+                </div>
+                <label for="f-option">Tất Cả</label>
+            </a>
+        </li>
+        <?php
+        if ($manufacturer) {
+            foreach ($manufacturer as $manu) {
+                ?>
+                <li>
+                    <a onclick="filterCategoryProduct('munafacturer',<?php echo $manu->ma_id ?>,$(this));"
+                        href="javascript:;">
+                        <div class="check">
+                            <div class="check-checked"></div>
+                        </div>
+                        <label for="f-option"><?php echo $manu->ma_name ?></label>
+                    </a>
+                </li>
+                <?php
+            }
+        }
+        ?>
+    </ul>
+    <h2>Giới Tính</h2>
+    <ul>
+        <li>
+            <a <?php echo empty($query) ? " class='active' " : "" ?> href="<?php echo $this->url->get("category-product") ?>">
+                <div class="check">
+                    <div class="check-checked"></div>
+                </div>
+                <label for="f-option">Tất Cả</label>
+            </a>
+        </li>
+        <li>
+            <a <?php echo isset($query['gender']) &&  $query['gender'] == 'nam'? " class='active' " : "" ?> href="<?php echo $this->url->get("category-product?gender=nam") ?>">
+                <div class="check">
+                    <div class="check-checked"></div>
+                </div>
+                <label for="f-option">Nam</label>
+            </a>
+        </li>
+        <li>
+            <a <?php echo isset($query['gender']) &&  $query['gender'] == 'nu'? " class='active' " : "" ?> href="<?php echo $this->url->get("category-product?gender=nu") ?>">
+                <div class="check">
+                    <div class="check-checked"></div>
+                </div>
+                <label for="f-option">Nữ</label>
+            </a>
+        </li>
+    </ul>
+    <h2>Quần Áo</h2>
+    <ul class="clothers">
+        <li>
+            <a onclick="filterCategoryProduct('category','all',$(this));"
+               href="javascript:;">
+                        <span class="clothers-chose">
+                        <i class="fa fa-circle fa-1" aria-hidden="true"></i>
+                            Tất Cả
+                            </span>
+            </a>
+        </li>
+        <?php
+        if ($listCategory) {
+            foreach ($listCategory as $lica) {
+                ?>
+                <li>
+                    <a onclick="filterCategoryProduct('category',<?php echo $lica->ct_id ?>,$(this));"
+                       href="javascript:;">
+                        <span class="clothers-chose">
+                        <i class="fa fa-circle fa-1" aria-hidden="true"></i>
+                            <?php echo $lica->ct_name ?>
+                            </span>
+                    </a>
+                </li>
+                <?php
+            }
+        }
+        ?>
+    </ul>
+    <h2>Màu Sắc</h2>
+    <ul>
+        <li>
+            <a onclick="filterCategoryProduct('color','all',$(this));"
+               href="javascript:;">
+                <div class="check">
+                    <div class="check-checked"></div>
+                </div>
+                <label for="f-option">Tất Cả</label>
+            </a>
+        </li>
+        <?php
+        if ($listOption) {
+            foreach ($listOption as $licolor) {
+                if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Color) {
+                    ?>
+                    <li>
+                        <a onclick="filterCategoryProduct('color',<?php echo $licolor->plo_id ?>,$(this));"
+                           href="javascript:;">
+                            <div class="check">
+                                <div class="check-checked"></div>
+                            </div>
+                            <label for="f-option"><?php echo $licolor->plo_name ?></label>
+                        </a>
+                    </li>
+                    <?php
+                }
+            }
+        }
+        ?>
+    </ul>
+    <h2>Kích Cỡ</h2>
+    <ul>
+        <li>
+            <a onclick="filterCategoryProduct('size','all',$(this));"
+               href="javascript:;">
+                <div class="check">
+                    <div class="check-checked"></div>
+                </div>
+                <label for="f-option">Tất Cả</label>
+            </a>
+        </li>
+        <?php
+        if ($listOption) {
+            foreach ($listOption as $licolor) {
+                if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Size) {
+                    ?>
+                    <li>
+                        <a onclick="filterCategoryProduct('size',<?php echo $licolor->plo_id ?>,$(this));"
+                           href="javascript:;">
+                            <div class="check">
+                                <div class="check-checked"></div>
+                            </div>
+                            <label for="f-option"><?php echo $licolor->plo_name ?></label>
+                        </a>
+                    </li>
+                    <?php
+                }
+            }
+        }
+        ?>
+    </ul>
+</div>

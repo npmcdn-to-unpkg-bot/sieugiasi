@@ -1,0 +1,29 @@
+<input type="hidden" name="pr_id_order" value="<?php echo $product->pr_id ?>" >
+<select class="select-filter-detail popup-color-product">
+    <?php
+    $listColor = $product->showColor();
+    if (!empty($listColor)) {
+        foreach ($listColor as $key => $color) {
+            ?>
+            <option style="background-color: <?php echo $color->plo_detail ?>" value="<?php echo $color->plo_id ?>" >
+                <?php echo "Màu : ".$color->plo_name ?>
+            </option>
+
+        <?php }
+    } ?>
+
+</select>
+<select class="select-filter-detail popup-size-product">
+    <?php
+    $listSize = $product->showSize();
+    if (!empty($listSize)) {
+        foreach ($listSize as $key => $size) {
+            ?>
+            <option data-gtm-size="XS " name="false"
+                    value="<?php echo $key ?>"><?php echo "Size : " . $size ?></b>
+            </option>
+            <?php
+        }
+    }
+    ?>
+</select>

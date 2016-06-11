@@ -1,0 +1,47 @@
+<div  class="wrapper">
+    <div class="main-loginregister-area">
+        <div class="loginregister-left">
+            <div class="content-loginregister">
+                <h1>Đăng nhập</h1>
+                <form id="login-form" onsubmit="loginUser(); return false; " class="login-register-form form-horizontal" >
+                    <p><input required minlength="6" name="us_name" type="text" class="input-contact-form" placeholder="Tên Đăng Nhập Hoặc Email*"></p>
+
+                    <p><input required minlength="6" name="us_password" type="password" class="input-contact-form" placeholder="Mật Khẩu*"></p>
+                    <a href="<?php echo $this->url->get("user/forgot-password") ?>" class="forgot-password" >Quên mật khẩu?</a>
+
+                    <button onclick="loginUser()" type="button" class="btn-login-register">Đăng Nhập</button>
+                    <p style="margin: 10px 0" >* Thông tin bắt buộc</p>
+                    <input  style="visibility: hidden;position: absolute;" type="submit">
+                </form>
+                <p class="text-login-social" >
+                    hoặc đăng nhập bằng 
+                    <a onclick="facebookLogin();" href="javascript:;" class="btn-social-login btn-login-fb"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-login-fb.png" alt=""></a>
+                    <a onclick="googleLogin();" href="javascript:;" class="btn-social-login btn-login-gg"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-icon-gg.png" alt=""></a>
+                </p>
+            </div>
+        </div>
+        <div class="loginregister-right">
+            <div style="float: right" class="content-loginregister">
+                <h1>Đăng Ký</h1>
+                <form onsubmit=" registerUser(); return false; " class="login-register-form register-form " >
+                    <p><input required minlength="6" name="us_name" type="text" class="input-contact-form" placeholder="Tên Đăng Nhập*"></p>
+                    <p><input required name="us_email" email="true" type="text" class="input-contact-form" placeholder="Email*"></p>
+                    <p><input required minlength="6" name="us_password" type="password" class="input-contact-form" placeholder="Mật Khẩu*"></p>
+                    <p>Ít nhất 6 kí tự gồm chữ cái và số</p>
+                    <p><input required minlength="6" name="us_confirm_password" type="password" class="input-contact-form" placeholder="Nhập Lại Mật Khẩu*"></p>
+                    <p>Tôi đã đọc và đồng ý với <a style="color: #4c64a5;" href=""> điều khoản sử dụng </a> của Ninomaxx</p>
+                    <button onclick="registerUser();" type="button" class="btn-login-register">Đăng Nhập</button>
+                    <p style="margin: 10px 0" >* Thông tin bắt buộc</p>
+                    <input  style="visibility: hidden;position: absolute;" type="submit">
+                </form>
+                <p class="text-login-social" >
+                    hoặc đăng nhập bằng 
+                    <a onclick="facebookLogin();" href="javascript:;" class="btn-social-login btn-login-fb"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-login-fb.png" alt=""></a>
+                    <a onclick="googleLogin();" href="javascript:;" class="btn-social-login btn-login-gg"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-icon-gg.png" alt=""></a>
+                </p>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>

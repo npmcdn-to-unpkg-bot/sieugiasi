@@ -1,0 +1,102 @@
+<div class="wrapper">
+    <div class="shopping-cart-area">
+        <?php echo $this->partial('shoping-cart/menu') ?>
+        <div class="shopping-cart-content">
+            <table>
+                <thead>
+                <tr>
+                    <th style="width: 5%;"></th>
+                    <th style="width: 10%;">Sản Phẩm</th>
+                    <th style="width: 30%;"></th>
+                    <th>Giá</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if (!empty($cart)) {
+                    foreach ($cart['product'] as $key=>$product) {
+                        if ($product['cart_quantity'] > 0) { ?>
+                            <tr>
+                                <td>
+                                    <a data-rel="<?php echo $key ?>" href="javascript:;"
+                                       class="btn-remove-pr-shoppingcart">
+                                        <img
+                                            src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-remove.png"
+                                            alt="">
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <img class="img-pr-shoppingcart" src="<?php echo $product['pa_image_link'] ?>"
+                                         alt="">
+                                </td>
+                                <td style="text-align: left">
+                                    <a  class="pr-name-shoppingcart"><?php echo $product['pr_name'] ?></a><br>
+                                    <a style="font-size: 14px; font-weight: bold;" class="pr-name-shoppingcart">Màu : <?php echo $product['color_name'] ?></a><br>
+                                    <a style="font-size: 14px; font-weight: bold;" class="pr-name-shoppingcart">Size : <?php echo $product['size_name'] ?></a>
+                                </td>
+                                <td style="font-weight: bold">
+                                    <?php echo ($product['pr_price_promotion'] > 0) ? number_format($product['pr_price_promotion']) . " Vnđ" : number_format($product['pr_price']) . " Vnđ" ?>
+                                </td>
+                                <td>
+                                    <div class="input-number-sc">
+                                        <a data-rel="<?php echo $key ?>" href="javascript:;" class="minus">
+                                            <img
+                                                src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-minus.png"
+                                                alt="">
+                                        </a>
+                                        <input readonly="readonly" value="<?php echo $product['cart_quantity'] ?>"
+                                               type="text" class="input-number"/>
+                                        <a data-rel="<?php echo $key ?>" href="javascript:;" class="plus">
+                                            <img
+                                                src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-plus.png"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="price-total" style="font-weight: bold">
+                                    <?php echo number_format($product['total_price']) . " Vnđ" ?>
+                                </td>
+                            </tr>
+                        <?php }
+                    }
+                } ?>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-price-shoppingcar">
+            <h1>Thành Tiền</h1>
+            <div class="row-sc">
+                <span class="label-sc">Tổng Tiền</span>
+                <span class="temp-price"><?php echo number_format($cart['total_price_product']) . " Vnđ" ?></span>
+            </div>
+            <?php if ($cart['coupon']>0) { ?>
+                <div class="row-sc">
+                    <span class="label-sc">Discount</span>
+                    <span class="coupon-discount"><?php echo  number_format($cart['coupon']) . " Vnđ"?></span>
+                </div>
+            <?php } ?>
+            <div class="row-sc">
+                <span class="label-sc">Phí Vận Chuyển</span>
+                <span
+                    class="fee-price"><?php echo $cart['fee_drive'] > 0 ? number_format($cart['total_price_order']) . " Vnđ" : 'Miễn Phí' ?></span>
+            </div>
+            <div class="row-total-price">
+                <span class="label-sc">Thành Tiền</span>
+                <span class="total-price"><?php echo number_format($cart['total_price_order']) . " Vnđ" ?></span>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="shopping-cart-bottom">
+            <input name="co_code" class="input-contact-form input-promotion-code"
+                   placeholder="Nhập Mã Phiếu Giảm Giá" type="text">
+            <a <?php if ($user) { ?> onclick="addCoupon();" href="javascript:;" <?php } else { ?> href="<?php echo $this->url->get("user?redirect=shoping-cart") ?>" <?php } ?>
+                class="btn-light btn-promotion-code">Nhập Mã</a>
+            <a href="<?php echo $this->url->get("shoping-cart") ?>" class="btn-dark btn-update-cart">Cập Nhật Giỏ
+                Hàng</a>
+            <a <?php if (!empty($user)) { ?> href="<?php echo $this->url->get("checkout") ?>" <?php } else { ?> href="<?php echo $this->url->get("user?redirect=checkout") ?>" <?php } ?>
+                class="btn-light btn-checkout">Thanh Toán</a>
+        </div>
+    </div>
+</div>

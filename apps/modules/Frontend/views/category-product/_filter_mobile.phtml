@@ -1,0 +1,75 @@
+<div  class="m-filter-area">
+
+    <div id="accordian">
+        <ul>
+            <li class="">
+                <h3 style="text-transform: uppercase;">Lọc Sản Phẩm</h3>
+                <ul style="display: none">
+                    <li>
+                        <select class="m-select-filter m-filter-manufacturer">
+                            <?php
+                            if ($manufacturer) {
+                                foreach ($manufacturer as $manu) {
+                                    ?>
+                                    <option  <?php echo $choseManufacture == $manu->ma_id ? ' selected ' : '' ?> value="<?php echo $manu->ma_id ?>" ><?php echo $manu->ma_name ?></option>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </select>
+                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <select class="m-select-filter m-filter-category">
+                            <option value="-1" >Tất Cả</option>
+                            <?php
+                            if ($listCategory) {
+                                foreach ($listCategory as $lica) {
+                                    ?>
+                                    <option value="<?php echo $lica->ct_id ?>" <?php echo isset($category) && $category == $lica->ct_id ? ' selected ' : ''; ?> ><?php echo $lica->ct_name ?></option>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </select>
+                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <select class="m-select-filter m-filter-color">
+                            <option value="-1" >Màu Sắc</option>
+                            <?php
+                            if ($listOption) {
+                                foreach ($listOption as $licolor) {
+                                    if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Color) {
+                                        ?>
+                                        <option value="<?php echo $licolor->plo_id ?>" <?php echo isset($color) && $color == $licolor->plo_id ? ' selected ' : ''; ?> ><?php echo $licolor->plo_name ?></option>
+                                        <?php
+                                    }
+                                }
+                            }
+                            ?>
+                        </select>
+                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <select class="m-select-filter m-filter-size">
+                            <option value="-1" >Kích Cỡ</option>
+                            <?php
+                            if ($listOption) {
+                                foreach ($listOption as $licolor) {
+                                    if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Size) {
+                                        ?>
+                                        <option value="<?php echo $licolor->plo_id ?>" <?php echo isset($size) && $size == $licolor->plo_id ? ' selected ' : ''; ?> ><?php echo $licolor->plo_name ?></option>
+                                        <?php
+                                    }
+                                }
+                            }
+                            ?>
+                        </select>
+                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

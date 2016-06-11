@@ -1,0 +1,1080 @@
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:09:17 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:09:18 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:10:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] INSERT INTO `hq_building` (`cb_id`, `bd_name`, `bd_description`, `bd_width`, `bd_height`, `bd_svg`, `bd_create_date`) VALUES (?, ?, ?, ?, ?, ?, ?)
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:12:26 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] INSERT INTO `hq_building` (`cb_id`, `bd_name`, `bd_description`, `bd_width`, `bd_height`, `bd_svg`, `bd_create_date`) VALUES (?, ?, ?, ?, ?, ?, ?)
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:32 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:13:34 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:43:44 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] UPDATE `hq_building` SET `bd_id` = ?, `cb_id` = ?, `bd_name` = ?, `bd_description` = ?, `bd_width` = ?, `bd_height` = ?, `bd_svg` = ? WHERE bd_id='5'
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:51 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:44:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:45:18 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 09:45:19 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:23 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] UPDATE `hq_building` SET `bd_id` = ?, `cb_id` = ?, `bd_name` = ?, `bd_description` = ?, `bd_width` = ?, `bd_height` = ?, `bd_svg` = ? WHERE bd_id='5'
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:46 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:48:47 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] UPDATE `hq_building` SET `bd_id` = ?, `cb_id` = ?, `bd_name` = ?, `bd_description` = ?, `bd_width` = ?, `bd_height` = ?, `bd_svg` = ? WHERE bd_id='5'
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:13 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:49:14 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:49:23 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 09:49:24 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:34 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` ORDER BY `hq_category_building`.`cb_id` DESC
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:51:37 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:52:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:53:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:56:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 09:57:07 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:02:15 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:53 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:03:54 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:20 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:20 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:21 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:28 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:28 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:28 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:28 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:28 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:28 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:29 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] UPDATE `hq_building` SET `bd_id` = ?, `cb_id` = ?, `bd_name` = ?, `bd_description` = ?, `bd_width` = ?, `bd_height` = ?, `bd_svg` = ? WHERE bd_id='5'
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:36 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT `hq_building`.`bd_id`, `hq_building`.`cb_id`, `hq_building`.`bd_name`, `hq_building`.`bd_description`, `hq_building`.`bd_width`, `hq_building`.`bd_height`, `hq_building`.`bd_svg`, `hq_building`.`bd_create_date` FROM `hq_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_category_building' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] DESCRIBE `hq_category_building`
+[Sat, 19 Dec 15 10:04:38 +0100][INFO] SELECT `hq_category_building`.`cb_id`, `hq_category_building`.`cb_name` FROM `hq_category_building` WHERE `hq_category_building`.`cb_id` = :APR0 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:04:46 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:04:47 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '11' LIMIT :APL0
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:02 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:04 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '11' LIMIT :APL0
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] UPDATE `hq_object` SET `bd_id` = ?, `u_id` = null, `ob_name` = null, `ob_description` = null, `ob_css_id` = ?, `ob_css_class` = ?, `ob_position_x` = ?, `ob_position_y` = ?, `ob_width` = ?, `ob_height` = ?, `ob_zindex` = ?, `ca_id` = null, `ob_create_date` = ?, `ob_edit_date` = ? WHERE `ob_id` = ?
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:16 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:18 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:05:19 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '12' LIMIT :APL0
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:16 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:18 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:06:19 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '12' LIMIT :APL0
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] UPDATE `hq_object` SET `bd_id` = ?, `u_id` = null, `ob_name` = null, `ob_description` = null, `ob_css_id` = ?, `ob_css_class` = ?, `ob_position_x` = ?, `ob_position_y` = ?, `ob_width` = ?, `ob_height` = ?, `ob_zindex` = ?, `ca_id` = null, `ob_create_date` = ?, `ob_edit_date` = ? WHERE `ob_id` = ?
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:02 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:03 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:07:04 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:37 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:38 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '13' LIMIT :APL0
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] INSERT INTO `hq_object` (`bd_id`, `u_id`, `ob_name`, `ob_description`, `ob_css_id`, `ob_css_class`, `ob_position_x`, `ob_position_y`, `ob_width`, `ob_height`, `ob_zindex`, `ca_id`, `ob_create_date`, `ob_edit_date`) VALUES (?, DEFAULT, DEFAULT, DEFAULT, ?, ?, ?, ?, ?, ?, ?, DEFAULT, ?, DEFAULT)
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:41:59 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:00 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:42:00 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:00 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:00 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:01 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:02 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] UPDATE `hq_map_setting` SET `map_max_id` = ? WHERE map_id='1'
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object` WHERE `hq_object`.`ob_css_id` = '13' LIMIT :APL0
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] UPDATE `hq_object` SET `bd_id` = ?, `u_id` = null, `ob_name` = null, `ob_description` = null, `ob_css_id` = ?, `ob_css_class` = ?, `ob_position_x` = ?, `ob_position_y` = ?, `ob_width` = ?, `ob_height` = ?, `ob_zindex` = ?, `ca_id` = null, `ob_create_date` = ?, `ob_edit_date` = ? WHERE `ob_id` = ?
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:09 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:10 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:42:11 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:45:08 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:45:10 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:58:25 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:58:26 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:59:28 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_map_setting' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] DESCRIBE `hq_map_setting`
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT `hq_map_setting`.`map_id`, `hq_map_setting`.`map_width`, `hq_map_setting`.`map_height`, `hq_map_setting`.`map_center_x`, `hq_map_setting`.`map_center_y`, `hq_map_setting`.`map_khung_width`, `hq_map_setting`.`map_khung_height`, `hq_map_setting`.`map_max_id` FROM `hq_map_setting` WHERE `hq_map_setting`.`map_id` = 1 LIMIT :APL0
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_object' AND `TABLE_SCHEMA` = DATABASE()
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] DESCRIBE `hq_object`
+[Sat, 19 Dec 15 10:59:30 +0100][INFO] SELECT `hq_object`.`ob_id`, `hq_object`.`bd_id`, `hq_object`.`u_id`, `hq_object`.`ob_name`, `hq_object`.`ob_description`, `hq_object`.`ob_css_id`, `hq_object`.`ob_css_class`, `hq_object`.`ob_position_x`, `hq_object`.`ob_position_y`, `hq_object`.`ob_width`, `hq_object`.`ob_height`, `hq_object`.`ob_zindex`, `hq_object`.`ca_id`, `hq_object`.`ob_create_date`, `hq_object`.`ob_edit_date` FROM `hq_object`
