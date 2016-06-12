@@ -48,7 +48,6 @@
                         <th>ID Product</th>
                         <th>Image</th>
                         <th>Name</th>
-                        <th>Price</th>
                         <th>Price Promotion</th>
                         <th>Quantity</th>
                         <th>Product Status</th>
@@ -69,12 +68,13 @@
                                     echo $image->pa_image_link;
                                     ?>" alt=""> </td>
                                 <td><?php echo $val->pr_name ?></td>
-                                <td><?php echo number_format($val->pr_price) . " VNĐ" ?></td>
-                                <td><del><?php
+                                <td style="color:red" >
+                                    <?php
                                         if ($val->pr_price_promotion != 0) {
                                             echo number_format($val->pr_price_promotion) . " VNĐ";
                                         }
-                                        ?></del></td>
+                                        ?>
+                                </td>
                                 <td><?php echo $val->pr_quantity ?></td>
                                 <td>
                                     <?php if ($val->product_status == 1) { ?>

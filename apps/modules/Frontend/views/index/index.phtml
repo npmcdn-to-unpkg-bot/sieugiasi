@@ -84,27 +84,32 @@
                     </div>
                 </div>
             </div><!--TMS:1927272-->
-            <div class="top-deal hidden-sm col-md-20 col-lg-20" data-spm="24">
-                <a href="http://sale.aliexpress.com/brands_goestime.htm">
-                    <div class="top-deal-inner">
-                        <div class="top-deal-product">
-                            <img src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1J2.jpg" alt="">
-                        </div>
-                        <div class="top-deal-banner">
-                            <div class="top-deal-pic">
-                                <img
-                                    src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1JtwLMpXXXXcmXFXXXXXXXXXX-186-50.jpg"
-                                    alt=""></div>
-                            <div class="top-deal-date">
-                                <div class="text">
-                                    <p class="up">On sale</p>
-                                    <p class="down">Apr 18-24</p>
+            <?php if ($productSaleRandom) {
+                foreach ($productSaleRandom as $key => $prsale) {
+                    if ($key == 0) { ?>
+                        <div class="top-deal hidden-sm col-md-20 col-lg-20" data-spm="24">
+                            <a href="<?php echo $this->url->get("product/show/") . $prsale->pr_seo_link ?>">
+                                <div class="top-deal-inner">
+                                    <div class="top-deal-product">
+                                        <img src="<?php echo $prsale->showImage() ?>" alt="">
+                                    </div>
+                                    <div class="top-deal-banner">
+                                        <div class="top-deal-pic">
+                                            <p style="color: #333;font-weight: bold;text-align: center;position: relative;top: 16px;overflow: hidden;text-overflow: ellipsis;"><?php echo $prsale->pr_name ?></p>
+                                        </div>
+                                        <div class="top-deal-date">
+                                            <div class="text">
+                                                <p class="up">On sale</p>
+                                                <p class="down"><?php echo $prsale->formatDate($prsale->pr_date_sale_from) . " - " . $prsale->formatDate($prsale->pr_date_sale_to) ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
-                </a>
-            </div>
+                    <?php }
+                }
+            } ?>
         </div>
     </div>
 </div>
@@ -115,232 +120,11 @@
     }
 </style>
 
-<!--menu Category Product-->
-<section class="promotion-block categories">
-    <header><a data-spm-anchor-id="0.0.0.0" href="//m.aliexpress.com/categoryList.htm?cateId=0">All Categories</a>
-    </header>
-    <article>
-        <ul class="flex-box">
-            <li class="apparel-accessories"><a href="//m.aliexpress.com/categoryList.htm?cateId=10001">Apparel &amp;
-                    Accessories</a></li>
-            <li class="jewelry"><a href="//m.aliexpress.com/categoryList.htm?cateId=10016">Jewelry</a></li>
-            <li class="electronics"><a href="//m.aliexpress.com/categoryList.htm?cateId=10005">Electronics</a></li>
-            <li class="beauty-health"><a href="//m.aliexpress.com/categoryList.htm?cateId=10004">Beauty &amp;Health</a>
-            </li>
-        </ul>
-    </article>
-</section>
-<!--end menu category product-->
 
-<!--Sale Product Mobile-->
-<section class="promotion-block top-spread">
-    <article>
-        <ul class="flex-box top-spread-2">
-            <li>
-                <a data-spm-anchor-id="0.0.0.0" href="http://m.aliexpress.com/column/flashdeals.htm?fromapp=false"
-                   style="position:relative;" id="flash-deal-floor">
-                    <img
-                        src="<?php echo $this->url->get("public/FrontendCore/") ?>img/HTB1nrh_LFXXXXXuXXXXq6xXFXXXA.jpg">
-                    <p style="position:absolute;left:7%;top:3%;line-height:14px;font-size:15px;color:#E87644;margin:0;max-width:86%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;">
-                        Flash Deals</p>
-                    <div style="display: block;" class="countdown">
+<?php echo $this->partial('index/category_product_mobile') ?>
+<?php echo $this->partial('index/sale_product_mobile') ?>
+<?php echo $this->partial('index/list_product_mobile') ?>
 
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a data-spm-anchor-id="0.0.0.0" href="http://activities.aliexpress.com/superdeals_mobile.php"
-                   style="position:relative;">
-                    <img
-                        src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1CcuOFVXXXXcDXFXXtXFo3FXX-296-264.jpg">
-                    <p style="position:absolute;left:7%;top:3%;line-height:14px;font-size:15px;color:#6A7181;margin:0;max-width:86%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;">
-                        Super Deals</p></a>
-            </li>
-
-        </ul>
-    </article>
-</section>
-<!-- End Sale Product Mobile-->
-<!--Product list mobile-->
-<section id="today-deals" class="promotion-block today-deals" data-num="20" data-isgagaurl="">
-    <header><a data-aurl="aliexpress://superdeal" data-wurl="//m.aliexpress.com/column/recommend.htm"
-               href="//m.aliexpress.com/column/recommend.htm">Quality Picks<span style="display: inline;"
-                                                                                 id="today-deals-countdown"
-                                                                                 class="timer"><span
-                    data-role="hour"></span>:<span data-role="minute"></span>:<span
-                    data-role="second"></span></span></a></header>
-    <article>
-        <div style="display: none;" class="loading"></div>
-        <ul class="util-clearfix product-container">
-            <li>
-                <a href="//m.aliexpress.com/item/32641683014.html" data-product-id="32641683014">
-                    <div class="product-image"><img
-                            src="http://g03.a.alicdn.com/kf/HTB1zSKQMXXXXXcPXFXXq6xXFXXXF/3D-Universal-Camera-Lens-with-Clip-for-iPhone-Samsung-VR-Box-Glasses-Google-Cardboard-Mate-Virtual.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 5.58</b> / piece</div>
-                    <div class="product-cost">101 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32491144311.html" data-product-id="32491144311">
-                    <div class="product-image"><img
-                            src="http://g04.a.alicdn.com/kf/HTB1YdaiJVXXXXXWXpXXq6xXFXXXG/Newest-2015-Fashion-Retro-Round-Full-Frame-Anti-Computer-Radiation-Eye-Glasses-Anti-Fatigue-Plain-Mirror.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 3.55</b> / piece</div>
-                    <div class="product-cost">593 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32343837512.html" data-product-id="32343837512">
-                    <div class="product-image"><img
-                            src="http://g02.a.alicdn.com/kf/HTB1sUuMLFXXXXXyXFXXq6xXFXXX7/SY-209A-Iron-Stand-Magnifier-Electric-Iron-Board-Seat-360-Universal-Clamp-Frame-Welding-Work.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 4.56</b> / piece</div>
-                    <div class="product-cost">25 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32379607904.html" data-product-id="32379607904">
-                    <div class="product-image"><img
-                            src="http://g01.a.alicdn.com/kf/HTB1Y6uQMXXXXXacaXXXq6xXFXXXz/-Exposure-in-sun-first-2015-Glowing-Necklace-Glowing-fashion-Jewelry-Glow-Heart-Pendant-Women-s.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 1.75</b> / piece</div>
-                    <div class="product-cost">233 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32580814380.html" data-product-id="32580814380">
-                    <div class="product-image"><img
-                            src="http://g02.a.alicdn.com/kf/HTB17JPJHVXXXXaCXpXXq6xXFXXXg/Oscar-Hair-6pcs-Brazilian-Virgin-Hair-Body-Wave-Cheap-Human-Hair-Extensions-Brazilian-Body-Wave-50g.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 21.32</b> / piece</div>
-                    <div class="product-cost">30 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32641721089.html" data-product-id="32641721089">
-                    <div class="product-image"><img
-                            src="http://g04.a.alicdn.com/kf/HTB1ghTAMXXXXXcSXpXXq6xXFXXXL/2016-Baby-Bodysuit-Cotton-Clothing-For-Newborn-Baby-Clothes-Girls-Boys-Bodysuit-Overalls.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 2.93</b> / piece</div>
-                    <div class="product-cost">18 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32614035544.html" data-product-id="32614035544">
-                    <div class="product-image"><img
-                            src="http://g01.a.alicdn.com/kf/HTB1VEwxLFXXXXb8XXXXq6xXFXXXj/12cm-Mini-Animals-Puppy-Patrol-Dogs-Stuffed-Plush-PP-Cotton-Patrulla-Canina-Interactive-Dolls-for-kids.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 4.99</b> / piece</div>
-                    <div class="product-cost">22 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32543891475.html" data-product-id="32543891475">
-                    <div class="product-image"><img
-                            src="http://g04.a.alicdn.com/kf/HTB19t05KFXXXXbwXVXXq6xXFXXXH/Anself-Brand-9W-LED-Nail-Dryer-Polish-Curing-UV-Lamp-Nail-Polish-Dryer-Nail-Art-Salon.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 15</b> / piece</div>
-                    <div class="product-cost">18 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32358608008.html" data-product-id="32358608008">
-                    <div class="product-image"><img
-                            src="http://g03.a.alicdn.com/kf/HTB1E7dsMFXXXXXkXXXXq6xXFXXXU/New-60G-11cm-Women-s-Braided-Clip-In-Hair-Bun-Chignon-Donut-Roller-Hairpieces-SP159.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 8.45</b> / piece</div>
-                    <div class="product-cost">5 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32342126512.html" data-product-id="32342126512">
-                    <div class="product-image"><img
-                            src="http://g03.a.alicdn.com/kf/HTB1M.AxHFXXXXb3XpXXq6xXFXXXD/Fashion-Baby-Boys-Girls-Soft-Sole-Crib-Shoes-PU-Leather-Anti-slip-Shoes-Toddler-Sneakers-Free.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 2.53</b> / piece</div>
-                    <div class="product-cost">132 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32602347120.html" data-product-id="32602347120">
-                    <div class="product-image"><img
-                            src="http://g01.a.alicdn.com/kf/HTB1._b8LpXXXXbfXFXXq6xXFXXXL/Free-Shipping-classic-men-jeans-gray-colors-casual-straight-frayed-denim-ripped-pants-trousers-fashion-design.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 29.68</b> / piece</div>
-                    <div class="product-cost">7 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32651350604.html" data-product-id="32651350604">
-                    <div class="product-image"><img
-                            src="http://g03.a.alicdn.com/kf/HTB1GJ_TMpXXXXbkXXXXq6xXFXXXq/women-messenger-bags-for-girls-handbags-shoulder-bolsas-feminina-of-famous-brand-bag-ladies-top-handle.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 26.54</b> / piece</div>
-                    <div class="product-cost">10 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32366303212.html" data-product-id="32366303212">
-                    <div class="product-image"><img
-                            src="http://g04.a.alicdn.com/kf/HTB18cHvIXXXXXXoXFXXq6xXFXXXF/NWT-Trend-Style-High-Quality-Plaids-Bermudas-Bermuda-Shorts-Fashion-Beachshorts-Leisure-Surf-Quick-Dry-Boardshorts.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 16.89</b> / piece</div>
-                    <div class="product-cost">1 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32587465472.html" data-product-id="32587465472">
-                    <div class="product-image"><img
-                            src="http://g02.a.alicdn.com/kf/HTB1NBciLXXXXXXuXFXXq6xXFXXXb/0-02-mm-Green-Ultra-Fine-Glitter-Powder-lipstick-DIY.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 9.89</b> / piece</div>
-                    <div class="product-cost">1 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32423035672.html" data-product-id="32423035672">
-                    <div class="product-image"><img
-                            src="http://g02.a.alicdn.com/kf/HTB1E.OeIVXXXXbgXpXXq6xXFXXXS/7-4v-2000mah-polymer-lithium-battery-wholesale.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 28</b> / piece</div>
-                    <div class="product-cost">1 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32478710161.html" data-product-id="32478710161">
-                    <div class="product-image"><img
-                            src="http://g01.a.alicdn.com/kf/HTB1PGzDJFXXXXbAXXXXq6xXFXXXy/Dita-Grandmaster-Four-Sunglasses-Men-Brand-Designer-Sunglasses-Women-Men-Oculos-De-Sol-Masculino-10th-Anniversary.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 56</b> / piece</div>
-                    <div class="product-cost">0 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32347042854.html" data-product-id="32347042854">
-                    <div class="product-image"><img
-                            src="http://g01.a.alicdn.com/kf/HTB1tpRuHVXXXXcWXVXXq6xXFXXXv/Home-using-grass-and-hay-crusher-pulverizer-corn-grinder-without-motor.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 414</b> / piece</div>
-                    <div class="product-cost">1 Orders</div>
-                </a>
-            </li>
-            <li>
-                <a href="//m.aliexpress.com/item/32604635761.html" data-product-id="32604635761">
-                    <div class="product-image"><img
-                            src="http://g03.a.alicdn.com/kf/HTB1CXMKMpXXXXbgXFXXq6xXFXXXS/Candy-Color-Women-Satin-Bridesmaid-Wedding-Handbag-Rose-Flower-Ruched-Clutch-Purse-Banquet-Bag-Party-Evening.jpg_350x350.jpg">
-                    </div>
-                    <div class="product-cost"><b>US $ 12.49</b> / piece</div>
-                    <div class="product-cost">0 Orders</div>
-                </a>
-            </li>
-
-        </ul>
-    </article>
-    <a href="//m.aliexpress.com/column/recommend.htm" id="today-deals-view-more-lnk" class="ui-button ui-button-third">View
-        more&nbsp;</a>
-</section>
-<!--End product list mobile-->
 <div class="main-deal container">
     <div class="today-deal-panel col-lg-15 col-md-15 today-deal-dos-new">
         <div class="title">
@@ -350,28 +134,41 @@
             </h2>
             <a style="visibility: visible;" href="http://superdeals.aliexpress.com/en" class="view-more hidden-md"
                data-role="viewmore">
-                <strong><i>397</i></strong> items </a>
+                <?php if ($countTodaySale > 0) { ?>
+                    <strong><i><?php echo $countTodaySale ?></i></strong> items <?php } ?> </a>
         </div>
         <a href="http://superdeals.aliexpress.com/en">
             <div class="container-main clearfix" data-role="main">
                 <div class="end-time">
-                                <span data-widget-cid="widget-26" style="visibility: visible;" data-role="countdown"
-                                      data-iswintertime="">
-                                    Ends in: <i><em data-role="hour">02</em>:<em data-role="minute">45</em>:<em
-                                            data-role="second">10</em></i>
-                                </span>
+                    <span style="visibility: visible;">Ends in:<span style="color:#E62E04" id="end-times"></span></span>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $("#end-times")
+                                .countdown("<?php echo date("Y/m/d", strtotime('+2 days', time())); ?>", function (event) {
+                                    $(this).text(
+                                        event.strftime('%H:%M:%S')
+                                    );
+                                });
+                        });
+                    </script>
+
+
                 </div>
-                <div class="product-pic">
-                    <img
-                        src="<?php echo $this->url->get("public/FrontendCore/") ?>img/Sandisk-16-64GB-Ultra-microSDHC-microSDXC-Class-10-memory-ca.jpg">
-                </div>
-                <div class="price-panel">
-                    <div class="price">
-                        <span>US $7.98</span>
-                        <del>US $11.40 / piece</del>
-                    </div>
-                    <div class="discount"><span>30% off</span></div>
-                </div>
+                <?php if ($productSaleRandom) {
+                    foreach ($productSaleRandom as $key => $prsale) {
+                        if ($key == 1) { ?>
+                            <div class="product-pic">
+                                <img src="<?php echo $prsale->showImage() ?>">
+                            </div>
+                            <div class="price-panel">
+                                <div class="price">
+                                    <span><?php echo $prsale->showPricePromotion() ?></span>
+                                    <del><?php echo $prsale->getMinimumPrice() ?></del>
+                                </div>
+                            </div>
+                        <?php }
+                    }
+                } ?>
             </div>
         </a>
 
@@ -464,131 +261,98 @@
                         <div class="keyword-list">
                             <?php if (count($manu->CategoryModel) > 0) { ?>
                                 <?php $categories = $manu->getCategory();
-                                foreach ($categories as $key=>$val) { ?>
-                                    <a <?php if($key%2==0){ ?> class="highlight" <?php } ?> href=""><?php echo $val->ct_name ?></a>
+                                foreach ($categories as $key => $val) { ?>
+                                    <a <?php if ($key % 2 == 0) { ?> class="highlight" <?php } ?>
+                                        href=""><?php echo $val->ct_name ?></a>
                                 <?php }
                             } ?>
                         </div>
                     </div>
+                    <?php $products = $manu->getProduct(); ?>
                     <div class="recommend-box col-lg-20 col-md-24 hidden-sm">
                         <div class="recommend-slider-box">
                             <ul class="slides">
-                                <li>
-                                    <a href="category-product.html">
-                                        <img
-                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1SpiFMpXXXXc.jpg"
-                                            alt="">
-                                        <div class="event-info">
-                                            <span class="main-title">2016 Summer Dresses</span>
-                                            <p class="sub-title">New arrivals</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="category-product.html">
-                                        <div class="pic"><img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1ZIkUMpXXXXX1XFXXXXXXXXXX-480-550.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="event-info">
-                                            <span class="main-title">Fashion &amp; Beauty Gifts</span>
-                                            <p class="sub-title">Let mom shine from top to toe</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="category-product.html">
-                                        <div class="pic"><img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1y2U5MpXXXXXMXXXXL2TJPFXX-480-550.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="event-info">
-                                            <span class="main-title">Tee Trends</span>
-                                            <p class="sub-title">New arrivals</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="category-product.html">
-                                        <div class="pic"><img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1SpiFMpXXXXc.jpg"
-                                                alt=""></div>
-                                        <div class="event-info">
-                                            <span class="main-title">2016 Summer Dresses</span>
-                                            <p class="sub-title">New arrivals</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="category-product.html">
-                                        <div class="pic"><img
-                                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1ZIkUMpXXXXX1XFXXXXXXXXXX-480-550.jpg"
-                                                alt="">
-                                        </div>
-                                        <div class="event-info">
-                                            <span class="main-title">Fashion &amp; Beauty Gifts</span>
-                                            <p class="sub-title">Let mom shine from top to toe</p>
-                                        </div>
-                                    </a>
-                                </li>
+                                <?php if (count($products) > 0) {
+                                    foreach ($products as $key => $pro) {
+                                        if ($key <= 3) { ?>
+                                            <li>
+                                                <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+                                                    <img src="<?php echo $pro->showImage() ?>" alt="">
+                                                    <div class="event-info">
+                                                        <span class="main-title"><?php echo $pro->pr_name ?></span>
+                                                        <p class="sub-title"><?php echo $pro->getMinimumPrice() ?></p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        <?php }
+                                    }
+                                } ?>
                             </ul>
                         </div>
 
                     </div>
 
-                    <div class="rec-industry-list col-lg-20 col-md-24 col-sm-40">
-                        <div class="top-industry-product">
-                            <a href="category-product.html">
-                                <div class="pic"><img alt=""
-                                                      src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1pD.jpg">
-                                </div>
-                            </a>
-                        </div>
-                        <ul class="clearfix rec-bottom-products">
-                            <li>
-                                <a href="category-product.html">
-                                    <span class="subject">Jumpsuits</span>
-                                    <span class="sub-heading">2016 Collection</span>
-                                    <div class="pic"><img
-                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1iK_OLVXXXXcIaXXXXXXXXXXX-180-195.jpg"
-                                            alt=""
-                                            height="195" width="180"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="category-product.html">
-                                    <span class="subject">Denim Dresses</span>
-                                    <span class="sub-heading">New Arrivals</span>
-                                    <div class="pic"><img
-                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1n15zKXXXXXcLXVXXXXXXXXXX-180-195.jpg"
-                                            alt=""
-                                            height="195" width="180"></div>
-                                </a>
-                            </li>
+                    <div class="rec-industry-right-list col-lg-10 col-md-12 hidden-sm hidden-md">
+                        <ul>
+                            <?php if (count($products) > 0) {
+                                foreach ($products as $key => $pro) {
+                                    if ($key > 3 && $key <= 5) { ?>
+                                        <li>
+                                            <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+                                                <span class="subject"><?php echo $pro->pr_name ?></span>
+                                                <span class="sub-heading"><?php echo $pro->getMinimumPrice() ?></span>
+                                                <div class="pic">
+                                                    <img src="<?php echo $pro->showImage() ?>" alt="" height="195"
+                                                         width="180">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    <?php }
+                                }
+                            } ?>
+
                         </ul>
                     </div>
                     <div class="rec-industry-right-list col-lg-10 col-md-12 hidden-sm hidden-md">
                         <ul>
-                            <li>
-                                <a href="category-product.html">
-                                    <span class="subject">2016 Summer Dresses</span>
-                                    <span class="sub-heading">New Arrivals</span>
-                                    <div class="pic"><img
-                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1WRYZLVXXXXc8XXXXXXXXXXXX-180-195.jpg"
-                                            alt=""
-                                            height="195" width="180"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="category-product.html">
-                                    <span class="subject">Scarves</span>
-                                    <span class="sub-heading">For her</span>
-                                    <div class="pic"><img
-                                            src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1fZrwHVXXXXXZXVXXXXXXXXXX-180-195.jpg"
-                                            alt=""
-                                            height="195" width="180"></div>
-                                </a>
-                            </li>
+                            <?php if (count($products) > 0) {
+                                foreach ($products as $key => $pro) {
+                                    if ($key > 5 && $key <= 7) { ?>
+                                        <li>
+                                            <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+                                                <span class="subject"><?php echo $pro->pr_name ?></span>
+                                                <span class="sub-heading"><?php echo $pro->getMinimumPrice() ?></span>
+                                                <div class="pic">
+                                                    <img src="<?php echo $pro->showImage() ?>" alt="" height="195"
+                                                         width="180">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    <?php }
+                                }
+                            } ?>
+
+                        </ul>
+                    </div>
+                    <div class="rec-industry-right-list col-lg-10 col-md-12 hidden-sm hidden-md">
+                        <ul>
+                            <?php if (count($products) > 0) {
+                                foreach ($products as $key => $pro) {
+                                    if ($key > 7 && $key <= 9) { ?>
+                                        <li>
+                                            <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+                                                <span class="subject"><?php echo $pro->pr_name ?></span>
+                                                <span class="sub-heading"><?php echo $pro->getMinimumPrice() ?></span>
+                                                <div class="pic">
+                                                    <img src="<?php echo $pro->showImage() ?>" alt="" height="195"
+                                                         width="180">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    <?php }
+                                }
+                            } ?>
+
                         </ul>
                     </div>
                 </div>
@@ -600,162 +364,29 @@
 <!--TMS:1715884-->
 <div data-widget-cid="widget-23" class="container related-recommend" id="j-related-recommend" data-spm="13">
     <div class="container-inner">
-        <div class="title"><h2>Recommendations for you</h2><span class="change-product-btn"><a href="javascript:;"
-                                                                                               data-role="change-btn">Try
-                                Your Luck</a></span></div>
+        <div class="title"><h2>Recommendations for you</h2></div>
         <ul data-requestid="20160424211420252-74673138" class="product-list clearfix" data-role="product-container">
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/HD-Super-Ultra-Smallest-Mini-go-pro-Camera-SQ8-Camcorder-Video-Recorder-720p-DVR-support-TF/32574634301.html"
-                       data-productid="32574634301" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/HD-Super-Ultra-Smallest-Mini-go-pro-Camera-SQ8-Camcorder-Vid.jpg">
+            <?php if ($productSaleRandom) {
+                foreach ($productSaleRandom as $key => $prsale) { ?>
+                    <li class="col-lg-12 col-md-15 col-sm-20">
+                        <div class="item-inner">
+                            <a href="<?php echo $this->url->get("product/show/") . $prsale->pr_seo_link ?>"
+                               target="_blank">
+                                <div class="pro-img"><i></i><img
+                                        src="<?php echo $prsale->showImage() ?>">
+                                </div>
+                                <div class="pro-info">
+                                    <div class="g-orders">133 Orders</div>
+                                    <span class="g-price"><?php echo $prsale->showPricePromotion() ?></span>
+                                    <del class="g-del-price"><?php echo $prsale->getMinimumPrice() ?></del>
+                                </div>
+                            </a>
                         </div>
-                        <div class="pro-info">
-                            <div class="g-orders">133 Orders</div>
-                            <span class="g-price">US $18.47</span>
-                            <del class="g-del-price">US $27.98</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/Vogue-Women-s-High-Waist-A-Line-Long-Full-Skirt-Cocktail-Party-Pleated-Dress/32470362120.html"
-                       data-productid="32470362120" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/Vogue-Women-s-High-Waist-A-Line-Long-Full-Skirt-Cocktail-Par.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">244 Orders</div>
-                            <span class="g-price">US $9.23</span>
-                            <del class="g-del-price">US $9.72</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/New-Fashion-Neo-Hybrid-Case-for-Sony-Xperia-C5-Ultra-Dual-E5533-E5553-Soft-TPU-PC/32601685548.html"
-                       data-productid="32601685548" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/New-Fashion-Neo-Hybrid-Case-for-Sony-Xperia-C5-Ultra-Dual-E5.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">65 Orders</div>
-                            <span class="g-price">US $2.96</span>
-                            <del class="g-del-price">US $3.29</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/teemzone-Men-Genuine-Leather-Wallet-Business-Casual-Credit-Card-ID-large-capacity-certificate-for-his-wallet/32377828572.html"
-                       data-productid="32377828572" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/teemzone-Men-Genuine-Leather-Wallet-Business-Casual-Credit-C.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">310 Orders</div>
-                            <span class="g-price">US $10.19</span>
-                            <del class="g-del-price">US $12.90</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/Huawei-Honor-4C-case-luxury-9-colors-litchi-texture-flip-leather-cover-case-wallet-style-with/32394970907.html"
-                       data-productid="32394970907" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/Huawei-Honor-4C-case-luxury-9-colors-litchi-texture-flip-lea.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">33 Orders</div>
-                            <span class="g-price">US $3.76</span>
-                            <del class="g-del-price">US $3.96</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/2016-new-arrival-lowest-price-20-pcs-AA-Ni-Cd-1-2V-2-3AA-rechargeable-battery/32563462641.html"
-                       data-productid="32563462641" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/2016-new-arrival-lowest-price-20-pcs-2-3AA-Ni-Cd-1-2V-2-3AA-.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">6 Orders</div>
-                            <span class="g-price">US $0.65</span>
-                            <del class="g-del-price">US $0.69</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/2016-Summer-Women-Wedge-Sandals-Gold-Sliver-Black-Ladies-Gladiator-Sandals-Rhinestone-Buckle-Strap-Beach-Shoes/32604283744.html"
-                       data-productid="32604283744" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/2016-Summer-Women-Wedge-Sandals-Gold-Sliver-Black-Ladies-Gla.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">22 Orders</div>
-                            <span class="g-price">US $19.24</span>
-                            <del class="g-del-price">US $32.07</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/Star-Jewelry-Wholesale-2015-New-Design-Maxi-Necklace-Fashion-Geometric-Metal-Flowers-Statement-Necklaces-Pendants-Best/32574537719.html"
-                       data-productid="32574537719" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/Star-Jewelry-Wholesale-2015-New-Design-Maxi-Necklace-Fashion.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">14 Orders</div>
-                            <span class="g-price">US $3.82</span>
-                            <del class="g-del-price">US $4.78</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/Multifunctional-4-in-1-Fold-Makeup-Brush-Set-Professional-Top-Grade-Makeup-Brushes-Cosmetic-Tool/32410454466.html"
-                       data-productid="32410454466" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/Multifunctional-4-in-1-Fold-Makeup-Brush-Set-Professional-To.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">254 Orders</div>
-                            <span class="g-price">US $1.71</span>
-                            <del class="g-del-price">US $3.42</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="col-lg-12 col-md-15 col-sm-20">
-                <div class="item-inner">
-                    <a href="http://www.aliexpress.com/item/2015-Fashion-Original-Vertical-Flip-Leather-Cover-Case-for-Apple-iPhone-5C-High-Quality-Painted-Mobile/32252565693.html"
-                       data-productid="32252565693" target="_blank">
-                        <div class="pro-img"><i></i><img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/2015-Fashion-Original-Vertical-Flip-Leather-Cover-Case-for-A.jpg">
-                        </div>
-                        <div class="pro-info">
-                            <div class="g-orders">8 Orders</div>
-                            <span class="g-price">US $3.99</span>
-                            <del class="g-del-price">US $4.93</del>
-                        </div>
-                    </a>
-                </div>
-            </li>
+                    </li>
+                <?php }
+            } ?>
         </ul>
     </div>
 
 </div>  <!--TMS:1715913-->
-<?php echo $this->partial('partial/menu_scroll_left') ?>
+<?php echo $this->partial('index/menu_scroll_left') ?>

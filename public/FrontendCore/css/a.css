@@ -7679,9 +7679,9 @@ div.site-footer {
 .top-deal .top-deal-banner .top-deal-pic {
     float: left;
     height: 70px;
-    width: 70%;
+    width: 50%;
     padding-left: 10px;
-    padding-right: 10px
+    /*padding-right: 10px*/
 }
 
 .top-deal .top-deal-banner .top-deal-pic img {
@@ -7694,7 +7694,7 @@ div.site-footer {
 .top-deal .top-deal-banner .top-deal-date {
     float: left;
     height: 70px;
-    width: 30%
+    width: 50%
 }
 
 .top-deal .top-deal-banner .top-deal-date .text {
@@ -8021,7 +8021,7 @@ div.site-footer {
 .today-deal-panel .container-main .price {
     padding-right: 8px;
     display: inline-block;
-    text-align: left
+    text-align: center;
 }
 
 .today-deal-panel .container-main .price span {
@@ -8036,7 +8036,7 @@ div.site-footer {
     font-size: 13px;
     color: #999;
     line-height: 139%;
-    float: left
+    /*float: left*/
 }
 
 .today-deal-panel .container-main .discount {
@@ -8124,7 +8124,6 @@ div.site-footer {
 
 .related-recommend .product-list {
     margin-left: -10px;
-    height: 608px;
     overflow: hidden;
     padding: 0 6px
 }

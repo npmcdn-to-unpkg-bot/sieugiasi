@@ -2,16 +2,21 @@
 
 namespace Backend\Controllers;
 
-class ProductController extends ControllerBase {
+use Backend\Models\ProductPriceModel;
 
-    public function initialize() {
+class ProductController extends ControllerBase
+{
+
+    public function initialize()
+    {
         parent::initialize();
         if (!in_array($this->user['usa_username'], $this->userRole['Admin']) && !in_array($this->user['usa_username'], $this->userRole['Product'])) {
             return $this->response->redirect($this->config['rootUrl'] . $this->module_config_backend->main_route . "/");
         }
     }
 
-    public function handleAction() {
+    public function handleAction()
+    {
         $output = [];
         if (method_exists($this, $this->request->getPost('method')))
             $output = $this->{$this->request->getPost('method')}($this->request->getPost());
@@ -19,14 +24,16 @@ class ProductController extends ControllerBase {
         die;
     }
 
-    public function indexAction() {
+    public function indexAction()
+    {
         $dataModel = new \Backend\Models\ProductModel();
         $this->view->setLayout("map");
         $this->view->data = $dataModel::find(array("order" => "pr_create_date desc"));
         $this->view->header_title = "Product Manager";
     }
 
-    public function detailContentAction() {
+    public function detailContentAction()
+    {
         $productModel = new \Backend\Models\ProductModel();
         $categoryModel = new \Backend\Models\CategoryModel();
         $typeGalleryModel = new \Backend\Models\TypeGaleryModel();
@@ -73,14 +80,14 @@ class ProductController extends ControllerBase {
         $this->view->header_title = "Product Detail Manager";
     }
 
-    public function newEditContent($input) {
+    public function newEditContent($input)
+    {
         $respon['status'] = 0;
         if (empty($input['data'])) {
             $respon['message'] = 'Không có dữ liệu';
             return $respon;
         }
         $data = json_decode($input['data'], true);
-
         if (!isset($data['ct_id']) || $data['ct_id'] == '-1') {
             $respon['message'] = 'Không được để trống Category ';
             return $respon;
@@ -89,6 +96,19 @@ class ProductController extends ControllerBase {
             $respon['message'] = 'Attribute không được để trống';
             return $respon;
         }
+        if (isset($data['price']) && empty($data['price'])) {
+            $respon['message'] = 'Giá không được để trống';
+            return $respon;
+        }
+        //check price and quntity from
+        foreach ($data['price'] as $pri) {
+            if (is_null($pri['hqr_price']) || is_null($pri['hqr_quantity_from'])) {
+                $respon['message'] = 'Giá và Số lượng không được để trống';
+                return $respon;
+                break;
+            }
+        }
+
         $buildingModel = new \Backend\Models\ProductModel();
         $optionModel = new \Backend\Models\ProductOptionModel();
 
@@ -111,7 +131,6 @@ class ProductController extends ControllerBase {
         }
         $data['pr_decription'] = $data['description'];
         unset($data['description']);
-
         if (empty($data['pr_id']) || $data['pr_id'] == NULL) {
             //insert
             unset($data['pr_id']);
@@ -147,6 +166,18 @@ class ProductController extends ControllerBase {
                     }
                 }
                 //end insert Attribute
+                //insert Price
+                if (isset($data['price']) && !empty($data['price'])) {
+                    foreach ($data['price'] as $attr) {
+                        $priceModel = new ProductPriceModel();
+                        $attr['pr_id'] = $data['pr_id'];
+                        if (!isset($attr['hqr_quantity_to']) || is_null($attr['hqr_quantity_to'])) {
+                            $attr['hqr_quantity_to'] = Null;
+                        }
+                        $priceModel->save($attr);
+                    }
+                }
+                //end insert Price
                 //insert Avatar
                 if (!empty($data['ava_img']) || !empty($data['ava_img_hover'])) {
                     $avatar_data = array(
@@ -159,7 +190,7 @@ class ProductController extends ControllerBase {
                         array(
                             'pr_id' => $data['pr_id'],
                             'la_id' => 1,
-                            'pa_image_link' => $data['ava_img_hover'] ? $data['ava_img_hover'] : '',
+                            'pa_image_link' => isset($data['ava_img_hover']) ? $data['ava_img_hover'] : '',
                             'pa_type' => 2,
                         ),
                     );
@@ -215,6 +246,20 @@ class ProductController extends ControllerBase {
                     }
                 }
                 //end insert Attribute
+                //insert Price
+                $priceModel = new ProductPriceModel();
+                $priceModel::find(array("pr_id='{$data['pr_id']}'"))->delete();
+                if (isset($data['price']) && !empty($data['price'])) {
+                    foreach ($data['price'] as $attr) {
+                        $priceModel = new ProductPriceModel();
+                        $attr['pr_id'] = $data['pr_id'];
+//                        if (!isset($attr['hqr_quantity_to']) || is_null($attr['hqr_quantity_to'])) {
+//                            $attr['hqr_quantity_to'] = NULL;
+//                        }
+                        $priceModel->save($attr);
+                    }
+                }
+                //end insert Price
                 //insert Avatar
                 $avatarModel = new \Backend\Models\ProductAvatarModel();
                 $avatarModel::find(array("pr_id='{$data['pr_id']}'"))->delete();
@@ -229,7 +274,7 @@ class ProductController extends ControllerBase {
                         array(
                             'pr_id' => $data['pr_id'],
                             'la_id' => 1,
-                            'pa_image_link' => $data['ava_img_hover'] ? $data['ava_img_hover'] : '',
+                            'pa_image_link' => isset($data['ava_img_hover']) ? $data['ava_img_hover'] : '',
                             'pa_type' => 2,
                         ),
                     );
@@ -248,7 +293,8 @@ class ProductController extends ControllerBase {
         return $respon;
     }
 
-    public function deleteContent($input) {
+    public function deleteContent($input)
+    {
         $respon['status'] = 0;
         if (empty($input['data'])) {
             $respon['message'] = 'Không có dữ liệu';
@@ -269,7 +315,8 @@ class ProductController extends ControllerBase {
         return $respon;
     }
 
-    public function createParent($thutuc, $array) {
+    public function createParent($thutuc, $array)
+    {
         $arr = $array;
         $content_obj = new \Backend\Models\CategoryModel();
         $list_parent = $content_obj::findFirst("ct_id= '{$thutuc}'");

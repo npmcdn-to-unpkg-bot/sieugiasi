@@ -137,6 +137,32 @@ $(document).ready(function () {
                 });
             }
             //end get attribute product
+
+            //get price product
+            var price = document.getElementsByClassName("tab_price");
+            if (price.length != 0) {
+                $.each(price, function (key, val) {
+                    var data_price = $(val).find("input[name='hqr_price']").val();
+                    var data_description = $(val).find("textarea[name='hqr_decription']").val();
+                    var quantityTo = $(val).find("input[name='hqr_quantity_to']").val();
+                    var quantityFrom = $(val).find("input[name='hqr_quantity_from']").val();
+
+                    if (typeof temArray['price'] === 'undefined' || temArray['price'] === null) {
+                        temArray['price'] = {};
+                    }
+                    if (data_price != '' && quantityFrom != '') {
+                        if (typeof temArray['price'][key] === 'undefined' || temArray['price'][key] === null) {
+                            temArray['price'][key] = {};
+                        }
+                        temArray['price'][key]['hqr_quantity_from'] = quantityFrom;
+                        temArray['price'][key]['hqr_quantity_to'] = quantityTo;
+                        temArray['price'][key]['hqr_price'] = data_price;
+                        temArray['price'][key]['hqr_decription'] = data_description;
+                    }
+                });
+            }
+            //end get price product
+
             $.ajax({
                 type: "POST",
                 url: queryUrl + '/handle',
@@ -615,7 +641,7 @@ function createAttributeProduct() {
                         <textarea data-rel="' + attr_id + '" id="description_ckeditor_' + attr_id + '" rows="5" cols="5" class="form-control ckeditor-text" ></textarea>\n\
                     </div>\n\
                     <div class="col-sm-1">\n\
-                        <button type="button" onclick="removeAttributeProduct(' + attr_id + ')" class="btn border-danger text-danger-600 btn-flat btn-icon btn-rounded btn-remove-attribute"><i class="icon-minus3"></i></button>\n\
+                        <button type="button" onclick="removeAttributeProduct($(this))" class="btn border-danger text-danger-600 btn-flat btn-icon btn-rounded btn-remove-attribute"><i class="icon-minus3"></i></button>\n\
                     </div>\n\
                     <script type="text/javascript">\n\
                         $(document).ready(function () {\n\
@@ -631,7 +657,35 @@ function createAttributeProduct() {
     $(".product-attribute .modal-body").append(html);
     $("html, body").animate({scrollTop: $(document).height()}, 1000);
 }
-function removeAttributeProduct(id) {
+function createPriceProduct() {
+    var html = '<div  class="tab_price form-group price_' + price + '" >\n\
+    <div class="col-sm-2">\n\
+                         <label>Quantity From</label>\n\
+                         <input type="text" value="" name="hqr_quantity_from" class="form-control ">\n\
+                    </div>\n\
+                    <div class="col-sm-2">\n\
+                        <label>Quantity To</label>\n\
+                        <input type="text"  name="hqr_quantity_to" class="form-control ">\n\
+                    </div>\n\
+                    <div class="col-sm-2">\n\
+                         <label>Price</label>\n\
+                         <input data-rel="' + price + '" type="text" value="" name="hqr_price" class="form-control ">\n\
+                    </div>\n\
+                    <div class="col-sm-5">\n\
+                         <label>Decription</label>\n\
+                         <textarea name="hqr_decription" data-rel="" rows="5" cols="5" class="form-control"></textarea>\n\
+                    </div>\n\
+                    <div class="col-sm-1">\n\
+                         <button type="button "  onclick="removeAttributeProduct($(this))"\n\
+                            class="btn border-danger text-danger-600 btn-flat btn-icon btn-rounded btn-remove-attribute">\n\
+                         <i class="icon-minus3"></i></button>\n\
+                    </div>\n\
+                </div>';
+    price++;
+    $(".product-price .modal-body").append(html);
+    $("html, body").animate({scrollTop: $(document).height()}, 1000);
+}
+function removeAttributeProduct($this) {
     var notice = new PNotify({
         title: "Thông Báo",
         text: "Bạn có chắc chắn muốn xóa dòng này",
@@ -659,7 +713,7 @@ function removeAttributeProduct(id) {
     })
     // On confirm
     notice.get().on('pnotify.confirm', function () {
-        $(".attribute_" + id).remove();
+        $this.parents(".form-group").remove();
     })
 
 
@@ -791,7 +845,7 @@ function sendNewsletter(id) {
                 hideLoading();
                 if (result.status == 1) {
                     SuccessNotice('Thành Công', result.message);
-                }else{
+                } else {
                     WarningNotice('Lỗi', result.message);
                 }
             }

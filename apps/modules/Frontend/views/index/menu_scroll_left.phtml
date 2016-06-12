@@ -1,0 +1,16 @@
+<div data-spm-max-idx="13" data-widget-cid="widget-17"
+     style="position: fixed; visibility: hidden; left: 311.5px; top: 120px;z-index: 9999" class="floor-fixed-panel"
+     id="j-floor-fixed-panel" data-spm="19">
+    <ul class="floor-nav-list">
+        <?php if ($manufacturer) {
+            foreach ($manufacturer as $key => $manu) { ?>
+                <li class="nav-<?php echo $array_icon[$key] ?>">
+                    <a href="#j-industry-floor-<?php echo $array_icon[$key] ?>">
+                        <i></i>
+                        <span><?php echo $manu->ma_name ?></span>
+                    </a>
+                </li>
+            <?php }
+        } ?>
+    </ul>
+</div>

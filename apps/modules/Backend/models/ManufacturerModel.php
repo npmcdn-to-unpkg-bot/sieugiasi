@@ -29,14 +29,29 @@ class ManufacturerModel extends ModelBase
 
     public function getCategory()
     {
-        $temp=array();
+        $temp = array();
         if (count($this->CategoryModel)) {
             foreach ($this->CategoryModel as $cate) {
-                if($cate->ct_parent_id==0 || is_null($cate->ct_parent_id)){
-                    $temp[]=$cate;
+                if ($cate->ct_parent_id == 0 || is_null($cate->ct_parent_id)) {
+                    $temp[] = $cate;
                 }
             }
         }
         return $temp;
+    }
+
+    public function getProduct()
+    {
+        $product = $arr_category = array();
+        if (count($this->CategoryModel)) {
+            foreach ($this->CategoryModel as $cate) {
+                $arr_category[] = $cate->ct_id;
+            }
+
+            $string = implode(",", $arr_category);
+            $productModel = new ProductModel();
+            $product = $productModel::find(array("ct_id in ({$string}) and pr_status =1", "order" => "pr_create_date desc", "limit" => 10));
+        }
+        return $product;
     }
 }

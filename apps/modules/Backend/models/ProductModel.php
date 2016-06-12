@@ -18,23 +18,24 @@ class ProductModel extends ModelBase
         $this->hasMany("pr_id", "\Backend\Models\ProductOptionDetailModel", "pr_id", array('alias' => 'ProductOptionDetailModel'));
         $this->hasMany("pr_id", "\Backend\Models\ProductAttributeModel", "pr_id", array('alias' => 'ProductAttributeModel'));
         $this->hasMany("pr_id", "\Backend\Models\ProductImageModel", "pr_id", array('alias' => 'ProductImageModel'));
+        $this->hasMany("pr_id", "\Backend\Models\ProductPriceModel", "pr_id", array('alias' => 'ProductPriceModel'));
     }
 
-    public function beforeCreate()
-    {
-        if ($this->pr_quantity <= 0) {
-            $this->pr_quantity = 0;
-            $this->product_status = 0;
-        }
-    }
-    public function beforeUpdate()
-    {
-
-        if ($this->pr_quantity <= 0) {
-            $this->pr_quantity = 0;
-            $this->product_status = 0;
-        }
-    }
+//    public function beforeCreate()
+//    {
+//        if ($this->pr_quantity <= 0) {
+//            $this->pr_quantity = 0;
+//            $this->product_status = 0;
+//        }
+//    }
+//    public function beforeUpdate()
+//    {
+//
+//        if ($this->pr_quantity <= 0) {
+//            $this->pr_quantity = 0;
+//            $this->product_status = 0;
+//        }
+//    }
 
     public function updateByID($data, $id)
     {
@@ -42,6 +43,16 @@ class ProductModel extends ModelBase
         $values = array_values($data);
         $where = "pr_id='" . $id . "'";
         return $this->getWriteConnection()->update($this->getSource(), $fields, $values, $where);
+    }
+
+    public function getMinimumPrice()
+    {
+        $productPriceModel = new ProductPriceModel();
+        $price = $productPriceModel::minimum(array("pr_id ='{$this->pr_id}'", "column" => "hqr_price"));
+        if ($price) {
+            return number_format($price) . " Vnđ";
+        }
+        return '';
     }
 
     public function showPrice()
@@ -133,5 +144,8 @@ class ProductModel extends ModelBase
 
         }
         return false;
+    }
+    public function formatDate($date){
+        return date("d/m",strtotime($date));
     }
 }
