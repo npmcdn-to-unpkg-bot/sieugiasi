@@ -1,0 +1,67 @@
+<div class="popup-area">
+    <div onclick="closePopup();" class="overlay"></div>
+    <div class="popup-main popup-order-success">
+        <h1 class="text-popup-header">Xin Chào</h1>
+        <div class="content-popup">
+            <p>
+                <i class="fa fa-hourglass-o fa-3x" aria-hidden="true"></i>
+            </p>
+            <p class="text-popup-content">
+                đơn hàng của bạn đang được cập nhật
+                vui lòng quay lại sau 5 phút!
+            </p>
+        </div>
+        <a href="" class=" btn-popup">Giỏ Hàng</a>
+    </div>
+    <div class="popup-main popup-success">
+        <h1 class="text-popup-header">Thành Công</h1>
+        <div class="content-popup">
+            <p>
+                <i class="fa fa-check fa-3x" aria-hidden="true"></i>
+            </p>
+            <p class="text-popup-content">
+                đơn hàng của bạn đang được cập nhật
+                vui lòng quay lại sau 5 phút!
+            </p>
+        </div>
+        <a href="javascript:;" onclick="closePopup();" class=" btn-popup">Đồng Ý</a>
+    </div>
+    <div class="popup-main popup-error">
+        <h1 class="text-popup-header">Thành Công</h1>
+        <div class="content-popup">
+            <p>
+                <i class="fa fa-close fa-3x" aria-hidden="true"></i>
+            </p>
+            <p class="text-popup-content">
+                đơn hàng của bạn đang được cập nhật
+                vui lòng quay lại sau 5 phút!
+            </p>
+        </div>
+        <a href="javascript:;" onclick="closePopup();" class=" btn-popup">Đồng Ý</a>
+    </div>
+    <div class="popup-main popup-add-cart">
+        <h1 class="text-popup-header">Thành Công</h1>
+        <div class="content-popup">
+            <p>
+                <i class="fa fa-close fa-3x" aria-hidden="true"></i>
+            </p>
+            <p style="padding-bottom: 30px" class="text-popup-content">
+            </p>
+        </div>
+        <a href="<?php echo $this->url->get('shoping-cart') ?>" class="btn-light btn-cart">Giỏ Hàng</a>
+        <a href="javascript:; " onclick="closePopup();" class="btn-dark btn-continue">Tiếp Tục</a>
+    </div>
+    <div class="popup-main popup-chose-size-color-order">
+        <h1 class="text-popup-header">Chọn Size Và Color</h1>
+        <div class="content-popup">
+
+        </div>
+        <a href="javascript:; " style="display: inline-block;margin-top: 20px;" class="btn-dark btn-chose-size-color">OK</a>
+    </div>
+    <div class="popup-main popup-loading">
+        <h1 class="text-popup-header">Loading...</h1>
+        <div class="content-popup">
+            <i class="fa-5x fa fa-hourglass-half" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>

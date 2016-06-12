@@ -41,10 +41,17 @@
                  data-successtips="&lt;em&gt;Congratulations!&lt;/em&gt;You have successfully subscribed."
                  data-emailerror="Invalid email address. Please try again.">
                 <h3>Subscription</h3>
-                <input placeholder="Please enter your email" class="alert-subscribe-input" data-role="input"
-                       type="text"><input value="Subscribe" class="alert-subscribe-submit" data-role="submit"
-                                          type="submit">
-                <div class="email-error-tips"></div>
+                <form onsubmit=" registerNewsletter(); return false; " method="post"
+                      class="form-newsletter form-horizontal">
+                    <input type="hidden" name="us_newsletter" value="1">
+                    <input type="hidden" name="us_status" value="0">
+                    <input type="hidden" name="us_from" value="1">
+                    <input email="true" required="true" name="us_email" placeholder="Please enter your email" class="alert-subscribe-input" data-role="input"
+                           type="text">
+                    <button onclick="registerNewsletter();" type="button" class="alert-subscribe-submit">Subscribe
+                    </button>
+                    <input style="visibility: hidden;position: absolute;" type="submit">
+                </form>
                 <p class="tips">Register now to get updates on promotions and coupons.</p>
             </div>
             <div class="app-box">

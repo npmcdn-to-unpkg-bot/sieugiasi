@@ -31,27 +31,6 @@ class UserModel extends ModelBase
     {
         $validation = new Validation();
 
-        $validation->add('us_full_name', new PresenceOf(
-            array(
-                'message' => 'Full Name is required'
-            )
-        ));
-        $validation
-            ->add('us_phone', new PresenceOf(
-                array(
-                    'message' => 'Phone is required'
-                )
-            ))
-            ->add('us_phone', new StringLength(array(
-                'max' => 11,
-                'min' => 10,
-                'message' => 'Vui lòng nhập đúng số điện thoại của bạn',
-            )));
-        $validation->add('us_birthday', new PresenceOf(
-            array(
-                'message' => 'Birthday is required'
-            )
-        ));
         $validation
             ->add('us_email', new PresenceOf(array(
                 'message' => 'Email is required'
@@ -206,7 +185,7 @@ class UserModel extends ModelBase
 
     public function beforeCreate()
     {
-        $this->us_full_name=$this->us_name;
+//        $this->us_full_name=$this->us_name;
         if (!empty($this->us_password)) {
             $this->us_password = md5($this->us_password);
         }
