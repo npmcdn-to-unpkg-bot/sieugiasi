@@ -39,19 +39,6 @@ $router->add('/:controller/:action/:params', array(
     'action', function ($action) {
     return str_replace('-', '', $action);
 });
-$router->add('/ninomaxx', array(
-    'namespace' => $moduleClass,
-    'module' => $module,
-    'controller' => 'Manufacturer',
-    'action' => 'ninomaxx',
-))->setName($module);
-
-$router->add('/N-And-M', array(
-    'namespace' => $moduleClass,
-    'module' => $module,
-    'controller' => 'Manufacturer',
-    'action' => 'nAndM',
-))->setName($module);
 $router->add('/search', array(
     'namespace' => $moduleClass,
     'module' => $module,
@@ -62,6 +49,18 @@ $router->add('/page/{seo-link}', array(
     'namespace' => $moduleClass,
     'module' => $module,
     'controller' => 'Page',
+    'action' => 'index'
+));
+$router->add('/manufacturer/{id}', array(
+    'namespace' => $moduleClass,
+    'module' => $module,
+    'controller' => 'Manufacturer',
+    'action' => 'index'
+));
+$router->add('/category-product/{seo-link}', array(
+    'namespace' => $moduleClass,
+    'module' => $module,
+    'controller' => 'CategoryProduct',
     'action' => 'index'
 ));
 $router->handle();

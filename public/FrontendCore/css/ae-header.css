@@ -2171,7 +2171,7 @@
     height: 85px;
     width: 100%;
     background-color: #fff;
-    z-index: 20;
+    z-index: 999;
     border-bottom: 1px solid #e9e9e9
 }
 

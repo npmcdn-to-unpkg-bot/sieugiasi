@@ -12,7 +12,7 @@ class ErrorController extends ControllerBase
 
     public function show404Action()
     {
-        return $this->response->redirect("");
+//        return $this->response->redirect("");
         echo "404 Not Found";
         die;
     }

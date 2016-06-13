@@ -1,3 +1,6 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 .menu-position-fix{
     position: fixed;
     top: 0;
@@ -2108,6 +2111,9 @@
 
 .skin-default .mm-ae-email-subscriptions {
     color: #333333;
+}
+.bc-navy-cate-inner{
+    border-left: 1px solid #E8E8E8;
 }
 /* ------------------------------------------------------------- */
 /* Responsive mobile */

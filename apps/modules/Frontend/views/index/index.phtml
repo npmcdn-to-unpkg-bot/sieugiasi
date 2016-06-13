@@ -26,7 +26,7 @@
                             <dl data-role="first-menu" class="cl-item cl-item-<?php echo $array_icon[$key] ?> "
                                 data-spm="101">
                                 <dt class="cate-name">
-                                    <span><a href=""><?php echo $manu->ma_name ?></a></span>
+                                    <span><a href="<?php echo $this->url->get("manufacturer/").$manu->ma_id ?>"><?php echo $manu->ma_name ?></a></span>
                                 </dt>
                                 <?php if (count($manu->CategoryModel) > 0) { ?>
                                     <dd data-role="first-menu-main" class="sub-cate" data-path="c-women-content">
@@ -36,7 +36,7 @@
                                                 <div class="sub-cate-row">
                                                     <dl data-role="two-menu" class="sub-cate-items">
                                                         <dt>
-                                                            <a href=""><?php echo $cate->ct_name ?></a>
+                                                            <a href="<?php echo $this->url->get("category-product/").$cate->ct_seo_link ?>"><?php echo $cate->ct_name ?></a>
                                                         </dt>
                                                         <dd>
                                                             <?php
@@ -46,7 +46,7 @@
                                                                 foreach ($childCategory as $child) {
                                                                     ?>
 
-                                                                    <a href=""><?php echo $child->ct_name ?></a>
+                                                                    <a href="<?php echo $this->url->get("category-product/").$child->ct_seo_link ?>"><?php echo $child->ct_name ?></a>
                                                                 <?php }
                                                             } ?>
                                                         </dd>
@@ -256,14 +256,14 @@
                 <div class="container-inner clearfix" data-spm="1">
                     <div class="indutry-info col-lg-10 col-md-12 col-sm-20">
                         <div class="industry-enter">
-                            <a href=""><?php echo $manu->ma_name ?></a>
+                            <a href="<?php echo $this->url->get("manufacturer/").$manu->ma_id ?>"><?php echo $manu->ma_name ?></a>
                         </div>
                         <div class="keyword-list">
                             <?php if (count($manu->CategoryModel) > 0) { ?>
                                 <?php $categories = $manu->getCategory();
                                 foreach ($categories as $key => $val) { ?>
                                     <a <?php if ($key % 2 == 0) { ?> class="highlight" <?php } ?>
-                                        href=""><?php echo $val->ct_name ?></a>
+                                        href="<?php echo $this->url->get("category-product/").$val->ct_seo_link ?>"><?php echo $val->ct_name ?></a>
                                 <?php }
                             } ?>
                         </div>

@@ -2,6 +2,8 @@
 
 namespace Frontend\Controllers;
 
+use Backend\Models\CategoryModel;
+
 class CategoryProductController extends ControllerBase
 {
     public function initialize()
@@ -9,39 +11,44 @@ class CategoryProductController extends ControllerBase
         parent::initialize();
     }
 
-    public function indexAction()
+    public function indexAction($seo_link)
     {
-        $arrQuery = $this->request->getQuery();
-        $manufacturerModel = new \Backend\Models\ManufacturerModel();
-        $productModel = new \Backend\Models\ProductModel();
-        $optionModel = new \Backend\Models\ProductListOptionModel();
-        $arrFilter = $this->getData($arrQuery);
-        $where = $arrFilter[0];
-        $order = $arrFilter[1];
-        $manufacture = $arrFilter[2];
-        $listCategory = $arrFilter[3];
-        $product = $productModel::find(array($where, "limit" => 12, "order" => $order));
-        if (isset($arrQuery['promotion'])) {
-            $where .= ' and pr_price_promotion > 0  ';
-            $product = $productModel::find(array($where, "limit" => 12, "order" => "pr_price asc"));
-        }
-        $this->setScript();
-        unset($arrQuery['_url']);
-        $this->view->query = $arrQuery;
-        $this->view->product = $product;
-        $this->view->choseManufacture = $manufacture;
-        $this->view->listCategory = $listCategory;
-        $this->view->listOption = $optionModel::find();
-        $this->view->manufacturer = $manufacturerModel::find(array("order" => "ma_id desc"));
-        $this->view->setLayout("index");
-        $this->view->header_title = "Ninomaxx - N&M";
+//        $categoryModel = new CategoryModel();
+//        $category=$categoryModel::findFirst(array(" ct_seo_link = '{$seo_link}'"));
+//        if(!$category){
+//            return $this->response->redirect("");
+//        }
+//        $arrQuery = $this->request->getQuery();
+//        $manufacturerModel = new \Backend\Models\ManufacturerModel();
+//        $productModel = new \Backend\Models\ProductModel();
+//        $optionModel = new \Backend\Models\ProductListOptionModel();
+//        $arrFilter = $this->getData($arrQuery);
+//        $where = $arrFilter[0];
+//        $order = $arrFilter[1];
+//        $manufacture = $arrFilter[2];
+//        $listCategory = $arrFilter[3];
+//        $product = $productModel::find(array($where, "limit" => 12, "order" => $order));
+//        if (isset($arrQuery['promotion'])) {
+//            $where .= ' and pr_price_promotion > 0  ';
+//            $product = $productModel::find(array($where, "limit" => 12, "order" => "pr_price asc"));
+//        }
+//        $this->setScript();
+//        unset($arrQuery['_url']);
+//        $this->view->query = $arrQuery;
+//        $this->view->product = $product;
+//        $this->view->choseManufacture = $manufacture;
+//        $this->view->listCategory = $listCategory;
+//        $this->view->listOption = $optionModel::find();
+//        $this->view->manufacturer = $manufacturerModel::find(array("order" => "ma_id desc"));
+
+        $this->view->header_title = "zxc";
     }
 
 
     protected function setScript()
     {
-        $this->assets->collection("inline")
-            ->addJs('public/FrontendCore/js/loadcontent.js');
+        $this->assets->addCss('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic&subset=latin,vietnamese', false);
+        $this->assets->addCss('public/FrontendCore/css/category-product.css', true);
     }
 
     public function filterAction()
