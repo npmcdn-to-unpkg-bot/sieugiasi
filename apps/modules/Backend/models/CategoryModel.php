@@ -32,6 +32,13 @@ class CategoryModel extends ModelBase
 
     }
 
+    public function getCategoryParent()
+    {
+        $categoryParent = self::findFirst(array("ct_id = '{$this->ct_parent_id}'"));
+        return $categoryParent;
+
+    }
+
     public function countProduct()
     {
         if (count($this->ProductModel) > 0) {

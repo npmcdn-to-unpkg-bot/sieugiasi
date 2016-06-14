@@ -60,12 +60,16 @@ class ProductModel extends ModelBase
         return number_format($this->pr_price) . " Vnđ";
     }
 
+
     public function showPricePromotion()
     {
-        if ($this->pr_price_promotion != 0) {
-            return number_format($this->pr_price_promotion) . " Vnđ";
-        } else {
-            return false;
+        $date = date("Y-m-d");
+        if ($this->pr_date_sale_from <= $date && $date <= $this->pr_date_sale_to) {
+            if ($this->pr_price_promotion != 0) {
+                return number_format($this->pr_price_promotion) . " Vnđ";
+            } else {
+                return false;
+            }
         }
     }
 
@@ -145,7 +149,20 @@ class ProductModel extends ModelBase
         }
         return false;
     }
-    public function formatDate($date){
-        return date("d/m",strtotime($date));
+
+    public function formatDate($date)
+    {
+        return date("d/m", strtotime($date));
+    }
+
+    public function countOrder()
+    {
+        $orderDetailModel = new OrderDetailModel();
+        $orderProduct = $orderDetailModel::sum(array("column" => "od_quantity", "conditions" => "pr_id='{$this->pr_id}'"));
+        if ($orderProduct) {
+            return $orderProduct;
+        } else {
+            return 0;
+        }
     }
 }

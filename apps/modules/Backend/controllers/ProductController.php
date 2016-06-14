@@ -175,6 +175,9 @@ class ProductController extends ControllerBase
                             $attr['hqr_quantity_to'] = Null;
                         }
                         $priceModel->save($attr);
+                        $priceMin=end($data['price']);
+                        $buildingModel->pr_price=$priceMin['hqr_price'];
+                        $buildingModel->update();
                     }
                 }
                 //end insert Price
@@ -231,7 +234,7 @@ class ProductController extends ControllerBase
                     }
                 }
                 //update insert Option detail product
-                //insert Attribute
+                //update Attribute
                 $attributeModel = new \Backend\Models\ProductAttributeModel();
                 $attributeModel::find(array("pr_id='{$data['pr_id']}'"))->delete();
                 if (isset($data['attribute']) && !empty($data['attribute'])) {
@@ -245,22 +248,22 @@ class ProductController extends ControllerBase
                         $attributeModel->save($attr_data);
                     }
                 }
-                //end insert Attribute
-                //insert Price
+                //end update Attribute
+                //update Price
                 $priceModel = new ProductPriceModel();
                 $priceModel::find(array("pr_id='{$data['pr_id']}'"))->delete();
                 if (isset($data['price']) && !empty($data['price'])) {
                     foreach ($data['price'] as $attr) {
                         $priceModel = new ProductPriceModel();
                         $attr['pr_id'] = $data['pr_id'];
-//                        if (!isset($attr['hqr_quantity_to']) || is_null($attr['hqr_quantity_to'])) {
-//                            $attr['hqr_quantity_to'] = NULL;
-//                        }
                         $priceModel->save($attr);
                     }
+                    $priceMin=end($data['price']);
+                    $check_product->pr_price=$priceMin['hqr_price'];
+                    $check_product->update();
                 }
-                //end insert Price
-                //insert Avatar
+                //end update Price
+                //update Avatar
                 $avatarModel = new \Backend\Models\ProductAvatarModel();
                 $avatarModel::find(array("pr_id='{$data['pr_id']}'"))->delete();
                 if (!empty($data['ava_img']) || !empty($data['ava_img_hover'])) {
@@ -283,7 +286,7 @@ class ProductController extends ControllerBase
                         $avatarModel->save($ava);
                     }
                 }
-                // end insert Avatar
+                // end update Avatar
                 $respon['status'] = 1;
                 $respon['message'] = 'Thành Công';
             } else {

@@ -1,148 +1,125 @@
-<div class="main-content-left">
-    <h2>Thương Hiệu</h2>
-    <ul>
-        <li>
-            <a class='active' href="<?php echo $this->url->get("category-product") ?>">
-                <div class="check">
-                    <div class="check-checked"></div>
+<div class="col-sub">
+    <div id="refine-category" data-spm-protocol="i">
+        <div data-widget-cid="widget-12" id="refine-category-list" data-spm="3">
+            <?php if (!empty($arrQuery)) { ?>
+                <div id="clear-all-refine">
+                    Thông Tin Tra Cứu
+                    <a href="<?php echo $this->url->get("category-product/") . $category->ct_seo_link ?>"
+                       class="clear-all">Clear</a>
                 </div>
-                <label for="f-option">Tất Cả</label>
-            </a>
-        </li>
-        <?php
-        if ($manufacturer) {
-            foreach ($manufacturer as $manu) {
-                ?>
-                <li>
-                    <a onclick="filterCategoryProduct('munafacturer',<?php echo $manu->ma_id ?>,$(this));"
-                        href="javascript:;">
-                        <div class="check">
-                            <div class="check-checked"></div>
-                        </div>
-                        <label for="f-option"><?php echo $manu->ma_name ?></label>
-                    </a>
-                </li>
-                <?php
-            }
-        }
-        ?>
-    </ul>
-    <h2>Giới Tính</h2>
-    <ul>
-        <li>
-            <a <?php echo empty($query) ? " class='active' " : "" ?> href="<?php echo $this->url->get("category-product") ?>">
-                <div class="check">
-                    <div class="check-checked"></div>
+                <div class="refine-selected-list">
+                    <?php if (isset($arrQuery['size'])) { ?>
+                        <dl class="refine-selected">
+                            <dt class="cate-title">
+                                Size
+                            </dt>
+                            <dd>
+
+                                <a href="javascript:;"
+                                   onclick="filterCategoryProduct('size',<?php echo $arrQuery['size'] ?>,$(this));"
+                                   class="remove-common-select">
+                                    <?php
+                                    $size = \Backend\Models\ProductListOptionModel::getOptionById($arrQuery['size']);
+                                    echo $size->plo_name; ?>
+                                </a>
+                            </dd>
+                        </dl>
+                    <?php } ?>
+                    <?php if (isset($arrQuery['color'])) { ?>
+                        <dl class="refine-selected">
+                            <dt class="cate-title">
+                                Color
+                            </dt>
+                            <dd>
+
+                                <a href="javascript:;" onclick="filterCategoryProduct('color',<?php echo $arrQuery['color'] ?>,$(this));"
+                                   class="remove-color-select" >
+                                    <?php
+                                    $color = \Backend\Models\ProductListOptionModel::getOptionById($arrQuery['color']);
+                                     ?>
+                                    <span style="background-color: <?php echo $color->plo_detail ?>" class=" color-box"></span><?php echo $color->plo_detail ?>
+                                </a>
+                            </dd>
+                        </dl>
+                    <?php } ?>
                 </div>
-                <label for="f-option">Tất Cả</label>
-            </a>
-        </li>
-        <li>
-            <a <?php echo isset($query['gender']) &&  $query['gender'] == 'nam'? " class='active' " : "" ?> href="<?php echo $this->url->get("category-product?gender=nam") ?>">
-                <div class="check">
-                    <div class="check-checked"></div>
-                </div>
-                <label for="f-option">Nam</label>
-            </a>
-        </li>
-        <li>
-            <a <?php echo isset($query['gender']) &&  $query['gender'] == 'nu'? " class='active' " : "" ?> href="<?php echo $this->url->get("category-product?gender=nu") ?>">
-                <div class="check">
-                    <div class="check-checked"></div>
-                </div>
-                <label for="f-option">Nữ</label>
-            </a>
-        </li>
-    </ul>
-    <h2>Quần Áo</h2>
-    <ul class="clothers">
-        <li>
-            <a onclick="filterCategoryProduct('category','all',$(this));"
-               href="javascript:;">
-                        <span class="clothers-chose">
-                        <i class="fa fa-circle fa-1" aria-hidden="true"></i>
-                            Tất Cả
-                            </span>
-            </a>
-        </li>
-        <?php
-        if ($listCategory) {
-            foreach ($listCategory as $lica) {
-                ?>
-                <li>
-                    <a onclick="filterCategoryProduct('category',<?php echo $lica->ct_id ?>,$(this));"
-                       href="javascript:;">
-                        <span class="clothers-chose">
-                        <i class="fa fa-circle fa-1" aria-hidden="true"></i>
-                            <?php echo $lica->ct_name ?>
-                            </span>
-                    </a>
-                </li>
-                <?php
-            }
-        }
-        ?>
-    </ul>
-    <h2>Màu Sắc</h2>
-    <ul>
-        <li>
-            <a onclick="filterCategoryProduct('color','all',$(this));"
-               href="javascript:;">
-                <div class="check">
-                    <div class="check-checked"></div>
-                </div>
-                <label for="f-option">Tất Cả</label>
-            </a>
-        </li>
-        <?php
-        if ($listOption) {
-            foreach ($listOption as $licolor) {
-                if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Color) {
-                    ?>
-                    <li>
-                        <a onclick="filterCategoryProduct('color',<?php echo $licolor->plo_id ?>,$(this));"
-                           href="javascript:;">
-                            <div class="check">
-                                <div class="check-checked"></div>
-                            </div>
-                            <label for="f-option"><?php echo $licolor->plo_name ?></label>
-                        </a>
-                    </li>
-                    <?php
-                }
-            }
-        }
-        ?>
-    </ul>
-    <h2>Kích Cỡ</h2>
-    <ul>
-        <li>
-            <a onclick="filterCategoryProduct('size','all',$(this));"
-               href="javascript:;">
-                <div class="check">
-                    <div class="check-checked"></div>
-                </div>
-                <label for="f-option">Tất Cả</label>
-            </a>
-        </li>
-        <?php
-        if ($listOption) {
-            foreach ($listOption as $licolor) {
-                if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Size) {
-                    ?>
-                    <li>
-                        <a onclick="filterCategoryProduct('size',<?php echo $licolor->plo_id ?>,$(this));"
-                           href="javascript:;">
-                            <div class="check">
-                                <div class="check-checked"></div>
-                            </div>
-                            <label for="f-option"><?php echo $licolor->plo_name ?></label>
-                        </a>
-                    </li>
-                    <?php
-                }
-            }
-        }
-        ?>
-    </ul>
+            <?php } ?>
+            <div class="cate-dot-line"></div>
+
+
+            <dl class="attribute-item">
+                <dt class="cate-title attr-less">Size</dt>
+
+
+                <dd class="list-box">
+                    <ul class="size-select clearfix">
+                        <?php
+                        if ($listOption) {
+                            foreach ($listOption as $licolor) {
+                                if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Size) {
+                                    ?>
+                                    <li>
+                                        <a onclick="filterCategoryProduct('size',<?php echo $licolor->plo_id ?>,$(this));"
+                                           href="javascript:;"><?php echo $licolor->plo_name ?></a>
+                                    </li>
+                                    <?php
+                                }
+                            }
+                        }
+                        ?>
+                    </ul>
+                </dd>
+
+            </dl>
+            <dl class="attribute-item">
+                <dt class="cate-title attr-less">Category</dt>
+
+                <dd class="list-box">
+                    <ul class="common-select clearfix">
+                        <?php if ($category->ct_parent_id != 0) {
+                            $categoryChild = $categoryParent->getCategoryChild();
+
+                        } ?>
+                        <?php if ($categoryChild) {
+                            foreach ($categoryChild as $cateCh) { ?>
+                                <li>
+                                    <a href="<?php echo $this->url->get("category-product/") . $cateCh->ct_seo_link ?>"><?php echo $cateCh->ct_name ?></a>
+                                    <span>(<?php echo $cateCh->countProduct() ?>)</span>
+                                </li>
+                            <?php }
+                        } ?>
+                    </ul>
+                </dd>
+
+
+            </dl>
+            <dl class="attribute-item">
+                <dt class="cate-title attr-less">Color</dt>
+
+
+                <dd class="list-box">
+                    <ul class="color-select clearfix">
+                        <?php
+                        if ($listOption) {
+                            foreach ($listOption as $licolor) {
+                                if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Color) {
+                                    ?>
+                                    <li>
+                                        <a onclick="filterCategoryProduct('color',<?php echo $licolor->plo_id ?>,$(this));"
+                                           href="javascript:;">
+                                            <span
+                                                style="background-color:<?php echo $licolor->plo_detail ?> ">&nbsp;</span></a>
+                                    </li>
+                                    <?php
+                                }
+                            }
+                        }
+                        ?>
+                    </ul>
+
+                </dd>
+            </dl>
+        </div>
+    </div>
+
 </div>
