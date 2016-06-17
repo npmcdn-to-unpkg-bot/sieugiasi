@@ -1,207 +1,356 @@
-<div class="wrapper">
-    <div id="mainDivBody" class="main-vertical-body main-body-wrapper row-fluid">
-        <div class="productPage__generalContainer lazyProductPage-js">
+<div class="ui-breadcrumb" style="width: 100%">
+    <div class="container">
+        <a rel="nofollow" class="breadcrumb-home-link" href="<?php echo $this->url->get() ?>">Home</a>
+        <span class="divider">&gt;</span>
+        <a href="<?php echo $this->url->get("category-product/") . $product->CategoryModel->ct_seo_link ?>"><?php echo $product->CategoryModel->ct_name ?></a>
+        <span class="divider">&gt;</span>
+        <h2><a href="javascript:;" title="<?php echo $product->pr_name ?>"><?php echo $product->pr_name ?></a></h2>
+    </div>
+</div>
+<div class="detail" id="j-detail-page">
+    <div class="detail-bd container util-clearfix detail-image-dynamic" id="j-product-detail-bd">
+        <div class="detail-main">
+            <div class="detail-wrap">
+                <h1 class="product-name"><?php echo $product->pr_name ?></h1>
 
-            <div class="row-fluid home_ficha">
-                <div class="pull-left breadcrumb_container">
-                    <a href="<?php echo $this->url->get('category-product?munafacturer=') . $product->CategoryModel->ManufacturerModel->ma_id ?>"
-                       style="text-decoration: none; ">
-                        <span id="Form:SVFichaProducto:SVFilA:j_id_as" style="cursor: pointer;"
-                              class="breadcrumb"><?php echo $product->CategoryModel->ManufacturerModel->ma_name; ?></span>
-                    </a>
-                    <span class="breadcrumb separator"> &gt; </span>
-                    <a href="<?php echo isset($product->CategoryModel) ? $this->url->get('category-product?gender=') . $product->showParentCategory()->ct_seo_link.'&munafacturer='.$product->CategoryModel->ManufacturerModel->ma_id : '' ?>" style="text-decoration: none; ">
-                        <span id="Form:SVFichaProducto:SVFilA:j_id_as" style="cursor: pointer;"
-                              class="breadcrumb"><?php echo $product->showParentCategory()->ct_name; ?></span>
-                    </a>
-                    <span class="breadcrumb separator"> &gt; </span>
-                    <a href="<?php echo isset($product->CategoryModel) ? $this->url->get('category-product?category=') . $product->CategoryModel->ct_id : '' ?>"
-                       style="text-decoration: none; ">
-                        <span id="Form:SVFichaProducto:SVFilA:j_id_av" style="cursor: pointer;"
-                              class="breadcrumb"><?php echo isset($product->CategoryModel) ? $product->CategoryModel->ct_name : ''; ?></span>
-                    </a>
-                    <span class="breadcrumb separator"> &gt; </span>
-                    <span class="breadcrumb"><?php echo $product->pr_name; ?></span>
+                <div class="product-price">
+                    <?php if ($product->showPricePromotion()) { ?>
+                        <div class="product-price-main">
+                            <div class="p-del-price-detail">
+                                <span class="p-del-price-title">Giá:</span>
+                                <del class="p-del-price-content notranslate">
+                                    <?php echo $product->getMinimumPrice() ?>
+                                </del>
+                            </div>
+                            <div class="p-price-detail util-clearfix">
+                                <span class="p-price-title">Discount Price:</span>
+                                <div class="p-price-content">
+                                <span class="p-symbol">
+                                    <?php echo $product->showPricePromotion() ?>
+                                </span>
+
+                                </div>
+                                <span class="p-eventtime-left">  Còn lại <?php echo $product->timeLeft() ?> ngày </span>
+                            </div>
+                        </div>
+                    <?php } else { ?>
+                        <div class="mod-detail-price">
+                            <div class="table-wrap">
+                                <table class="de-price-hd ">
+                                    <thead>
+                                    <tr>
+                                        <th class="de-price-amount">Số lượng（<span class="unit lsf">chiếc</span>）</th>
+                                        <th class="de-price-reveal" style="padding-left: 28px;">Giá bán</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="unit-detail-price-amount">
+                                    <?php $prices = $product->ProductPriceModel;
+                                    if ($prices) {
+                                        foreach ($prices as $key => $pri) {
+
+                                            ?>
+                                            <tr>
+                                                <td class="de-price-amount">
+                                                    <?php if ($key != count($prices) - 1) {
+                                                        echo $pri->hqr_quantity_from . " - " . $pri->hqr_quantity_to;
+                                                    } else {
+                                                        echo "≥ " . $pri->hqr_quantity_from;
+                                                    } ?>
+
+                                                </td>
+                                                <td>
+                                                    <span class="reality-reveal">
+                                                        <span class="de-pnum-ep"><?php echo $pri->showPrice() ?></span>
+                                                        <span class="unit lsf">/ chiếc</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        <?php }
+                                    } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    <?php } ?>
+
+                </div>
+
+                <div class="product-attribute-main" id="j-product-attribute-main">
+                    <div data-widget-cid="widget-19" id="j-product-info-sku">
+                        <dl class="p-property-item p-total-price">
+                            <dt class="p-item-title">Mã sản phẩm:</dt>
+                            <dd style="display: block" class="p-item-main">
+                                <div style="display: block" class="p-price-tips">
+                                    <?php echo $product->pr_public_id ?>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="p-property-item p-total-price">
+                            <dt class="p-item-title">Trọng lượng:</dt>
+                            <dd style="display: block" class="p-item-main">
+                                <div style="display: block" class="p-price-tips">
+                                    <?php echo $product->pr_weight ?> kg/chiếc
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+
+
                 </div>
             </div>
-
-            <div class="row-fluid noBorders">
-                <div id="gallery-product" class="imagenes-contenedor">
-                    <div id="carousel" class="flexslider">
-                        <ul class="slides">
-                            <?php $gallery = $product->showGalleryDefault();
-                            if (isset($gallery) && !empty($gallery)) {
-                                foreach ($gallery as $gla) { ?>
-                                    <li>
-                                        <img
-                                            src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
-                                    </li>
-                                <?php }
-                            } ?>
-                        </ul>
-                    </div>
-                    <div id="slider" class="flexslider">
-                        <ul class="slides">
-                            <?php $gallery = $product->showGalleryDefault();
-                            if (isset($gallery) && !empty($gallery)) {
-                                foreach ($gallery as $gla) { ?>
-                                    <li>
-                                        <img id="jzoom" class="jzoom"
-                                             src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"
-                                             data-pimg="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
-                                    </li>
-                                <?php }
-                            } ?>
-                        </ul>
-                    </div>
-
+        </div>
+        <div class="detail-gallery">
+            <div id="gallery-product" class="imagenes-contenedor">
+                <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                        <?php $gallery = $product->ProductImageModel;
+                        if (isset($gallery) && !empty($gallery)) {
+                            foreach ($gallery as $gla) { ?>
+                                <li>
+                                    <img
+                                        src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                                </li>
+                            <?php }
+                        } ?>
+                    </ul>
                 </div>
-                <div class="datos_ficha_producto span5 pull-right">
-                    <div class="cabecera_producto_height_fix">
-                        <div class="cabecera_producto row-fluid">
-
-                            <div class="info_cabecera_producto">
-                                <div itemprop="name" class="nombreProducto row-fluid">
-                                    <h1>
-                                        <?php echo $product->pr_name ?>
-                                    </h1>
-                                </div>
-
-                                <div class="referenciaProducto row-fluid">
-                                    <?php echo $product->pr_public_id ?>
-
-                                </div>
-                            </div>
-                            <div class="precio_cabecera_producto">
-                                <?php $pricePromotion = $product->showPricePromotion();
-                                if ($pricePromotion) { ?>
-                                    <div class="precioProducto row-fluid">
-                                        <?php echo $product->showPricePromotion(); ?>
-                                    </div>
-                                    <div  style="text-decoration: line-through;font-size: 13px;" class="precioProducto row-fluid promotion">
-                                        <?php echo $product->showPrice() ?>
-                                    </div>
-                                <?php } else { ?>
-                                    <div class="precioProducto row-fluid">
-                                        <?php echo $product->showPrice() ?>
-                                    </div>
-                                <?php } ?>
-
-                                <div class="ficha_warning span12">
-                                    <?php echo $product->pr_decription ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="producto_color row-fluid productColor__container">
-                        <div class="producto_color_texto span12">
-                            <p class="producto_title_color">Colour:
-                            </p>
-                        </div>
-                        <div class="product-list-colors product-list-colors-detail">
-                            <?php
-                            $listColor = $product->showColor();
-                            if (!empty($listColor)) {
-                                foreach ($listColor as $key => $color) {
-                                    ?>
-                                    <div data-rel="<?php echo $color->plo_id ?>"
-                                         onclick="changeColorGallery(<?php echo $product->pr_id ?>,<?php echo $color->plo_id ?>,this)"
-                                         class="color <?php echo $key == 0 ? ' color--selected ' : '' ?> ">
-                                        <a href="javascript:;" class="other-color"
-                                           style="background-color: <?php echo $color->plo_detail ?>"></a>
-                                    </div>
-                                <?php }
-                            } ?>
-                        </div>
-                    </div>
-
-                    <div class="productPage__actionContainer stock_false">
-
-                        <div class="selector_tallas row-fluid priceSelector__container">
-
-                            <input id="_mng_talla_disp63000052" name="_mng_talla_disp63000052" value="false"
-                                   type="hidden">
-                                    <span id="_mng_idtalla63000052"><input id="Form:SVFichaProducto:size:j_id_ev"
-                                                                           name="Form:SVFichaProducto:size:j_id_ev"
-                                                                           value="" type="hidden">
-                                    </span>
-                            <select class="select-filter-detail size-product">
-                                <option selected="selected" value="-1" name="false">Choose your size</option>
-                                <?php
-                                $listSize = $product->showSize();
-                                if (!empty($listSize)) {
-                                    foreach ($listSize as $key => $size) {
-                                        ?>
-                                        <option data-gtm-size="XS " name="false"
-                                                value="<?php echo $key ?>"><?php echo "Size : " . $size ?></b>
-                                        </option>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </select>
-
-                            <div class="eu_size span5 hidden_mobile">
-                                <a target="_blank"
-                                   href="<?php echo $this->url->get() . "product/size-guide/" . $product->pr_seo_link; ?>"
-                                   class="eu_text">Sizes guide</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="shop_wishlist row-fluid no_loged productExtra__container">
-                        <a data-rel="<?php echo $product->pr_id ?>" href="javascript:;"
-                           class="btn-add-wishlist btn-add-cart">Thêm Vào Giỏ Hàng</a>
-                        <div id="bocataTallaNoSelWish" style="display: none" class="error bubble_message">
-                            <span class="flecha icono">^</span>Choose your size before adding the item to your Wishlist.
-                        </div>
-                    </div>
-                    <div class="addThisButtons rowfluid clearfix socialProduct__container">
-                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                        <script type="text/javascript"
-                                src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-571ca9f3d29cb3c0"></script>
-                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                        <div class="addthis_sharing_toolbox"></div>
-                    </div>
-                    <div class="description-filter-detail-area">
-                        <div id="accordian-filter-detail">
-                            <ul>
-                                <?php if (isset($product->ProductAttributeModel)) {
-                                    foreach ($product->ProductAttributeModel as $atribute) {
-                                        ?>
-                                        <li class="">
-                                            <h3><?php echo $atribute->hpa_name ?></h3>
-                                            <ul style="display: none">
-                                                <li>
-                                                    <?php echo $atribute->hpa_description ?>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    <?php }
-                                } ?>
-                            </ul>
-                        </div>
-                    </div>
+                <div id="slider" class="flexslider">
+                    <ul class="slides">
+                        <?php if (isset($gallery) && !empty($gallery)) {
+                            foreach ($gallery as $gla) { ?>
+                                <li>
+                                    <img id="jzoom" class="jzoom"
+                                         src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"
+                                         data-pimg="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                                </li>
+                            <?php }
+                        } ?>
+                    </ul>
                 </div>
 
             </div>
         </div>
-        <div class="orther-product-detail-area">
-            <?php if (isset($ortherProduct)) {
-                foreach ($ortherProduct as $orther) {
-                    ?>
-                    <div class="orther-product">
-                        <a href="<?php echo $this->url->get() . "product/show/" . $orther->pr_seo_link; ?>">
-                            <img src="<?php echo $orther->showImage() ?>"
-                                 alt="">
-                            <span class="productList__name"> <?php echo $orther->pr_name ?></span>
-                            <span class="productList__price"><?php echo $orther->showPrice() ?></span>
-                        </a>
+    </div>
+    <div class="detail-main-layout container util-clearfix">
+        <div class="col-main">
+
+            <div class="main-wrap">
+
+                <div class="main-content">
+
+                    <div data-widget-cid="widget-4" id="j-product-tabbed-pane"
+                         class="ui-tab ui-tab-normal ui-switchable tabbed-pannel-fixed">
+                        <ul style="width: 988px;" class="ui-tab-nav ui-switchable-nav">
+                            <li data-trigger="pdt" class="ui-tab-active ui-switchable-trigger" data-role="trigger">
+                                <a href="javascript:;">Product Details</a>
+                            </li>
+                        </ul>
+
+                        <div class="ui-tab-body ui-switchable-content">
+                            <div class="ui-tab-pane ui-switchable-panel" data-role="panel" style="display:block;">
+                                <div id="buy-product" class="mod-detail-purchasing-multiple fd-clr selected-nothing">
+                                    <div class="content-wrapper content-wrapper-spec ">
+                                        <div class="content">
+                                            <div class="leading fd-clr">
+                                                <span class="prop prop-single tsf">Màu sắc</span>
+                                                <div class="value fd-clr">
+                                                    <?php
+                                                    $listColor = $product->showColor();
+                                                    if (!empty($listColor)) {
+                                                        foreach ($listColor as $key => $color) {
+                                                            ?>
+                                                            <div class="unit-detail-spec-operator clr">
+                                                                <a data-rel="<?php echo $product->pr_id ?>"
+                                                                   data-id="<?php echo $color->plo_id ?>"
+                                                                   class="no-image chose-color "
+                                                                   href="javascript:void(0);">
+                                                                    <span
+                                                                        style="background-color: <?php echo $color->plo_detail ?>"
+                                                                        class="text tsf text-double-line"></span>
+                                                                    <div class="cor"></div>
+                                                                </a>
+                                                            </div>
+                                                        <?php }
+                                                    } ?>
+
+                                                </div>
+                                                <div style="clear: both"></div>
+                                            </div>
+                                            <div class="list">
+                                                <div class="thumb">
+                                                    <?php if (!empty($listColor)) { ?>
+                                                        <a id="current-color"
+                                                           data-rel="<?php echo $listColor[0]->plo_detail ?>"
+                                                           data-id="<?php echo $listColor[0]->plo_id ?>"
+                                                           href="javascript:;" rel="nofollow">
+                                                            <div
+                                                                style="background-color: <?php echo $listColor[0]->plo_detail ?>;height: 70px"
+                                                                class="text tsf">
+                                                            </div>
+                                                        </a>
+                                                    <?php } ?>
+                                                </div>
+                                                <table>
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="name tsf">Kích thước</th>
+                                                        <th class="price">Giá</th>
+                                                        <th class="count">Còn lại</th>
+                                                        <th class="amount">Số lượng</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <?php
+                                                    $listSize = $product->showSize();
+                                                    if (!empty($listSize)) {
+                                                        foreach ($listSize as $key => $size) {
+                                                            ?>
+                                                            <tr>
+                                                                <td class="name">
+                                                                    <span class="tsf"><?php echo $size ?></span></td>
+                                                                <td class="price">
+                                                                    <span><em><?php echo $product->getMaximumPrice(); ?></em></span>
+                                                                </td>
+                                                                <td class="count">
+                                                                    <span><?php echo $product->showQuantity() ?></span>
+                                                                </td>
+                                                                <td class="amount">
+                                                                    <span class="control">
+                                                                        <?php if ($product->pr_quantity != 0 && !empty($product->pr_quantity)) { ?>
+                                                                            <div class="input-number-sc">
+                                                                    <a data-id="<?php echo $product->pr_id ?>"
+                                                                       data-size="<?php echo $key ?>"
+                                                                       href="javascript:;" class="minus">
+                                                                        <img
+                                                                            src="<?php echo $this->url->get("public/FrontendCore/img/icon-minus.png") ?>"
+                                                                            alt="">
+                                                                    </a>
+                                                                    <input readonly="readonly" value="0"
+                                                                           class="input-number" type="text">
+                                                                    <a data-id="<?php echo $product->pr_id ?>"
+                                                                       data-size="<?php echo $key ?>"
+                                                                       href="javascript:;" class="plus">
+                                                                        <img
+                                                                            src="<?php echo $this->url->get("public/FrontendCore/img/icon-plus.png") ?>"
+                                                                            alt="">
+                                                                    </a>
+                                                                </div>
+                                                                        <?php } ?>
+                                                            </span>
+                                                                </td>
+                                                            </tr>
+                                                            <?php
+                                                        }
+                                                    }
+                                                    ?>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="summary">
+                                            <div class="operator fd-clr">
+                                                <div class="sub-total fd-clr" style="display: block;">
+                                                    <ul>
+                                                    </ul>
+                                                </div>
+                                                <div class="total fd-clr">
+                                                    <div class="amount-blk fd-clr">
+                                                        <span class="amount-tit"
+                                                              style="width:67px;float:left">Số lượng:</span>
+                                                        <div
+                                                            style="float:left;text-align:right;width:151px;display:inline;">
+                                                            <p class="amount" title="">0</p><span
+                                                                class="amount-unit">chiếc</span><span
+                                                                class="sep">&nbsp;</span>
+                                                        </div>
+                                                        <div style="clear: both"></div>
+                                                    </div>
+                                                    <div class="amount-blk fd-clr">
+                                                        <span class="amount-tit" style="width:67px;float:left">Tổng tiền:</span>
+                                                        <div
+                                                            style="float:left;text-align:right;width:151px;display:inline;height:15px;">
+                                                            <p class="price" title="">0</p>
+                                                        </div>
+                                                        <div style="clear: both"></div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="unit-detail-order-action">
+                                                    <a hidefocus="true" data-type="purchase" target="_self"
+                                                       href="javascript:void(0);"  class="blue-btn-adaptive do-cart btn-add-cart"
+                                                       title=""
+                                                       rel="nofollow" id="lnkAddToCart">
+                                                        <span><em>Chọn mua</em></span>
+                                                    </a>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                                <div style="clear:both;"></div>
+                                            </div>
+                                        </div>
+                                        <div style="clear:both;"></div>
+                                    </div>
+                                </div>
+                                <?php if (isset($product->ProductAttributeModel)) {
+                                    foreach ($product->ProductAttributeModel as $atribute) {
+                                        ?>
+                                        <div class="ui-box product-property-main">
+                                            <div class="ui-box-title"><?php echo $atribute->hpa_name ?></div>
+                                            <div style="padding: 10px;" class="ui-box-body">
+                                                <?php echo $atribute->hpa_description ?>
+                                            </div>
+                                        </div>
+                                    <?php }
+                                } ?>
+                                <div class="ui-box product-property-main">
+                                    <div class="ui-box-title">Mô Tả</div>
+                                    <div style="padding: 10px;" class="ui-box-body">
+                                        <?php echo $product->pr_decription ?>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                <?php }
-            } ?>
+
+
+                    <div id="j-related-searches" data-spm="1000012">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sub detail-sub-wrap">
+
+
+            <div id="j-top-selling-products" class="ui-box top-selling-products" data-spm="100009">
+                <div class="ui-box-title">Sản Phẩm Bán Chạy</div>
+                <div class="ui-box-body">
+                    <ul class="rec-products-list">
+                        <?php if ($ortherProduct) {
+                            foreach ($ortherProduct as $pro) { ?>
+                                <li>
+                                    <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>"
+                                       target="_blank"
+                                       title="<?php echo $pro->pr_name ?>">
+                                        <div class="pic">
+                                            <img alt="" src="<?php echo $pro->showImage() ?>">
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="p-title"><?php echo $pro->pr_name ?></div>
+                                            <div class="p-price"><b
+                                                    class="num"><?php echo $pro->getMinimumPrice() ?></b></div>
+                                            <div class="p-order">Đã bán (<?php echo $pro->countOrder() ?>)</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            <?php }
+                        } ?>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

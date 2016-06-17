@@ -8,6 +8,7 @@ use Backend\Models\InformationModel;
 
 class ControllerBase extends Controller
 {
+    protected $fee_tranfer = 55000;
 
     public function initialize()
     {
@@ -25,7 +26,7 @@ class ControllerBase extends Controller
         $informationModel = new InformationModel();
         $this->view->information = $informationModel::findFirst();
         //Orther Page
-        $ortherPageModel=new OrtherPageModel();
+        $ortherPageModel = new OrtherPageModel();
         $this->view->orther_page = $ortherPageModel::find(array("p_status=1"));
     }
 
@@ -60,6 +61,49 @@ class ControllerBase extends Controller
         if (isset($log_sess->$user_id)) {
             $this->memsession->destroy($log_sess->$user_id);
         }
+    }
+
+    public function recalculationCart($cart)
+    {
+        $totalPriceOrder = 0;
+        foreach ($cart['product'] as $key => $product) {
+            $cart['weight'] += $product['pr_weight'] * $product['cart_quantity'];
+            $cart['product'][$key]['total_price'] = $product['price'] * $product['cart_quantity'];
+            $totalPriceOrder +=  $cart['product'][$key]['total_price'];
+        }
+
+        $cart['fee_drive'] = $cart['weight'] * $this->fee_tranfer;
+        $cart['total_price_product'] = $totalPriceOrder;
+        $cart['total_price_order'] = $totalPriceOrder + $cart['fee_drive'] - $cart['coupon'];
+
+        if (isset($cart['coupon_code'])) {
+            $couponModel = new CouponModel();
+            $date = date("Y-m-d");
+            $coupon = $couponModel::findFirst(array("co_code =:code: and co_status = 1 and co_number > 0 and co_date_start <= :date: and co_date_end >= :date: ",
+                "bind" => (array(
+                    "code" => $cart['coupon_code'],
+                    "date" => $date,
+                ))));
+            if ($coupon) {
+                //discount
+                if ($coupon->co_type == 1) {
+                    // Discount for percent
+
+                    $discount = ($cart['total_price_product'] + $cart['fee_drive']) / 100 * $coupon->co_discount;
+                    if ($discount > $coupon->co_total) {
+                        $discount = $coupon->co_total;
+                    }
+                } else {
+                    $discount = $coupon->co_discount;
+                    // Discount for fixed amount
+                }
+                $cart['coupon'] = $discount;
+            } else {
+                unset($cart['coupon']);
+                unset($cart['coupon_code']);
+            }
+        }
+        return $cart;
     }
 
 }

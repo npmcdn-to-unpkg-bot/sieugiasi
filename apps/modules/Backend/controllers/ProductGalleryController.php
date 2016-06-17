@@ -2,16 +2,19 @@
 
 namespace Backend\Controllers;
 
-class ProductGalleryController extends ControllerBase {
+class ProductGalleryController extends ControllerBase
+{
 
-    public function initialize() {
+    public function initialize()
+    {
         parent::initialize();
         if (!in_array($this->user['usa_username'], $this->userRole['Admin']) && !in_array($this->user['usa_username'], $this->userRole['Product'])) {
             return $this->response->redirect($this->config['rootUrl'] . $this->module_config_backend->main_route . "/");
         }
     }
 
-    public function handleAction() {
+    public function handleAction()
+    {
         $output = [];
         if (method_exists($this, $this->request->getPost('method')))
             $output = $this->{$this->request->getPost('method')}($this->request->getPost());
@@ -19,23 +22,21 @@ class ProductGalleryController extends ControllerBase {
         die;
     }
 
-    public function indexAction() {
+    public function indexAction()
+    {
         $productModel = new \Backend\Models\ProductModel();
         $this->view->product = $productModel::find(array("order" => "pr_id desc"));
         $this->view->setLayout("map");
         $this->view->header_title = "Product Gallery Manager";
     }
 
-    public function detailContentAction() {
+    public function detailContentAction()
+    {
         if ($this->request->isPost()) {
             $data = $this->request->getPost();
-            $optionDetailModel = new \Backend\Models\ProductOptionDetailModel();
             $imageModel = new \Backend\Models\ProductImageModel();
             $data_image = $imageModel::find(array("plo_id = '{$data['color_id']}' and pr_id='{$data['product_id']}'"));
-
-            $data_color = $optionDetailModel::findFirst(array("plo_id = '{$data['color_id']}' and pr_id='{$data['product_id']}'"));
             $respon = array(
-                'product_status' => $data_color->product_status,
                 'image' => $data_image->toArray()
             );
             echo json_encode($respon);
@@ -49,14 +50,15 @@ class ProductGalleryController extends ControllerBase {
         $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
     }
 
-    public function uploadImageAction() {
+    public function uploadImageAction()
+    {
         $pr_id = $this->request->getQuery("pr_id");
         $plo_id = $this->request->getQuery("plo_id");
-        if ($plo_id == '-1') {
-            $respon = array("status" => 0, "message" => "Vui Lòng Chọn Color");
-            echo json_encode($respon);
-            die;
-        }
+//        if ($plo_id == '-1') {
+//            $respon = array("status" => 0, "message" => "Vui Lòng Chọn Color");
+//            echo json_encode($respon);
+//            die;
+//        }
         if ($this->request->hasFiles() == true) {
             $uploads = $this->request->getUploadedFiles();
             $img = array();
@@ -77,7 +79,8 @@ class ProductGalleryController extends ControllerBase {
         $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
     }
 
-    public function newEditContent($input) {
+    public function newEditContent($input)
+    {
         $respon['status'] = 0;
         if (empty($input['data'])) {
             $respon['message'] = 'Không có dữ liệu';
@@ -85,18 +88,20 @@ class ProductGalleryController extends ControllerBase {
         }
 
         $data = json_decode($input['data'], true);
-        if (!isset($data['plo_id']) || $data['plo_id'] == '-1') {
-            $respon['message'] = 'Vui lòng chọn Color. ';
-            return $respon;
-        }
-        $data['product_status'] = isset($data['product_status']) ? 1 : 0;
-        $optionDetailModel = new \Backend\Models\ProductOptionDetailModel();
-        $optionDetail = $optionDetailModel::findFirst(array("pr_id = '{$data['pr_id']}' and plo_id='{$data['plo_id']}'"));
-        $optionDetail->product_status = $data['product_status'];
-        $optionDetail->save();
+        $data['plo_id'] = -1;
+//        if (!isset($data['plo_id']) || $data['plo_id'] == '-1') {
+//            $respon['message'] = 'Vui lòng chọn Color. ';
+//            return $respon;
+//        }
+//        $data['product_status'] = isset($data['product_status']) ? 1 : 0;
+//        $optionDetailModel = new \Backend\Models\ProductOptionDetailModel();
+//        $optionDetail = $optionDetailModel::findFirst(array("pr_id = '{$data['pr_id']}' and plo_id='{$data['plo_id']}'"));
+//        $optionDetail->product_status = $data['product_status'];
+//        $optionDetail->save();
         $buildingModel = new \Backend\Models\ProductImageModel();
         $buildingModel::find(array("pr_id = '{$data['pr_id']}' and plo_id='{$data['plo_id']}'"))->delete();
         if (isset($data['pi_image_link']) && !empty($data['pi_image_link'])) {
+
             foreach ($data['pi_image_link'] as $img) {
                 $buildingModel = new \Backend\Models\ProductImageModel();
                 $data_insert = array(
@@ -112,7 +117,8 @@ class ProductGalleryController extends ControllerBase {
         return $respon;
     }
 
-    public function deleteContent($input) {
+    public function deleteContent($input)
+    {
         $respon['status'] = 0;
         if (empty($input['data'])) {
             $respon['message'] = 'Không có dữ liệu';

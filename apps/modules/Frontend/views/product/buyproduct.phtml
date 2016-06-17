@@ -1,0 +1,165 @@
+<?php if ($product) { ?>
+    <div class="content-wrapper content-wrapper-spec ">
+        <div class="content">
+            <div class="leading fd-clr">
+                <span class="prop prop-single tsf">Màu sắc</span>
+                <div class="value fd-clr">
+                    <?php
+                    $listColor = $product->showColor();
+                    if (!empty($listColor)) {
+                        foreach ($listColor as $key => $color) {
+                            ?>
+                            <div class="unit-detail-spec-operator clr">
+                                <a data-rel="<?php echo $product->pr_id ?>"
+                                   data-id="<?php echo $color->plo_id ?>"
+                                   class="no-image chose-color <?php if ($color->plo_id == $idColor) {
+                                       echo " selected ";
+                                   } ?>"
+                                   href="javascript:void(0);">
+                                                                    <span
+                                                                        style="background-color: <?php echo $color->plo_detail ?>"
+                                                                        class="text tsf text-double-line"></span>
+                                    <div class="cor"></div>
+                                </a>
+                            </div>
+                        <?php }
+                    } ?>
+
+                </div>
+                <div style="clear: both"></div>
+            </div>
+            <div class="list">
+                <div class="thumb">
+                    <?php if (!empty($listColor)) {
+                        foreach ($listColor as $key => $color) {
+                            if ($color->plo_id == $idColor) {
+                                ?>
+                                <a id="current-color"
+                                   data-rel="<?php echo $color->plo_detail ?>"
+                                   data-id="<?php echo $color->plo_id ?>"
+                                   href="javascript:;" rel="nofollow">
+                                    <div
+                                        style="background-color: <?php echo $color->plo_detail ?>;height: 70px"
+                                        class="text tsf">
+                                    </div>
+                                </a>
+                            <?php }
+                        }
+                    } ?>
+                </div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th class="name tsf">Kích thước</th>
+                        <th class="price">Giá</th>
+                        <th class="count">Còn lại</th>
+                        <th class="amount">Số lượng</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $listSize = $product->showSize();
+                    if (!empty($listSize)) {
+                        foreach ($listSize as $key => $size) {
+                            ?>
+                            <tr>
+                                <td class="name">
+                                    <span class="tsf"><?php echo $size ?></span></td>
+                                <td class="price">
+                                    <span><em><?php echo number_format($buyProduct[$product->pr_id]['price']) . " Vnđ"; ?></em></span>
+                                </td>
+                                <td class="count">
+                                    <span><?php echo $product->showQuantity() ?></span>
+                                </td>
+                                <td class="amount">
+                                                                    <span class="control">
+                                                                        <?php if ($product->pr_quantity != 0 && !empty($product->pr_quantity)) { ?>
+                                                                            <div class="input-number-sc">
+                                                                    <a data-id="<?php echo $product->pr_id ?>"
+                                                                       data-size="<?php echo $key ?>"
+                                                                       href="javascript:;" class="minus">
+                                                                        <img
+                                                                            src="<?php echo $this->url->get("public/FrontendCore/img/icon-minus.png") ?>"
+                                                                            alt="">
+                                                                    </a>
+                                                                    <input readonly="readonly"
+                                                                           value="<?php echo isset($buyProduct[$product->pr_id]['color'][$idColor][$key]) ? $buyProduct[$product->pr_id]['color'][$idColor][$key] : 0 ?>"
+                                                                           class="input-number" type="text">
+                                                                    <a data-id="<?php echo $product->pr_id ?>"
+                                                                       data-size="<?php echo $key ?>"
+                                                                       href="javascript:;" class="plus">
+                                                                        <img
+                                                                            src="<?php echo $this->url->get("public/FrontendCore/img/icon-plus.png") ?>"
+                                                                            alt="">
+                                                                    </a>
+                                                                </div>
+                                                                        <?php } ?>
+                                                            </span>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="operator fd-clr">
+                <div class="sub-total fd-clr" style="display: block;">
+                    <ul>
+                        <?php if (!empty($buyProduct[$product->pr_id]['color'])) {
+                            foreach ($buyProduct[$product->pr_id]['color'] as $key=>$val) {
+                                foreach ($listColor as $color) {
+                                    if ($color->plo_id == $key && array_sum($val)>0) { ?>
+                                        <li class="fd-clr">
+                                            <div class="sub-name tsf"><?php echo $color->plo_name ?></div>
+                                            <div class="sub-amount"><em><?php echo array_sum($val) ?></em> chiếc</div>
+                                        </li>
+                                    <?php }
+                                }
+                            }
+                        } ?>
+                    </ul>
+                </div>
+                <div class="total fd-clr">
+                    <div class="amount-blk fd-clr">
+                                                        <span class="amount-tit"
+                                                              style="width:67px;float:left">Số lượng:</span>
+                        <div
+                            style="float:left;text-align:right;width:151px;display:inline;">
+                            <p class="amount"
+                               title=""><?php echo $buyProduct[$product->pr_id]['total_quantity'] ?></p><span
+                                class="amount-unit">chiếc</span><span
+                                class="sep">&nbsp;</span>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div class="amount-blk fd-clr">
+                        <span class="amount-tit" style="width:67px;float:left">Tổng tiền:</span>
+                        <div
+                            style="float:left;text-align:right;width:151px;display:inline;height:15px;">
+                            <p class="price"
+                               title=""><?php echo number_format($buyProduct[$product->pr_id]['total_price']) . " Vnđ"; ?></p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+
+                </div>
+                <div class="unit-detail-order-action">
+                    <a hidefocus="true" data-type="purchase" target="_self"
+                       href="javascript:void(0);" class="blue-btn-adaptive do-cart btn-add-cart"
+                       title=""
+                       rel="nofollow" id="lnkAddToCart">
+                        <span><em>Chọn mua</em></span>
+                    </a>
+                    <div style="clear: both"></div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+<?php } ?>

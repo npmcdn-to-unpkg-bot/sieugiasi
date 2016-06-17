@@ -21,21 +21,21 @@ class ProductModel extends ModelBase
         $this->hasMany("pr_id", "\Backend\Models\ProductPriceModel", "pr_id", array('alias' => 'ProductPriceModel'));
     }
 
-//    public function beforeCreate()
-//    {
-//        if ($this->pr_quantity <= 0) {
-//            $this->pr_quantity = 0;
-//            $this->product_status = 0;
-//        }
-//    }
-//    public function beforeUpdate()
-//    {
-//
-//        if ($this->pr_quantity <= 0) {
-//            $this->pr_quantity = 0;
-//            $this->product_status = 0;
-//        }
-//    }
+    public function beforeCreate()
+    {
+        if ($this->pr_quantity <= 0) {
+            $this->pr_quantity = 0;
+            $this->product_status = 0;
+        }
+    }
+    public function beforeUpdate()
+    {
+
+        if ($this->pr_quantity <= 0) {
+            $this->pr_quantity = 0;
+            $this->product_status = 0;
+        }
+    }
 
     public function updateByID($data, $id)
     {
@@ -51,6 +51,21 @@ class ProductModel extends ModelBase
         $price = $productPriceModel::minimum(array("pr_id ='{$this->pr_id}'", "column" => "hqr_price"));
         if ($price) {
             return number_format($price) . " Vnđ";
+        }
+        return '';
+    }
+
+    public function getMaximumPrice($format=false)
+    {
+        $productPriceModel = new ProductPriceModel();
+        $price = $productPriceModel::maximum(array("pr_id ='{$this->pr_id}'", "column" => "hqr_price"));
+        if ($price) {
+            if(!$format){
+                return number_format($price) . " Vnđ";
+            }else{
+                return $price;
+            }
+
         }
         return '';
     }
@@ -150,6 +165,7 @@ class ProductModel extends ModelBase
         return false;
     }
 
+
     public function formatDate($date)
     {
         return date("d/m", strtotime($date));
@@ -165,4 +181,33 @@ class ProductModel extends ModelBase
             return 0;
         }
     }
+
+    public function timeLeft()
+    {
+        return ceil((strtotime($this->pr_date_sale_to) - time()) / (60 * 60 * 24));
+    }
+
+    public function showQuantity()
+    {
+        if ($this->pr_quantity == 0 || empty($this->pr_quantity)) {
+            return 'Hết Hàng';
+        }
+        return number_format($this->pr_quantity, 0);
+    }
+
+    public function getProductTopSale($top)
+    {
+        
+        $topOrder = OrderDetailModel::find(array("columns" => "pr_id, SUM(od_quantity) as sum", "group" => "pr_id", "order" => "SUM(od_quantity) desc", "limit" => $top));
+        if ($topOrder) {
+            $string = '';
+            foreach ($topOrder as $val) {
+                $string .= $val->pr_id . ",";
+            }
+            $string = rtrim($string, ',');
+            $product = self::find(array("pr_id in ({$string})"));
+            return $product;
+        }
+    }
+    
 }

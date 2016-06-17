@@ -17,5 +17,9 @@ class ProductPriceModel extends ModelBase {
         $where = "hpa_id='" . $id . "'";
         return $this->getWriteConnection()->update($this->getSource(), $fields, $values, $where);
     }
+    public function showPrice()
+    {
+        return number_format($this->hqr_price) . " Vnđ";
+    }
 }
 

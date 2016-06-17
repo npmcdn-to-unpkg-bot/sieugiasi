@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), url(/ae-wholesale-ui/node_modules/@alife/beta-apollo/src/font/open-sans.cd1c2929.eot?#iefix) format('embedded-opentype'), url(/ae-wholesale-ui/node_modules/@alife/beta-apollo/src/font/open-sans.cd1c2929.eot), url(/ae-wholesale-ui/node_modules/@alife/beta-apollo/src/font/open-sans.006320aa.woff) format('woff'), url(/ae-wholesale-ui/node_modules/@alife/beta-apollo/src/font/open-sans.b91bcbdf.ttf) format('truetype')
-}
 
 html {
     margin: 0;

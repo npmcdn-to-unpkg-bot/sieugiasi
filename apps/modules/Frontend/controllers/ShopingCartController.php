@@ -10,6 +10,8 @@ use Backend\Models\ProductModel;
 
 class ShopingCartController extends ControllerBase
 {
+
+
     public function initialize()
     {
         parent::initialize();
@@ -32,64 +34,46 @@ class ShopingCartController extends ControllerBase
 
     public function addCart($request)
     {
+        $productListOptionModel = new ProductListOptionModel();
+        $buyProduct = $this->memsession->get('BUYPRODUCT', null);
         $cart = $this->memsession->get('CART', null);
         if (!isset($cart)) {
             $cart = array(
                 'product' => array(),
                 'total_price_product' => 0,
+                'weight' => 0,
                 'fee_drive' => 0,
                 'coupon' => 0,
                 'total_price_order' => 0,
             );
         }
-
-        $temp_arr = array();
-        $totalPriceOrder = 0;
-        $productModel = new ProductModel();
-        $productListOptionModel=new ProductListOptionModel();
-        $product = $productModel::findFirst($request['id']);
-        if ($product) {
-
-            $productImage = $product->showImage();
-            $product = $product->toArray();
-            $product['pa_image_link'] = $productImage;
-            $quantity = 1;
-            //Chỉ dc mua tối đa 5 sản phẩm 1 loại
-            if ($quantity > 5) {
-                $respon['status'] = 0;
-                $respon['message'] = 'Chỉ được mua tối đa 5 sản phẩm cùng loại';
-                return $respon;
-            }
-            if ($product['pr_quantity'] < $quantity) {
-                $respon['status'] = 0;
-                $respon['message'] = 'Số lượng hàng trong kho không đủ';
-                return $respon;
-            }
-            if ($product['pr_price_promotion'] > 0) {
-                $totalPrice = $product['pr_price_promotion'] * $quantity;
-            } else {
-                $totalPrice = $product['pr_price'] * $quantity;
+        foreach ($buyProduct as $idProduct => $pro) {
+            $productModel = new ProductModel();
+            $product = $productModel::findFirst($idProduct);
+            if ($product) {
+                foreach ($pro['color'] as $idColor => $color) {
+                    foreach ($color as $idSize => $quantity) {
+                        $productImage = $product->showImage();
+                        $newproduct = $product->toArray();
+                        $newproduct['pa_image_link'] = $productImage;
+                        $newproduct['color'] = $idColor;
+                        $newproduct['color_name'] = $productListOptionModel::findFirst($idColor)->plo_name;
+                        $newproduct['size'] = $idSize;
+                        $newproduct['size_name'] = $productListOptionModel::findFirst($idSize)->plo_name;
+                        $newproduct['cart_quantity'] = $quantity;
+                        $newproduct['price'] = $pro['price'];
+                        $newproduct['total_price'] = $pro['price'] * $quantity;
+                        $cart['product'][] = $newproduct;
+                    }
+                }
             }
 
-            $temp_arr = $product;
-            $size=$request['size'];
-            $color=$request['color'];
-            $temp_arr['size']=$size;
-            $temp_arr['size_name']=$productListOptionModel::findFirst($size)->plo_name;
-            $temp_arr['color']=$color;
-            $temp_arr['color_name']=$productListOptionModel::findFirst($color)->plo_name;
-            $temp_arr['cart_quantity'] = $quantity;
-            $temp_arr['total_price'] = $totalPrice;
-            $cart['product'][] = $temp_arr;
 
-            $reCart = $this->recalculationCart($cart);
-            $this->memsession->set('CART', $reCart);
-            $respon['status'] = 1;
-            $respon['message'] = 'Sản phẩm đã được thêm vào giỏ hàng.';
-            return $respon;
         }
-        $respon['status'] = 0;
-        $respon['message'] = 'Không thể Thêm';
+        $reCart = $this->recalculationCart($cart);
+        $this->memsession->set('CART', $reCart);
+        $respon['status'] = 1;
+        $respon['message'] = 'Sản phẩm đã được thêm vào giỏ hàng.';
         return $respon;
     }
 
@@ -213,58 +197,11 @@ class ShopingCartController extends ControllerBase
         }
     }
 
-    public function recalculationCart($cart)
-    {
-        $totalPriceOrder = 0;
-        $totalPrice = 0;
-        foreach ($cart['product'] as $key => $product) {
-            if ($product['pr_price_promotion'] > 0) {
-                $totalPrice = $product['pr_price_promotion'] * $product['cart_quantity'];
-            } else {
-                $totalPrice = $product['pr_price'] * $product['cart_quantity'];
-            }
-            $cart['product'][$key]['total_price'] = $totalPrice;
-            $totalPriceOrder += $totalPrice;
-        }
-
-
-        $cart['total_price_product'] = $totalPriceOrder;
-        $cart['total_price_order'] = $totalPriceOrder + $cart['fee_drive'] - $cart['coupon'];
-
-        if (isset($cart['coupon_code'])) {
-            $couponModel = new CouponModel();
-            $date = date("Y-m-d");
-            $coupon = $couponModel::findFirst(array("co_code =:code: and co_status = 1 and co_number > 0 and co_date_start <= :date: and co_date_end >= :date: ",
-                "bind" => (array(
-                    "code" => $cart['coupon_code'],
-                    "date" => $date,
-                ))));
-            if ($coupon) {
-                //discount
-                if ($coupon->co_type == 1) {
-                    // Discount for percent
-
-                    $discount = ($cart['total_price_product'] + $cart['fee_drive']) / 100 * $coupon->co_discount;
-                    if ($discount > $coupon->co_total) {
-                        $discount = $coupon->co_total;
-                    }
-                } else {
-                    $discount = $coupon->co_discount;
-                    // Discount for fixed amount
-                }
-                $cart['coupon'] = $discount;
-            } else {
-                unset($cart['coupon']);
-                unset($cart['coupon_code']);
-            }
-        }
-        return $cart;
-    }
 
     public function getSizeColorAction($product_id)
     {
-        $productModel=new ProductModel();
-        $this->view->product=$productModel::findFirst($product_id);
+        $productModel = new ProductModel();
+        $this->view->product = $productModel::findFirst($product_id);
         $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
     }
 }

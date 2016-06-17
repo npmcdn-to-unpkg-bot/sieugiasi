@@ -21,7 +21,7 @@ class CategoryProductController extends ControllerBase
         $optionDetailModel = new \Backend\Models\ProductOptionDetailModel();
         $currentPage = $this->request->getQuery('page', 'int');
         $category = $categoryModel::findFirst(array(" ct_seo_link = '{$seo_link}'"));
-        if (!$category) {
+        if (!$category||!isset($seo_link)) {
             return $this->response->redirect("");
         }
         $where = 'pr_status=1 ';

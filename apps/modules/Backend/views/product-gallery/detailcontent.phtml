@@ -1,37 +1,5 @@
 <?php if ($data) { ?>
     <div class="form-group">
-        <label class="control-label col-sm-2">Color </label>
-        <div class="col-sm-10">
-            <select id="select-search-color" name="plo_id" class="select-search-color">
-                <option value="-1">Chose</option>
-                <?php
-                if ($option) {
-                    foreach ($option->ProductListOptionModel as $val) {
-                        foreach ($data->ProductOptionDetailModel as $optl) {
-                            if ($val->plo_id == $optl->plo_id) {
-                                ?>
-                                <option  value="<?php echo $val->plo_id ?>"><?php echo $val->plo_name ?></option>
-                                <?php
-                            }
-                        }
-                    }
-                }
-                ?>
-            </select>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-sm-2">Product Status</label>
-        <div class="col-sm-10">
-            <div class="checkbox checkbox-switch">
-                <label>
-                    <input name="product_status"  type="checkbox" data-on-color="success" data-off-color="danger" data-on-text="Còn" data-off-text="Hết" class="switch" checked="true" >
-                    Còn Hàng/Hết Hàng
-                </label>
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
         <label class="control-label col-sm-2">Image</label>
         <div class="col-sm-10">
 
@@ -46,35 +14,47 @@
     <script type="text/javascript">
         var id_image = 0;
         var plo_id = -1;
+        var $grid;
         $(document).ready(function () {
             $('[data-popup="lightbox"]').fancybox({
                 padding: 3
             });
             $('.select-search-color').select2();
             $(".switch").bootstrapSwitch();
-            $("#select-search-color").change(function () {
-                var id = $(this).val();
-                plo_id = id;
-                var product_id = <?php echo $data->pr_id ?>;
-                if (id != '-1') {
-                    $.ajax({
-                        type: "POST",
-                        url: queryUrl + "/detail-content",
-                        data: {"color_id": id, "product_id": product_id},
-                        success: function (result)
-                        {
-                            $(".gallery-image").remove();
-                            var data = $.parseJSON(result);
-                            if (data.product_status == 1) {
-                                $('input[name="product_status"]').bootstrapSwitch('state', true);
-                            } else {
-                                $('input[name="product_status"]').bootstrapSwitch('state', false);
-                            }
-                            //                            $(".gallery-image").remove();
-                            if (data.image.length != 0) {
-                                $.each(data.image, function (key, val) {
-                                    var html = '';
-                                    html = '<div class="col-lg-3 col-sm-6 gallery-image gallery-image-' + val.pi_id + '">\n\
+
+
+            $grid = $('.grid-image-gallery').masonry({
+                itemSelector: '.gallery-image',
+                // use element for option
+                // columnWidth: 240,
+                percentPosition: true,
+//                gutter: 10
+            });
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry('layout');
+            });
+            getImageDatabase(-1);
+        });
+        function getImageDatabase(id) {
+            plo_id = id;
+            var product_id = <?php echo $data->pr_id ?>;
+            $.ajax({
+                type: "POST",
+                url: queryUrl + "/detail-content",
+                data: {"color_id": id, "product_id": product_id},
+                success: function (result) {
+                    $(".gallery-image").remove();
+                    var data = $.parseJSON(result);
+                    if (data.product_status == 1) {
+                        $('input[name="product_status"]').bootstrapSwitch('state', true);
+                    } else {
+                        $('input[name="product_status"]').bootstrapSwitch('state', false);
+                    }
+                    //                            $(".gallery-image").remove();
+                    if (data.image.length != 0) {
+                        $.each(data.image, function (key, val) {
+                            var html = '';
+                            html = '<div class="col-lg-3 col-sm-6 gallery-image gallery-image-' + val.pi_id + '">\n\
                                     <div class="thumbnail">\n\
                                         <div class="thumb">\n\
                                             <img src="' + rootUrl + val.pi_image_link + '" alt="">\n\
@@ -88,25 +68,25 @@
                                         </div>\n\
                                     </div>\n\
                                 </div>';
-                                    $(".grid-image-gallery").append(html);
-                                    id_image = val.pi_id;
-                                });
-                                $("[data-popup='lightbox']").fancybox({
-                                    padding: 3
-                                });
-                            }
-                            uploadImage();
-
-                        }
-                    });
+                            var $content = $(html);
+                            $grid.append($content).masonry('appended', $content);
+                            $grid.imagesLoaded().progress(function () {
+                                $grid.masonry('layout');
+                            });
+//                            $(".grid-image-gallery").append(html);
+                            id_image = val.pi_id;
+                        });
+                        $("[data-popup='lightbox']").fancybox({
+                            padding: 3
+                        });
+                    }
+                    uploadImage();
                 }
-
             });
-
-        });
+        }
         function uploadImage() {
             var pr_id = $("#select-product").val();
-            var plo_id = $("#select-search-color").val();
+//            var plo_id = $("#select-search-color").val();
             var myDropzone = new Dropzone("#dropzone_multiple", {
                 init: function () {
                     this.on("addedfile", function (file) {
@@ -133,14 +113,14 @@
                         file.previewElement.appendChild(removeButton);
                     });
                 },
-                url: queryUrl + "/upload-image?pr_id=" + $("#select-product").val() + "&plo_id=" + plo_id,
+                url: queryUrl + "/upload-image?pr_id=" + pr_id + "&plo_id=" + plo_id,
                 filesizeBase: 1024,
-    //                uploadMultiple: true,
-    //                addRemoveLinks: true,
+                //                uploadMultiple: true,
+                //                addRemoveLinks: true,
                 dictRemoveFile: "Remove zxc",
                 paramName: pr_id, // The name that will be used to transfer the file
                 dictDefaultMessage: 'Drop files to upload <span>or CLICK</span>',
-                maxFilesize: 0.5, // MB
+                maxFilesize: 2, // MB
                 maxFiles: 20,
                 acceptedFiles: "image/jpeg,image/png",
                 accept: function (file, done) {

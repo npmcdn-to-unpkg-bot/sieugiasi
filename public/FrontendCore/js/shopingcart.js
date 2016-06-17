@@ -1,24 +1,30 @@
+var click = true;
 $(document).ready(function () {
     addCart();
     quatityShoppingCart();
     removeProductShoppingCart();
+    //chose Color
+    $("body").on("click", ".chose-color", function () {
+        $(".chose-color").removeClass("selected");
+        $(this).addClass("selected");
+        var id = $(this).attr("data-id");
+        var pr_id = $(this).attr("data-rel");
+        $.ajax({
+            type: "POST",
+            url: rootUrl + 'product/change-color',
+            data: {id_color: id, id_product: pr_id},
+            success: function (response) {
+                $("#buy-product").html(response);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            }
+        });
+    });
 });
 function addCart() {
     //Add cart
     $("body").on('click', '.btn-add-cart', function () {
-            var id = $(this).attr("data-rel");
-            //get size and color
-            $size = $(".size-product").val();
-            $color = $(".color--selected").attr("data-rel");
-            if ($size == '-1') {
-                showPopup('error', 'Thất Bại', 'Bạn chưa chọn size');
-                return false;
-            }
-            if ($size == null && $color == null) {
-                popupChoseSizeColor(id);
-                return false;
-            }
-            postAddCart(id);
+            postAddCart();
         }
     )
     ;
@@ -65,11 +71,11 @@ function popupChoseSizeColor(id) {
         }
     });
 }
-function postAddCart($id) {
+function postAddCart() {
     $.ajax({
         type: "POST",
         url: rootUrl + 'shoping-cart/handle',
-        data: {method: "addCart", id: $id, size: $size, color: $color},
+        data: {method: "addCart"},
         success: function (response) {
             var result = $.parseJSON(response);
             if (result.status == 1) {
@@ -88,28 +94,42 @@ function quatityShoppingCart() {
     if (click == true) {
         click = false;
         $("body").on("click", ".minus", function () {
-            var id = $(this).attr("data-rel");
+            var id_product = $(this).attr("data-id");
+            var id_size = $(this).attr("data-size");
+            var id_color = $("#current-color").attr("data-id");
             var val = $(this).parent(".input-number-sc").find(".input-number").val();
-            var price_product = $(this).parent(".input-number-sc").parent("td").parent("tr").find(".price-total");
             val--;
             if (val >= 0) {
-                changeNumberCart(id, val, price_product, $(this));
+                changeNumberProduct(val, id_product, id_size,id_color, $(this));
 
             }
         });
         $("body").on("click", ".plus", function () {
-            var $this = $(this);
-            var id = $(this).attr("data-rel");
+            var id_product = $(this).attr("data-id");
+            var id_size = $(this).attr("data-size");
+            var id_color = $("#current-color").attr("data-id");
             var val = $(this).parent(".input-number-sc").find(".input-number").val();
             var price_product = $(this).parent(".input-number-sc").parent("td").parent("tr").find(".price-total");
             val++;
-            if (val <= 5) {
-                changeNumberCart(id, val, price_product, $(this));
-            }
+            // if (val <= 5) {
+                changeNumberProduct(val, id_product, id_size,id_color, $(this));
+            // }
         });
     }
 }
-function changeNumberCart($id, $quantity, price_product, $this) {
+function changeNumberProduct($quantity,$id_product, $id_size,$id_color, $this,$status) {
+    $.ajax({
+        type: "POST",
+        url: rootUrl + 'product/buy-product',
+        data: {id_product: $id_product,id_size:$id_size,id_color:$id_color, quantity: $quantity,status:$status},
+        success: function (response) {
+            $("#buy-product").html(response);
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+        }
+    });
+}
+function changeNumberCart($quantity,$id_product, $id_size,$id_color, $this) {
     $.ajax({
         type: "POST",
         url: rootUrl + 'shoping-cart/handle',

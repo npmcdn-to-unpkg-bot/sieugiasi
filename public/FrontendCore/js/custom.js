@@ -1,4 +1,27 @@
 $(document).ready(function () {
+    if ($('#carousel').length != 0) {
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 210,
+            // itemMargin: 5,
+            asNavFor: '#slider',
+            direction: 'vertical'
+        });
+    }
+    if ($('#slider').length != 0) {
+        $('#slider').flexslider({
+            animation: "fade",
+            animationLoop: false,
+            slideshow: false,
+            controlNav: false,
+            touch: true,
+            sync: "#carousel"
+        });
+    }
     $(".cl-item").hover(function () {
         $(this).addClass('cl-item-unfold');
     }, function () {
@@ -75,4 +98,6 @@ $(document).ready(function () {
         $(".ms-drawer-mask").fadeOut();
         $(".ms-drawer").removeClass("open");
     });
+
+    
 });
