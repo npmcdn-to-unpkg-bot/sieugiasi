@@ -36,6 +36,11 @@ class ShopingCartController extends ControllerBase
     {
         $productListOptionModel = new ProductListOptionModel();
         $buyProduct = $this->memsession->get('BUYPRODUCT', null);
+        if (empty($buyProduct)) {
+            $respon['status'] = 0;
+            $respon['message'] = 'Bạn chưa chọn sản phẩm';
+            return $respon;
+        }
         $cart = $this->memsession->get('CART', null);
         if (!isset($cart)) {
             $cart = array(
@@ -65,6 +70,7 @@ class ShopingCartController extends ControllerBase
                         $newproduct['total_price'] = $pro['price'] * $quantity;
                         $cart['product'][] = $newproduct;
                     }
+
                 }
             }
 
@@ -72,6 +78,7 @@ class ShopingCartController extends ControllerBase
         }
         $reCart = $this->recalculationCart($cart);
         $this->memsession->set('CART', $reCart);
+        $this->memsession->remove('BUYPRODUCT');
         $respon['status'] = 1;
         $respon['message'] = 'Sản phẩm đã được thêm vào giỏ hàng.';
         return $respon;
@@ -97,29 +104,9 @@ class ShopingCartController extends ControllerBase
         $cart = $this->memsession->get('CART', null);
         $id = $request['id'];
         $quantity = $request['quantity'];
-        //Chỉ dc mua tối đa 5 sản phẩm 1 loại
-        if ($quantity > 5 || $quantity < 0) {
-            $respon['status'] = 0;
-            $respon['message'] = 'Số lượng không hợp lệ';
-            return $respon;
-        }
 
         if ($cart['product'][$id]) {
-            $productModel = new ProductModel();
-            $product = $productModel::findFirst($cart['product'][$id]['pr_id']);
-            if ($product->pr_quantity < $quantity) {
-                $respon['status'] = 0;
-                $respon['message'] = 'Số lượng hàng trong kho không đủ';
-                return $respon;
-            }
-
             $cart['product'][$id]['cart_quantity'] = $quantity;
-            if ($cart['product'][$id]['pr_price_promotion'] > 0) {
-                $cart['product'][$id]['total_price'] = $cart['product'][$id]['pr_price_promotion'] * $quantity;
-            } else {
-                $cart['product'][$id]['total_price'] = $cart['product'][$id]['pr_price'] * $quantity;
-            }
-
             $reCart = $this->recalculationCart($cart);
             $this->memsession->set('CART', $reCart);
 
@@ -203,5 +190,10 @@ class ShopingCartController extends ControllerBase
         $productModel = new ProductModel();
         $this->view->product = $productModel::findFirst($product_id);
         $this->view->setRenderLevel(\Phalcon\Mvc\View::LEVEL_ACTION_VIEW);
+    }
+    public function removeAllCartAction(){
+        $this->memsession->remove('BUYPRODUCT');
+        $this->memsession->remove('CART');
+        return $this->response->redirect('shoping-cart');
     }
 }

@@ -1,102 +1,185 @@
-<div class="wrapper">
-    <div class="shopping-cart-area">
-        <?php echo $this->partial('shoping-cart/menu') ?>
-        <div class="shopping-cart-content">
-            <table>
-                <thead>
-                <tr>
-                    <th style="width: 5%;"></th>
-                    <th style="width: 10%;">Sản Phẩm</th>
-                    <th style="width: 30%;"></th>
-                    <th>Giá</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php if (!empty($cart)) {
-                    foreach ($cart['product'] as $key=>$product) {
-                        if ($product['cart_quantity'] > 0) { ?>
-                            <tr>
-                                <td>
-                                    <a data-rel="<?php echo $key ?>" href="javascript:;"
-                                       class="btn-remove-pr-shoppingcart">
-                                        <img
-                                            src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-remove.png"
-                                            alt="">
-                                    </a>
-                                </td>
+<style>
+    .index-page {
+        background: none;
+    }
+</style>
+<div id="page" class="multiple-lan" data-spm="99999999" data-widget-cid="widget-6">
+    <div class="detail-main-layout container util-clearfix">
+        <div class="main-title-text">
+            <strong>Your Shopping Cart</strong> <span class="main-title-text-nums">(<span class="main-title-text-num">1 Item</span>)</span>
+        </div>
+        <div style="margin-bottom:10px;">
+            <p><a class="button-submit button button-large" href="<?php echo $this->url->get("shoping-cart/remove-all-cart"); ?>">Xóa giỏ hàng</a></p>
+        </div>
+        <div class="shoppingcart">
+            <div class="shoppingcart-header">
+                <ul class="fd-clr">
+                    <li class="item-name">Sản phẩm</li>
+                    <li class="price">Giá bán</li>
+                    <li class="quantity">Số lượng</li>
 
-                                <td>
-                                    <img class="img-pr-shoppingcart" src="<?php echo $product['pa_image_link'] ?>"
-                                         alt="">
-                                </td>
-                                <td style="text-align: left">
-                                    <a  class="pr-name-shoppingcart"><?php echo $product['pr_name'] ?></a><br>
-                                    <a style="font-size: 14px; font-weight: bold;" class="pr-name-shoppingcart">Màu : <?php echo $product['color_name'] ?></a><br>
-                                    <a style="font-size: 14px; font-weight: bold;" class="pr-name-shoppingcart">Size : <?php echo $product['size_name'] ?></a>
-                                </td>
-                                <td style="font-weight: bold">
-                                    <?php echo ($product['pr_price_promotion'] > 0) ? number_format($product['pr_price_promotion']) . " Vnđ" : number_format($product['pr_price']) . " Vnđ" ?>
-                                </td>
-                                <td>
-                                    <div class="input-number-sc">
-                                        <a data-rel="<?php echo $key ?>" href="javascript:;" class="minus">
-                                            <img
-                                                src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-minus.png"
-                                                alt="">
-                                        </a>
-                                        <input readonly="readonly" value="<?php echo $product['cart_quantity'] ?>"
-                                               type="text" class="input-number"/>
-                                        <a data-rel="<?php echo $key ?>" href="javascript:;" class="plus">
-                                            <img
-                                                src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-plus.png"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                </td>
-                                <td class="price-total" style="font-weight: bold">
-                                    <?php echo number_format($product['total_price']) . " Vnđ" ?>
-                                </td>
-                            </tr>
-                        <?php }
-                    }
-                } ?>
-                </tbody>
-            </table>
-        </div>
-        <div class="total-price-shoppingcar">
-            <h1>Thành Tiền</h1>
-            <div class="row-sc">
-                <span class="label-sc">Tổng Tiền</span>
-                <span class="temp-price"><?php echo number_format($cart['total_price_product']) . " Vnđ" ?></span>
+                    <li class="amount">Thành tiền</li>
+                    <li class="options"></li>
+                </ul>
             </div>
-            <?php if ($cart['coupon']>0) { ?>
-                <div class="row-sc">
-                    <span class="label-sc">Discount</span>
-                    <span class="coupon-discount"><?php echo  number_format($cart['coupon']) . " Vnđ"?></span>
+            <div class="shoppingcart-shops">
+                <div class="shoppingcart-shop">
+                    <div class="shop-info" style="position:relative;">
+                        <ul>
+                            <li class="checkbox"></li>
+                            <li class="shop-name">Người bán: <a href="/shop/37700.html" title="" target="_blank"
+                                                                name="37700"></a></li>
+                            <li class="shop-mix-info" style="position:absolute;right:12px;">
+                                Điều kiện đặt hàng:
+                                Tổng tiền hàng ≥ 100.000đ
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-item fd-clr">
+                        <?php if (!empty($cart)) {
+                            foreach ($cart['product'] as $key => $product) {
+                                if ($product['cart_quantity'] > 0) { ?>
+                                    <ul class="item fd-clr">
+                                        <li class="pic">
+                                            <a href="<?php echo $this->url->get("product/show/") . $product['pr_seo_link'] ?>"
+                                               target="_blank">
+                                                <img style="width: 65px"
+                                                     src="<?php echo $product['pa_image_link'] ?>"
+                                                     alt="<?php echo $product['pr_name'] ?>">
+                                            </a>
+                                        </li>
+                                        <li class="item-name" style="margin-right: 25px;">
+                                            <a href="<?php echo $this->url->get("product/show/") . $product['pr_seo_link'] ?>"
+                                               title="<?php echo $product['pa_image_link'] ?>"
+                                               target="_blank" style="height:36px;overflow:hidden;">
+                                                <?php echo $product['pr_name'] ?>
+                                            </a>
+                                            <div class="sku-name" style="margin-top:5px;">
+                                                <strong><?php echo $product['color_name'] ?>
+                                                    &gt; <?php echo $product['size_name'] ?></strong>
+                                            </div>
+                                        </li>
+
+                                        <li class="price-range"
+                                            style="margin-right: 25px;width: auto; min-width: 130px;">
+                                            <ul class="list-price-range fd-clr">
+                                                <?php $allPrice = \Backend\Models\ProductModel::getAllPrice($product['pr_id']);
+                                                if ($allPrice['promotion'] == 0) {
+                                                    foreach ($allPrice['data'] as $price) {
+                                                        ?>
+                                                        <li <?php if ($price->hqr_price == $product['price']) {
+                                                            echo 'class="selected"';
+                                                        } ?> >
+                                                            <dl>
+                                                                <dt>
+                                                                    <?php echo !empty($price->hqr_quantity_to) ? $price->hqr_quantity_from . " - " . $price->hqr_quantity_to : "≥ " . $price->hqr_quantity_from ?>
+                                                                    :
+                                                                </dt>
+                                                                <dd>
+                                                                    <em><?php echo $price->showPrice() ?></em>
+                                                                </dd>
+                                                            </dl>
+                                                        </li>
+                                                    <?php }
+                                                } else { ?>
+                                                    <li class="selected" >
+                                                        <dl>
+                                                            <dt>
+                                                            </dt>
+                                                            <dd>
+                                                                <em><?php echo $allPrice['data'] ?></em>
+                                                            </dd>
+                                                        </dl>
+                                                    </li>
+                                                <?php } ?>
+                                            </ul>
+                                        </li>
+                                        <li class="quantity" style="margin-right: 25px;">
+                                            <div class="input-number-sc">
+                                                <a data-rel="<?php echo $key; ?>" href="javascript:;" class="minus-cart">
+                                                    <img
+                                                        src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-minus.png"
+                                                        alt="">
+                                                </a>
+                                                <input readonly="readonly"
+                                                       value="<?php echo $product['cart_quantity'] ?>"
+                                                       class="input-number" type="text">
+                                                <a data-rel="<?php echo $key; ?>" href="javascript:;" class="plus-cart">
+                                                    <img
+                                                        src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-plus.png"
+                                                        alt="">
+                                                </a>
+                                                <div style="clear:both;"></div>
+                                            </div>
+                                        </li>
+                                        <li class="amount"
+                                            style="margin-right: 25px;"><?php echo number_format($product['total_price']) . " Vnđ" ?></li>
+                                        <li class="delete"><a href="javascript:void(0);" data-rel="<?php echo $key ?>"
+                                                              class="lnkRemoveSku btn-remove-pr-shoppingcart">[Xoá]</a>
+                                        </li>
+
+                                        <div style="clear: both"></div>
+                                    </ul>
+                                <?php }
+                            }
+                        } ?>
+
+                    </div>
+
+                    <div class="shop-footer">
+
+                        <div style="width: 170px;color: #666; font-weight: bold;" class="shop-footer-col-left">
+                                <span class="shop-total-quantity"
+                                      style="margin: 0 auto;">Đã chọn: <em><?php echo $cart['total_quantity'] ?> </em> sản phẩm</span>
+                        </div>
+
+                        <div style="width: 415px;" class="shop-footer-col-left">
+
+					<span style="color: #666; font-weight: bold;">
+						 Trọng lượng: <em class="shop-footer-em"><?php echo $cart['weight'] ?></em> kg
+						~ Trọng lượng tính phí vận chuyển: <em
+                            class="shop-footer-em"><?php echo ceil($cart['weight']) ?></em> kg
+					</span>
+                            (<a href="/page/view/10" style="text-decoration: none;" target="_blank">chi tiết</a>)
+										<span style="color: #C00; font-style: italic;">
+						(Bạn đang lãng phí <?php echo number_format(ceil($cart['weight']) - $cart['weight'],3); ?>kg
+												~
+                                            <?php echo number_format((ceil($cart['weight']) - $cart['weight']) * \Backend\Models\OrderModel::Fee_tranfer) . " Vnđ" ?>
+                                            )
+												Bạn nên chọn thêm sản phẩm ở shop này cho tròn 2kg để tránh lãng phí.
+					</span>
+                            <div class="shop-footer-show-more">
+                                <a href="/shop/37700.html">Lựa chọn thêm sản phẩm</a>
+                            </div>
+                        </div>
+
+                        <div class="shop-footer-col-right">
+                            <p>
+                                <span>Tiền hàng: </span>
+                                <span class="shop-footer-price temp-price">
+                                     <?php echo number_format($cart['total_price_product']) . " Vnđ" ?>
+                                </span>
+                            </p>
+                            <p>
+                                <span>Phí vận chuyển : </span>
+                                <span
+                                    class="shop-footer-price fee-price"><?php echo number_format($cart['fee_drive']) . " Vnđ" ?></span>
+                            </p>
+                            <p class="shop-footer-space"></p>
+                            <p>
+                                <span>Tổng: </span>
+						        <span class="shop-footer-price total-price" style="font-size: 18px">
+                                    <?php echo number_format($cart['total_price_order']) . " Vnđ" ?>
+                                </span>
+                            </p>
+                            <p><a class="button-submit button button-important button-large"
+                                  href="/shoppingCart/createOrder.html?shopId=37700" data-shop-id="37700">Đặt
+                                    hàng</a></p>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
                 </div>
-            <?php } ?>
-            <div class="row-sc">
-                <span class="label-sc">Phí Vận Chuyển</span>
-                <span
-                    class="fee-price"><?php echo $cart['fee_drive'] > 0 ? number_format($cart['total_price_order']) . " Vnđ" : 'Miễn Phí' ?></span>
             </div>
-            <div class="row-total-price">
-                <span class="label-sc">Thành Tiền</span>
-                <span class="total-price"><?php echo number_format($cart['total_price_order']) . " Vnđ" ?></span>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="shopping-cart-bottom">
-            <input name="co_code" class="input-contact-form input-promotion-code"
-                   placeholder="Nhập Mã Phiếu Giảm Giá" type="text">
-            <a <?php if ($user) { ?> onclick="addCoupon();" href="javascript:;" <?php } else { ?> href="<?php echo $this->url->get("user?redirect=shoping-cart") ?>" <?php } ?>
-                class="btn-light btn-promotion-code">Nhập Mã</a>
-            <a href="<?php echo $this->url->get("shoping-cart") ?>" class="btn-dark btn-update-cart">Cập Nhật Giỏ
-                Hàng</a>
-            <a <?php if (!empty($user)) { ?> href="<?php echo $this->url->get("checkout") ?>" <?php } else { ?> href="<?php echo $this->url->get("user?redirect=checkout") ?>" <?php } ?>
-                class="btn-light btn-checkout">Thanh Toán</a>
         </div>
     </div>
 </div>

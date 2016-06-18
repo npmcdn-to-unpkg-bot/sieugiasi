@@ -19,6 +19,8 @@ class OrderModel extends ModelBase
         return "hq_order";
     }
 
+    const Fee_tranfer = 55000;
+
     public function initialize()
     {
         parent::initialize();
@@ -91,6 +93,7 @@ class OrderModel extends ModelBase
     {
         return date("d/m/Y", strtotime($this->or_create_date));
     }
+
     public function setPrice($price)
     {
         return number_format($price) . " Vnđ";

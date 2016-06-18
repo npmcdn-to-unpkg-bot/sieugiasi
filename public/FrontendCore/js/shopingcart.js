@@ -2,6 +2,7 @@ var click = true;
 $(document).ready(function () {
     addCart();
     quatityShoppingCart();
+    changeQuatityShoppingCart();
     removeProductShoppingCart();
     //chose Color
     $("body").on("click", ".chose-color", function () {
@@ -25,8 +26,7 @@ function addCart() {
     //Add cart
     $("body").on('click', '.btn-add-cart', function () {
             postAddCart();
-        }
-    )
+        })
     ;
 }
 function checkout() {
@@ -117,6 +117,31 @@ function quatityShoppingCart() {
         });
     }
 }
+function changeQuatityShoppingCart() {
+    // if (click == true) {
+    //     click = false;
+        $("body").on("click", ".minus-cart", function () {
+            var id = $(this).attr("data-rel");
+            var val = $(this).parent(".input-number-sc").find(".input-number").val();
+            var price_product = $(this).parent(".input-number-sc").parent("td").parent("tr").find(".price-total");
+            val--;
+            if (val >= 0) {
+                changeNumberCart(id, val, price_product, $(this));
+
+            }
+        });
+        $("body").on("click", ".plus-cart", function () {
+            var $this = $(this);
+            var id = $(this).attr("data-rel");
+            var val = $(this).parent(".input-number-sc").find(".input-number").val();
+            var price_product = $(this).parent(".input-number-sc").parent("td").parent("tr").find(".price-total");
+            val++;
+            // if (val <= 5) {
+                changeNumberCart(id, val, price_product, $(this));
+            // }
+        });
+    // }
+}
 function changeNumberProduct($quantity,$id_product, $id_size,$id_color, $this,$status) {
     $.ajax({
         type: "POST",
@@ -129,7 +154,7 @@ function changeNumberProduct($quantity,$id_product, $id_size,$id_color, $this,$s
         }
     });
 }
-function changeNumberCart($quantity,$id_product, $id_size,$id_color, $this) {
+function changeNumberCart($id, $quantity, price_product, $this) {
     $.ajax({
         type: "POST",
         url: rootUrl + 'shoping-cart/handle',
@@ -138,6 +163,7 @@ function changeNumberCart($quantity,$id_product, $id_size,$id_color, $this) {
             var result = $.parseJSON(response);
             if (result.status == 1) {
                 click = true;
+                window.location.reload();
                 price_product.text(result.total_price);
                 $(".temp-price").text(result.total_price_product);
                 $(".coupon-discount").text(result.coupon);
@@ -164,11 +190,12 @@ function removeProductShoppingCart() {
             success: function (response) {
                 var result = $.parseJSON(response);
                 if (result.status == 1) {
-                    $this.parent("td").parent("tr").remove();
-                    $(".temp-price").text(result.total_price_product);
-                    $(".coupon-discount").text(result.coupon);
-                    $(".fee-price").text(result.fee_drive);
-                    $(".total-price").text(result.total_price_order);
+                    window.location.reload();
+                    // $this.parent(".item").remove();
+                    // $(".temp-price").text(result.total_price_product);
+                    // $(".coupon-discount").text(result.coupon);
+                    // $(".fee-price").text(result.fee_drive);
+                    // $(".total-price").text(result.total_price_order);
                 }
             },
             error: function (xhr, ajaxOptions, thrownError) {

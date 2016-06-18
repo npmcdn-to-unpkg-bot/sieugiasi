@@ -209,7 +209,7 @@
                                                                 <td class="name">
                                                                     <span class="tsf"><?php echo $size ?></span></td>
                                                                 <td class="price">
-                                                                    <span><em><?php echo $product->getMaximumPrice(); ?></em></span>
+                                                                    <span><em><?php echo $product->showPricePromotion() ? $product->showPricePromotion() : $product->getMaximumPrice(); ?></em></span>
                                                                 </td>
                                                                 <td class="count">
                                                                     <span><?php echo $product->showQuantity() ?></span>
@@ -277,10 +277,7 @@
 
                                                 </div>
                                                 <div class="unit-detail-order-action">
-                                                    <a hidefocus="true" data-type="purchase" target="_self"
-                                                       href="javascript:void(0);"  class="blue-btn-adaptive do-cart btn-add-cart"
-                                                       title=""
-                                                       rel="nofollow" id="lnkAddToCart">
+                                                    <a href="javascript:;"  class="blue-btn-adaptive do-cart btn-add-cart" >
                                                         <span><em>Chọn mua</em></span>
                                                     </a>
                                                     <div style="clear: both"></div>

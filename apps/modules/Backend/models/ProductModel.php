@@ -28,6 +28,7 @@ class ProductModel extends ModelBase
             $this->product_status = 0;
         }
     }
+
     public function beforeUpdate()
     {
 
@@ -55,14 +56,14 @@ class ProductModel extends ModelBase
         return '';
     }
 
-    public function getMaximumPrice($format=false)
+    public function getMaximumPrice($format = false)
     {
         $productPriceModel = new ProductPriceModel();
         $price = $productPriceModel::maximum(array("pr_id ='{$this->pr_id}'", "column" => "hqr_price"));
         if ($price) {
-            if(!$format){
+            if (!$format) {
                 return number_format($price) . " Vnđ";
-            }else{
+            } else {
                 return $price;
             }
 
@@ -197,7 +198,7 @@ class ProductModel extends ModelBase
 
     public function getProductTopSale($top)
     {
-        
+
         $topOrder = OrderDetailModel::find(array("columns" => "pr_id, SUM(od_quantity) as sum", "group" => "pr_id", "order" => "SUM(od_quantity) desc", "limit" => $top));
         if ($topOrder) {
             $string = '';
@@ -209,5 +210,27 @@ class ProductModel extends ModelBase
             return $product;
         }
     }
-    
+
+    public static function getAllPrice($idProduct,$format=true)
+    {
+        $product = self::findFirst($idProduct);
+        $date = date("Y-m-d");
+        $price = array();
+        if ($product->pr_price_promotion != 0 && $product->pr_date_sale_from <= $date && $date <= $product->pr_date_sale_to) {
+            $price['promotion'] = 1;
+            if($format){
+                $price['data'] = number_format($product->pr_price_promotion) . " Vnđ";
+            }else{
+                $price['data'] = $product->pr_price_promotion;
+            }
+            
+        } else {
+            $productPriceModel = new ProductPriceModel();
+            $price['promotion'] = 0;
+            $price['data'] = $productPriceModel::find(array("pr_id ='{$idProduct}'"));
+        }
+
+        return $price;
+    }
+
 }

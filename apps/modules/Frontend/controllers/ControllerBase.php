@@ -2,13 +2,14 @@
 
 namespace Frontend\Controllers;
 
+use Backend\Models\OrderModel;
 use Backend\Models\OrtherPageModel;
+use Backend\Models\ProductModel;
 use Phalcon\Mvc\Controller;
 use Backend\Models\InformationModel;
 
 class ControllerBase extends Controller
 {
-    protected $fee_tranfer = 55000;
 
     public function initialize()
     {
@@ -66,13 +67,35 @@ class ControllerBase extends Controller
     public function recalculationCart($cart)
     {
         $totalPriceOrder = 0;
+        $totalWeight = 0;
+        $quantityForProduct = $this->getQuantityProductCart($cart);
         foreach ($cart['product'] as $key => $product) {
-            $cart['weight'] += $product['pr_weight'] * $product['cart_quantity'];
+            $totalWeight += $product['pr_weight'] * $product['cart_quantity'];
+            //check Promotion
+            $productModel = new ProductModel();
+            $allPrice = $productModel::getAllPrice($product['pr_id'],false);
+            if ($allPrice['promotion'] == 0) {
+                foreach ($allPrice['data'] as $priceProduct) {
+                    if(!empty($priceProduct->hqr_quantity_to)){
+                        if($priceProduct->hqr_quantity_from < $quantityForProduct[$product['pr_id']] && $priceProduct->hqr_quantity_to >= $quantityForProduct[$product['pr_id']]){
+                            $cart['product'][$key]['price']=$priceProduct->hqr_price;
+                            break;
+                        }
+                    } else {
+                        $cart['product'][$key]['price'] = $priceProduct->hqr_price;
+                        break;
+                    }
+                }
+            } else {
+                $cart['product'][$key]['price']=$allPrice['data'];
+            }
+            //end
             $cart['product'][$key]['total_price'] = $product['price'] * $product['cart_quantity'];
-            $totalPriceOrder +=  $cart['product'][$key]['total_price'];
+            $totalPriceOrder += $cart['product'][$key]['total_price'];
         }
-
-        $cart['fee_drive'] = $cart['weight'] * $this->fee_tranfer;
+        $cart['weight'] = $totalWeight;
+        $cart['total_quantity'] = array_sum($quantityForProduct);
+        $cart['fee_drive'] = $cart['weight'] * OrderModel::Fee_tranfer;
         $cart['total_price_product'] = $totalPriceOrder;
         $cart['total_price_order'] = $totalPriceOrder + $cart['fee_drive'] - $cart['coupon'];
 
@@ -104,6 +127,26 @@ class ControllerBase extends Controller
             }
         }
         return $cart;
+    }
+
+    public function getQuantityProductCart($cart)
+    {
+        $arr = array();
+        $price = array();
+        $quantity = array();
+        foreach ($cart['product'] as $key => $item) {
+            $arr[$item['pr_id']][$key] = $item;
+        }
+        foreach ($arr as $key => $product) {
+            foreach ($product as $val) {
+                if (isset($quantity[$key])) {
+                    $quantity[$key] += $val['cart_quantity'];
+                } else {
+                    $quantity[$key] = $val['cart_quantity'];
+                }
+            }
+        }
+        return $quantity;
     }
 
 }

@@ -28,7 +28,7 @@ class ProductController extends ControllerBase
 
     public function showAction($seo)
     {
-//        $this->memsession->remove('BUYPRODUCT');
+        $this->memsession->remove('BUYPRODUCT');
         $productModel = new ProductModel();
         $product = $productModel::findFirst(array("pr_seo_link = '{$seo}'"));
         if (!$product) {
@@ -101,13 +101,18 @@ class ProductController extends ControllerBase
                 $cart[$idProduct]['total_quantity'] = $total_quantity;
 
                 //get price
-                $prices = $productPriceModel::find(array("pr_id='{$idProduct}'", "order" => "hqr_id desc"));
-                foreach ($prices as $price) {
-                    if (empty($price->hqr_quantity_to) && $cart[$idProduct]['total_quantity'] >= $price->hqr_quantity_from) {
-                        $cart[$idProduct]['price'] = $price->hqr_price;
-                        break;
-                    } else if ($cart[$idProduct]['total_quantity'] >= $price->hqr_quantity_from && $cart[$idProduct]['total_quantity'] < $price->hqr_quantity_to) {
-                        $cart[$idProduct]['price'] = $price->hqr_price;
+                $date = date("Y-m-d");
+                if ($product->pr_price_promotion != 0 && $product->pr_date_sale_from <= $date && $date <= $product->pr_date_sale_to) {
+                    $cart[$idProduct]['price'] = $product->pr_price_promotion;
+                } else {
+                    $prices = $productPriceModel::find(array("pr_id='{$idProduct}'", "order" => "hqr_id desc"));
+                    foreach ($prices as $price) {
+                        if (empty($price->hqr_quantity_to) && $cart[$idProduct]['total_quantity'] >= $price->hqr_quantity_from) {
+                            $cart[$idProduct]['price'] = $price->hqr_price;
+                            break;
+                        } else if ($cart[$idProduct]['total_quantity'] >= $price->hqr_quantity_from && $cart[$idProduct]['total_quantity'] < $price->hqr_quantity_to) {
+                            $cart[$idProduct]['price'] = $price->hqr_price;
+                        }
                     }
                 }
                 $cart[$idProduct]['total_price'] = $cart[$idProduct]['total_quantity'] * $cart[$idProduct]['price'];
@@ -125,7 +130,5 @@ class ProductController extends ControllerBase
     protected function setScript()
     {
         $this->assets->addCss('public/FrontendCore/css/product.css', true);
-        $this->assets->collection("inline")
-            ->addJs('public/FrontendCore/js/shopingcart.js');
     }
 }
