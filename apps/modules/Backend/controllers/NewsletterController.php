@@ -2,7 +2,7 @@
 
 namespace Backend\Controllers;
 
-require $_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/libraries/PHPMailer/PHPMailerAutoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/libraries/PHPMailer/PHPMailerAutoload.php';
 
 class NewsletterController extends ControllerBase {
 

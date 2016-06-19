@@ -51,16 +51,11 @@ $router->add('/page/{seo-link}', array(
     'controller' => 'Page',
     'action' => 'index'
 ));
+
 $router->add('/manufacturer/{id}', array(
     'namespace' => $moduleClass,
     'module' => $module,
     'controller' => 'Manufacturer',
-    'action' => 'index'
-));
-$router->add('/category-product/{seo-link}', array(
-    'namespace' => $moduleClass,
-    'module' => $module,
-    'controller' => 'CategoryProduct',
     'action' => 'index'
 ));
 $router->handle();

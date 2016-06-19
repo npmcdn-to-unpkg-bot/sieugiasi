@@ -26,64 +26,75 @@
             <div data-widget-cid="widget-10" class="nav-user-account" id="nav-user-account">
                 <div class="user-account-info" data-role="user-account-top">
                     <div class="user-account-inner hidden-sm">
-                                    <span class="account-unsigned" data-role="unsigned"><a rel="nofollow"
-                                                                                           href="https://login.aliexpress.com/express/mulSiteLogin.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
-                                                                                           data-role="sign-link">Sign
-                                            in</a><span class="ua-line">|</span><a rel="nofollow"
-                                                                                   href="http://us.ae.aliexpress.com/wsuser/buyerJoin/expressJoinIndex.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
-                                                                                   data-role="join-link">Join</a></span>
-                        <span class="account-name" data-role="username"></span>
+                        <?php if ($user) { ?>
+                            <span class="account-name" data-role="username">Chào,<?php echo $user->us_name ?></span>
+
+                        <?php } else { ?>
+                            <span class="account-unsigned" data-role="unsigned">
+                            <a rel="nofollow" href="<?php echo $this->url->get("user") ?>">
+                                Đăng Nhập
+                            </a>
+                            <span class="ua-line">|</span>
+                            <a rel="nofollow" href="<?php echo $this->url->get("user/register") ?>">Join</a>
+                        </span>
+                        <?php } ?>
                         <div class="myaliexpress" data-role="myaliexpress"><span data-role="myaliexpress-link">My AliExpress</span><b>(0)</b>
                         </div>
                     </div>
                 </div>
                 <div class="user-account-main" data-role="user-account-main">
-                    <div class="flyout-user-signout" data-role="signout-btn"><a rel="nofollow"
-                                                                                href="https://login.aliexpress.com/xman/xlogout.htm">Sign
-                            Out</a></div>
-                    <div style="display: block;" class="flyout-user-signIn" data-role="user-signIn">
-                        <p class="flyout-welcome-text" data-role="flyout-welcome">Welcome to AliExpress.com</p>
-                        <p><a rel="nofollow"
-                              href="https://login.aliexpress.com/express/mulSiteLogin.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
-                              class="sign-btn" data-role="sign-link">Sign in</a></p>
-                        <p class="flyout-signIn-type">
-                            <span>Sign in with</span>
-                            <a class="nus-icon nus-facebook" data-role="login-type" rel="nofollow"
-                               href="http://thirdparty.aliexpress.com/login.htm?type=fb&amp;tracelog=ws_fb_topbar"
-                               title="facebook"></a>
-                            <a class="nus-icon nus-vk" data-role="login-type" rel="nofollow"
-                               href="http://thirdparty.aliexpress.com/login.htm?type=vk&amp;tracelog=ws_vk_topbar"
-                               title="vk"></a>
-                            <a class="nus-icon nus-google" data-role="login-type" rel="nofollow"
-                               href="http://thirdparty.aliexpress.com/login.htm?type=gg&amp;tracelog=ws_gg_mainlogin"
-                               title="google"></a>
-                        </p>
-                    </div>
-                    <dl style="display: block;" class="flyout-visitors-login" data-role="user-login">
-                        <dt>New Customer?</dt>
-                        <dd><a rel="nofollow"
-                               href="http://us.ae.aliexpress.com/wsuser/buyerJoin/expressJoinIndex.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
-                               class="join-btn" data-role="join-link">Join Free</a></dd>
-                    </dl>
-                    <div id="flyout-remind-list" class="flyout-remind-list"></div>
-                    <ul class="flyout-quick-entry" data-role="quick-entry">
-                        <li><a rel="nofollow"
-                               href="http://us.ae.aliexpress.com/buyer/buyerIndexNew.htm?tracelog=ws_topbar">My
-                                AliExpress</a></li>
-                        <li><a rel="nofollow" href="http://trade.aliexpress.com/orderList.htm">My Orders</a></li>
-                        <li><a rel="nofollow" href="http://msg.aliexpress.com/buyerMsgList.htm">Message Center</a>
-                        </li>
-                        <li><a rel="nofollow" href="http://my.aliexpress.com/wishlist/wish_list_product_list.htm">Wish
-                                List</a></li>
-                        <li><a class="js-menu-my-favorite-stores" rel="nofollow"
-                               href="http://my.aliexpress.com/wishlist/wish_list_store_list.htm">My Favorite
-                                Stores</a></li>
-                        <li><a rel="nofollow" href="http://my.aliexpress.com/coupon/buyerCouponList.htm?sortBy=2">My
-                                Coupons</a></li>
-                        <li><a href="http://my.aliexpress.com/points/myPoints.htm" rel="nofollow">My Points</a></li>
-                        <li><a href="http://login.aliexpress.com/alipay_wallet.htm?tracelog=topbar" rel="nofollow">My
-                                Alipay</a></li>
-                    </ul>
+                    <?php if ($user) { ?>
+                        <div class="flyout-user-signout" data-role="signout-btn">
+                            <a rel="nofollow" href="<?php echo $this->url->get("user") ?>">
+                                Thoát</a>
+                        </div>
+                        <ul class="flyout-quick-entry" data-role="quick-entry">
+                            <li><a rel="nofollow"
+                                   href="http://us.ae.aliexpress.com/buyer/buyerIndexNew.htm?tracelog=ws_topbar">My
+                                    AliExpress</a></li>
+                            <li><a rel="nofollow" href="http://trade.aliexpress.com/orderList.htm">My Orders</a></li>
+                            <li><a rel="nofollow" href="http://msg.aliexpress.com/buyerMsgList.htm">Message Center</a>
+                            </li>
+                            <li><a rel="nofollow" href="http://my.aliexpress.com/wishlist/wish_list_product_list.htm">Wish
+                                    List</a></li>
+                            <li><a class="js-menu-my-favorite-stores" rel="nofollow"
+                                   href="http://my.aliexpress.com/wishlist/wish_list_store_list.htm">My Favorite
+                                    Stores</a></li>
+                            <li><a rel="nofollow" href="http://my.aliexpress.com/coupon/buyerCouponList.htm?sortBy=2">My
+                                    Coupons</a></li>
+                            <li><a href="http://my.aliexpress.com/points/myPoints.htm" rel="nofollow">My Points</a></li>
+                            <li><a href="http://login.aliexpress.com/alipay_wallet.htm?tracelog=topbar" rel="nofollow">My
+                                    Alipay</a></li>
+                        </ul>
+                    <?php } else { ?>
+                        <div style="display: block;" class="flyout-user-signIn" data-role="user-signIn">
+                            <p class="flyout-welcome-text" data-role="flyout-welcome">Welcome to AliExpress.com</p>
+                            <p><a rel="nofollow"
+                                  href="https://login.aliexpress.com/express/mulSiteLogin.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
+                                  class="sign-btn" data-role="sign-link">Sign in</a></p>
+                            <p class="flyout-signIn-type">
+                                <span>Sign in with</span>
+                                <a class="nus-icon nus-facebook" data-role="login-type" rel="nofollow"
+                                   href="http://thirdparty.aliexpress.com/login.htm?type=fb&amp;tracelog=ws_fb_topbar"
+                                   title="facebook"></a>
+                                <a class="nus-icon nus-vk" data-role="login-type" rel="nofollow"
+                                   href="http://thirdparty.aliexpress.com/login.htm?type=vk&amp;tracelog=ws_vk_topbar"
+                                   title="vk"></a>
+                                <a class="nus-icon nus-google" data-role="login-type" rel="nofollow"
+                                   href="http://thirdparty.aliexpress.com/login.htm?type=gg&amp;tracelog=ws_gg_mainlogin"
+                                   title="google"></a>
+                            </p>
+                        </div>
+                        <dl style="display: block;" class="flyout-visitors-login" data-role="user-login">
+                            <dt>New Customer?</dt>
+                            <dd><a rel="nofollow"
+                                   href="http://us.ae.aliexpress.com/wsuser/buyerJoin/expressJoinIndex.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
+                                   class="join-btn" data-role="join-link">Join Free</a></dd>
+                        </dl>
+                        <div id="flyout-remind-list" class="flyout-remind-list"></div>
+                    <?php } ?>
+
+
                 </div>
             </div>
         </div>

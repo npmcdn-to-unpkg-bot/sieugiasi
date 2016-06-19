@@ -13,7 +13,7 @@ class CategoryProductController extends ControllerBase
         parent::initialize();
     }
 
-    public function indexAction($seo_link)
+    public function showAction($seo_link)
     {
         $categoryModel = new CategoryModel();
         $productModel = new ProductModel();

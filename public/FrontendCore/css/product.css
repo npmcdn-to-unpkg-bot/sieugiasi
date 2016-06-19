@@ -9457,7 +9457,9 @@ button.alipay-btn:after {
 }
 .rec-products-list .product-info .p-title {
 	height:32px;
-	line-height:16px
+	line-height:16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .rec-products-list a {
 	display:block;

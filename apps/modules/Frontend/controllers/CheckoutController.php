@@ -11,7 +11,7 @@ use Backend\Models\ZoneDistrictModel;
 use Backend\Models\ZoneProvinceModel;
 use Backend\Models\ZoneWardModel;
 
-require $_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/libraries/Payment/NL_Checkoutv3.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/libraries/Payment/NL_Checkoutv3.php';
 
 class CheckoutController extends ControllerBase
 {
@@ -139,7 +139,7 @@ class CheckoutController extends ControllerBase
             $log .= 'Total: ' . $cart['total_price_order'] . " \n ";
             $log .= 'Error: ' . $nl_result->error_message . " \n";
             $log .= "===== End ===== \n ";
-            file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/data/logs/log_transaction_fail.txt', $log, FILE_APPEND);
+            file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/data/logs/log_transaction_fail.txt', $log, FILE_APPEND);
             $respon['message'] = end($nl_result->error_message);
 
         }
@@ -235,7 +235,7 @@ class CheckoutController extends ControllerBase
                 $log .= 'Email: ' . $this->user->us_email . " \n ";
                 $log .= 'Error: ' . $nlcheckout->GetErrorMessage($nl_errorcode) . " \n";
                 $log .= "===== End ===== \n ";
-                file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/data/logs/log_transaction_fail.txt', $log, FILE_APPEND);
+                file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/data/logs/log_transaction_fail.txt', $log, FILE_APPEND);
                 return $this->response->redirect($this->config['rootUrl'] . 'checkout');
             }
         }

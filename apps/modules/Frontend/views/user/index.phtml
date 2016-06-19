@@ -1,47 +1,96 @@
-<div  class="wrapper">
-    <div class="main-loginregister-area">
-        <div class="loginregister-left">
-            <div class="content-loginregister">
-                <h1>Đăng nhập</h1>
-                <form id="login-form" onsubmit="loginUser(); return false; " class="login-register-form form-horizontal" >
-                    <p><input required minlength="6" name="us_name" type="text" class="input-contact-form" placeholder="Tên Đăng Nhập Hoặc Email*"></p>
+<div class="page page-bg-1">
+    <input id="login-home-new" value="new" type="hidden">
 
-                    <p><input required minlength="6" name="us_password" type="password" class="input-contact-form" placeholder="Mật Khẩu*"></p>
-                    <a href="<?php echo $this->url->get("user/forgot-password") ?>" class="forgot-password" >Quên mật khẩu?</a>
+    <div class="container">
 
-                    <button onclick="loginUser()" type="button" class="btn-login-register">Đăng Nhập</button>
-                    <p style="margin: 10px 0" >* Thông tin bắt buộc</p>
-                    <input  style="visibility: hidden;position: absolute;" type="submit">
-                </form>
-                <p class="text-login-social" >
-                    hoặc đăng nhập bằng 
-                    <a onclick="facebookLogin();" href="javascript:;" class="btn-social-login btn-login-fb"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-login-fb.png" alt=""></a>
-                    <a onclick="googleLogin();" href="javascript:;" class="btn-social-login btn-login-gg"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-icon-gg.png" alt=""></a>
-                </p>
+        <div id="signInField">
+
+
+            <div id="expressbuyerlogin" data-widget-cid="widget-0" class="iframe-show iframe-loaded">
+                <div id="login-wrap" class="login-static nc-outer-box">
+
+                    <form onsubmit="loginUser(); return false; " id="login-form" name="login-form" method="post"
+                          class="form clr style-type-auto lang-en_us auto-en_us form-horizontal">
+
+                        <div id="login-content" class="form clr">
+                            <dl>
+                                <dt class="fm-label">
+                                <div class="fm-label-wrap clr">
+                                    <label for="fm-login-id">Tài Khoản</label>
+                                </div>
+                                </dt>
+                                <dd id="fm-login-id-wrap" class="fm-field">
+                                    <div class="fm-field-wrap">
+                                        <input name="us_name" id="fm-login-id" class="fm-text" name="loginId" required  minlength="6"
+                                               placeholder="Nhập Email" value="" >
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt class="fm-label">
+                                <div class="fm-label-wrap clr">
+                                    <span class="fm-label-extra">
+                                        <a id="forgot-password-link"
+                                           href="<?php echo $this->url->get("user/forgot-password") ?>"
+                                           target="_blank" data-spm-protocol="i">Quên Mật Khẩu?</a>
+                                    </span>
+
+                                    <label for="fm-login-password">Mật Khẩu:</label>
+                                </div>
+                                </dt>
+                                <dd id="fm-login-password-wrap" class="fm-field">
+                                    <div class="fm-field-wrap">
+                                        <input name="us_password" id="fm-login-password" class="fm-text" name="password"  required minlength="6"
+                                               placeholder="Password"
+                                               type="password">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div id="login-submit">
+                            <input name="event_submit_do_login" value="submit" type="hidden">
+                            <input id="fm-login-submit" value="Đăng Nhập" class="fm-button fm-submit" tabindex="4"
+                                   name="submit-btn" type="submit">
+                        </div>
+                        <div id="login-other">
+                            <div class="login-login-links">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="join-link">
+                <a id="join-link" class="util-right"
+                   href="<?php echo $this->url->get("user/register") ?>"
+                   title="join in" >Đăng Ký</a>
+            </div>
+            <div class="facebook">
+                Sign&nbsp;in&nbsp;with:
+                <a onclick="googleLogin();" href="javascript:;">
+                    <div class="google-icon"></div>
+                </a>
+                <a onclick="facebookLogin();" href="javascript:;">
+                    <div class="facebook-icon"></div>
+                </a>
             </div>
         </div>
-        <div class="loginregister-right">
-            <div style="float: right" class="content-loginregister">
-                <h1>Đăng Ký</h1>
-                <form onsubmit=" registerUser(); return false; " class="login-register-form register-form " >
-                    <p><input required minlength="6" name="us_name" type="text" class="input-contact-form" placeholder="Tên Đăng Nhập*"></p>
-                    <p><input required name="us_email" email="true" type="text" class="input-contact-form" placeholder="Email*"></p>
-                    <p><input required minlength="6" name="us_password" type="password" class="input-contact-form" placeholder="Mật Khẩu*"></p>
-                    <p>Ít nhất 6 kí tự gồm chữ cái và số</p>
-                    <p><input required minlength="6" name="us_confirm_password" type="password" class="input-contact-form" placeholder="Nhập Lại Mật Khẩu*"></p>
-                    <p>Tôi đã đọc và đồng ý với <a style="color: #4c64a5;" href=""> điều khoản sử dụng </a> của Ninomaxx</p>
-                    <button onclick="registerUser();" type="button" class="btn-login-register">Đăng Nhập</button>
-                    <p style="margin: 10px 0" >* Thông tin bắt buộc</p>
-                    <input  style="visibility: hidden;position: absolute;" type="submit">
-                </form>
-                <p class="text-login-social" >
-                    hoặc đăng nhập bằng 
-                    <a onclick="facebookLogin();" href="javascript:;" class="btn-social-login btn-login-fb"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-login-fb.png" alt=""></a>
-                    <a onclick="googleLogin();" href="javascript:;" class="btn-social-login btn-login-gg"><img src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>btn-icon-gg.png" alt=""></a>
-                </p>
+        <div id="login-sub">
+
+            <div class="banner-container">
+                <div class="banner banner-1" style="display: block;">
+                    <h3 class="banner-title">Smarter Shopping</h3>
+                    <h3 class="banner-title">Better Living!</h3>
+                    <ul class="banner-text">
+                        <li>Choose from over 40 different categories</li>
+                        <li>with millions of products</li>
+                    </ul>
+                </div>
+
+
             </div>
         </div>
 
-        <div class="clearfix"></div>
+        <div style="clear:both;"></div>
     </div>
+
 </div>

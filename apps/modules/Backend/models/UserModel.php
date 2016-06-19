@@ -53,6 +53,7 @@ class UserModel extends ModelBase
 
     public function validationRegister($request)
     {
+
         $validation = new Validation();
 
         $validation

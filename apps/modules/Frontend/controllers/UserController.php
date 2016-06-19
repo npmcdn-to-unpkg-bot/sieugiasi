@@ -4,9 +4,9 @@ namespace Frontend\Controllers;
 
 use Backend\Models\UserModel;
 
-require $_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/libraries/Facebook/autoload.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/libraries/Google/autoload.php';
-require $_SERVER['DOCUMENT_ROOT'] . '/ninomax/apps/libraries/PHPMailer/PHPMailerAutoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/libraries/Facebook/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/libraries/Google/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/libraries/PHPMailer/PHPMailerAutoload.php';
 
 class UserController extends ControllerBase
 {
@@ -24,7 +24,14 @@ class UserController extends ControllerBase
 
     public function indexAction()
     {
-        $this->view->header_title = "Đăng Nhập - Đăng Ký";
+        $this->setScript();
+        $this->view->header_title = "Đăng Nhập";
+    }
+
+    public function registerAction()
+    {
+        $this->setScript();
+        $this->view->header_title = "Đăng Ký";
     }
 
     public function registerNewsletter($request)
@@ -230,7 +237,7 @@ class UserController extends ControllerBase
         }
 
         $data = json_decode($request['data'], true);
-        $userModel = new \Backend\Models\UserModel();
+        $userModel = new UserModel();
         //Validation
         $validation = $userModel->validationRegister($data);
         if ($validation) {
@@ -273,24 +280,24 @@ class UserController extends ControllerBase
             return $respon;
         }
         $newPass = rand(100000, 999999);
-        $respon = array("status" => 0, "message" => "Gửi mail không thành công. Vui lòng liên hệ Ninomaxx để được hỗ trợ !!!");
+        $respon = array("status" => 0, "message" => "Gửi mail không thành công. Vui lòng liên hệ sieugiasix để được hỗ trợ !!!");
         $body = "Chào " . $user->us_name . ",<br><br>";
         $body .= "Đây là mật khẩu mới của bạn.<br>";
         $body .= "Mật Khẩu : $newPass <br><br>";
         $body .= "- Lưu ý: Sau khi đăng nhập bạn nên đổi lại mật khẩu mới. <br><br><br>";
         $body .= "Thân,<br>";
-        $body .= "Ninomaxx";
+        $body .= "sieugiasix";
         $mail = new \PHPMailer;
         $mail->isSMTP();
         $mail->IsHTML(true);
-        $mail->CharSet    = "UTF-8";
-        $mail->Host       = "smtp.zoho.com";
-        $mail->SMTPAuth   = true;
-        $mail->Username   = "no-reply@hoidapthutuchaiquan.vn";
-        $mail->Password   = "Efp8+yY4(&H4+ubb";
+        $mail->CharSet = "UTF-8";
+        $mail->Host = "smtp.zoho.com";
+        $mail->SMTPAuth = true;
+        $mail->Username = "no-reply@hoidapthutuchaiquan.vn";
+        $mail->Password = "Efp8+yY4(&H4+ubb";
         $mail->SMTPSecure = "ssl";
-        $mail->Port       = 465;
-        $mail->setFrom('no-reply@hoidapthutuchaiquan.vn', 'Ninomax');
+        $mail->Port = 465;
+        $mail->setFrom('no-reply@hoidapthutuchaiquan.vn', 'sieugiasi');
         $mail->addAddress($email, $user->us_full_name);
         $mail->Subject = "Khôi Phục Mật Khẩu";
         $mail->Body = $body;
@@ -364,5 +371,10 @@ class UserController extends ControllerBase
     public function forgotPasswordAction()
     {
         $this->view->header_title = "Forgot Password User";
+    }
+
+    protected function setScript()
+    {
+        $this->assets->addCss('public/FrontendCore/css/login.css', true);
     }
 }

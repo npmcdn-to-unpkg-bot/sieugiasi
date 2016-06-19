@@ -33,34 +33,34 @@ class ControllerBase extends Controller
 
     public function createSession($user)
     {
-        $this->kichOut($user->us_id);
-        $this->memsession->set('USER_HOME', $user);
+//        $this->kichOut($user->us_id);
+        $this->memcache->save('USERHOME', $user);
         $log_sess = $this->memcache->get('login_session_home');
-        $log_sess[$user->us_id] = $this->memsession->getId();
+//        $log_sess[$user->us_id] = $this->memcache->getId();
         $this->memcache->save('login_session_home', $log_sess);
     }
 
     public function getUser()
     {
-        $user_info = $this->memsession->get('USER_HOME', null);
-        $log_sess = $this->memcache->get('login_session_home');
+        $user_info = $this->memcache->get('USERHOME',null);
+//        $log_sess = $this->memcache->get('login_session_home');
 
-        if (!isset($user_info) || $log_sess[$user_info->us_id] != $this->memsession->getId()) {
-            $user_info = FALSE;
-        }
+//        if (!isset($user_info) || $log_sess[$user_info->us_id] != $this->memcache->getId()) {
+//            $user_info = FALSE;
+//        }
         return $user_info;
     }
 
     public function destroySession()
     {
-        $this->memsession->remove('USER_HOME');
+        $this->memcache->remove('USERHOME');
     }
 
     public function kichOut($user_id)
     {
         $log_sess = $this->memcache->get('login_session_home');
-        if (isset($log_sess->$user_id)) {
-            $this->memsession->destroy($log_sess->$user_id);
+        if (isset($log_sess[$user_id])) {
+            $this->memcache->destroy($log_sess[$user_id]);
         }
     }
 

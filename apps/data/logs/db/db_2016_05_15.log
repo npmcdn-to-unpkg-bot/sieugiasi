@@ -1,7 +1,0 @@
-[Sun, 15 May 16 05:25:54 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
-[Sun, 15 May 16 05:25:54 +0200][INFO] DESCRIBE `hq_menu`
-[Sun, 15 May 16 05:25:54 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
-[Sun, 15 May 16 05:25:54 +0200][INFO] DESCRIBE `hq_menu`
-[Sun, 15 May 16 05:25:54 +0200][INFO] SELECT IF(COUNT(*) > 0, 1, 0) FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_NAME` = 'hq_menu' AND `TABLE_SCHEMA` = DATABASE()
-[Sun, 15 May 16 05:25:54 +0200][INFO] DESCRIBE `hq_menu`
-[Sun, 15 May 16 05:25:54 +0200][INFO] SELECT `hq_menu`.`mn_id` AS `mn_id`, `hq_menu`.`mn_parent_id` AS `mn_parent_id` FROM `hq_menu` ORDER BY `hq_menu`.`mn_parent_id` ASC

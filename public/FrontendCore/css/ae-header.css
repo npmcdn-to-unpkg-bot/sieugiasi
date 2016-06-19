@@ -2741,7 +2741,7 @@
 }
 
 .user-account-info .account-name {
-    display: none;
+    /*display: none;*/
     width: 80px;
     height: 18px;
     line-height: 18px
@@ -2896,7 +2896,6 @@
 }
 
 .flyout-user-signout {
-    display: none;
     margin: 0 20px 15px;
     line-height: 24px;
     font-size: 14px;
