@@ -15,8 +15,8 @@ require $_SERVER['DOCUMENT_ROOT'] . '/sieugiasi/apps/libraries/Payment/NL_Checko
 
 class CheckoutController extends ControllerBase
 {
-    protected $MERCHANT_ID = '46594';
-    protected $MERCHANT_PASS = 'fde95097199a35450d25c143ce048250';
+    protected $MERCHANT_ID = '46880';
+    protected $MERCHANT_PASS = '686e81cdd38a0a4cf310c1bc31159385';
     protected $RECEIVER = 'namtrung804@gmail.com';
     protected $URL_API = 'https://www.nganluong.vn/checkout.api.nganluong.post.php';
 
@@ -25,8 +25,8 @@ class CheckoutController extends ControllerBase
     {
         parent::initialize();
         $cart = $this->memsession->get('CART', null);
-        if (!isset($cart) && $this->dispatcher->getActionName() != 'paymentsuccess') {
-            return $this->response->redirect('category-product');
+        if ((!isset($cart) && $this->dispatcher->getActionName() != 'paymentsuccess')||empty($this->user)) {
+            return $this->response->redirect('');
         }
         $this->view->cart = $cart;
     }
@@ -45,12 +45,17 @@ class CheckoutController extends ControllerBase
         $provinceModel = new ZoneProvinceModel();
         $districtModel = new ZoneDistrictModel();
         $wardModel = new ZoneWardModel();
+        $this->setScript();
         $this->view->province = $provinceModel::find(array("order" => "zp_name asc"));
         $this->view->district = $districtModel::find();
         $this->view->ward = $wardModel::find();
         $this->view->header_title = "Ninomaxx";
     }
+    protected function setScript()
+    {
 
+        $this->assets->addCss('public/FrontendCore/css/checkout.css', true);
+    }
     public function payment($request)
     {
         $data_address = array();

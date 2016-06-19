@@ -1,0 +1,234 @@
+.index-page{
+    background-color: #fff !important;
+}
+.segment-box {
+    width: 952px;
+    margin: 30px auto;
+    padding: 0 4px;
+}
+.customer-form-title{margin-bottom:10px;height: 32px;line-height: 32px;background: #f3f5f7;padding-left: 12px;font-size: 14px;text-transform: uppercase;font-weight:bold;}
+.mod-create-order .customer-address-detail li{float:left;padding:10px 0 0 10px;}
+.mod-create-order .customer-address-detail li.label{width:130px;clear:both;}
+.mod-create-order a{color: #258;}
+.mod-create-order a:hover{color:#ff7300; text-decoration: underline;}
+.mod-create-order .mod-list-item{padding:10px 30px;}
+.mod-create-order .mod-select-transport-type{border-top: 1px solid #e3d5c4;}
+.mod-create-order .mod-customer-address{padding:10px 30px 10px 20px;float:left;}
+.mod-create-order .mod-list-item table{width:100%;border-collapse: collapse;}
+.mod-create-order .mod-list-item table td{vertical-align: top;text-align: center;border-top: 1px dotted #e3e3e3;padding:5px;}
+.mod-create-order .mod-list-item table td.pic{text-align: left;width:64px;}
+.mod-create-order .mod-list-item table td.item-name{text-align: left;width:50%;}
+.mod-create-order .mod-list-item table td.amount{font-weight:bold;color:#ff7300;}
+.mod-create-order .mod-list-item table th{height: 30px;font-weight: 500;color: #666;text-transform: uppercase;}
+.mod-create-order .mod-list-item table thead{background: #faf6f1;}
+.mod-create-order .shop-info{margin-bottom:10px;}
+.mod-create-order .shop-info a{text-transform: uppercase;}
+
+.mod-create-order{background:#f7f7f7;border: 1px solid #acb1ba;}
+.mod-create-order .mod-label{width:100px;float:left;padding:10px 0 0 10px;font-weight:bold;}
+.mod-create-order .mod-content{width:840px;float:left;background:#fff;}
+.mod-create-order .mod-items{border-top: 1px solid #acb1ba;}
+.mod-create-order .mod-summary{border-top: 1px solid #e3d5c4;margin-top: 2px;}
+.mod-create-order .mod-summary .order-note{padding:10px 30px;float:left;width: 55%;}
+.mod-create-order .mod-summary .order-amount{float: right;text-align: right;line-height: 2;padding: 30px 0;background: #faf6f1;padding:10px 30px;}
+.mod-create-order .mod-summary ul li{float:left;}
+.mod-create-order .mod-summary ul li.label{width:130px;clear:both; margin-right:10px;}
+.mod-create-order .mod-summary ul li.value{text-align:right;width:108px;}
+.mod-create-order .mod-summary ul li.value span{font-weight:bold;}
+.mod-create-order .mod-summary ul li.value span#orderTotal{color:#ff7300;font-size:17px;}
+.mod-create-order .mod-list-transport-type{padding:10px 30px;}
+.mod-create-order .mod-list-transport-type li{line-height:20px;}
+.mod-create-order .mod-list-transport-type input{margin-right:10px;}
+.form-area .form-column{float:left;}
+.form-area .form-title{font-weight:bold;font-size:14px;}
+.form-area .form-row{float:left;clear:both;padding:10px 0 0 10px;position:relative;}
+.form-area .form-row input,.form-area .form-row select{
+    padding: 5px;
+}
+.form-area .form-row input{
+    width: 300px;
+}
+.form-area .form-row label{display:block;float:left;width:120px;margin: 7px 0;}
+.form-area .form-row.submit{padding-left:130px;}
+.form-area .form-row .form-hint{font-style:italic;font-weight:0.9em;position:absolute;padding:10px;top:0px;width:100%;}
+.form-area .form-row .errorMessage{color:#FD463B;}
+
+/** Register form **/
+.form-customer-register .form-column{width:50%;}
+.form-customer-register input.textbox{width: 190px;padding: 2px;height: 35px;line-height: 35px;border: 1px solid #B5B5B5;}
+.form-customer-register .errorMessage{margin-left:120px;}
+
+.bank_list {
+    float:left;
+    margin-top: 0px;
+    width:545px;
+}
+.bank_list ul{float:left;width:100%;}
+.bank_list li {
+    float: left;
+    width: 60px;
+    margin: 10px 10px 0px 0;
+    border-bottom: none;
+    padding: 0 !important;
+    height:60px;
+}
+.img-active {
+    border: 2px solid blue !important
+}
+
+.img-bank {
+    border: 2px solid white
+}
+
+/* ------------------------------------------------------------- */
+/* Banking */
+/* ------------------------------------------------------------- */
+#accordian-checkout ul li label.label-checkout {
+    border-bottom: 1px solid #d7d7d8 !important;
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+    font-weight: bold;
+    background: url('../img/arrowDown.png') 95% center no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+    margin: 0;
+}
+
+#accordian-checkout ul li .sub-checkout {
+    padding: 20px 0;
+    display: none;
+}
+
+#accordian-checkout ul li.active .sub-checkout {
+    display: block;
+}
+
+i.VISA, i.MASTE, i.AMREX, i.JCB, i.VCB, i.TCB, i.MB, i.VIB, i.ICB, i.EXB, i.ACB, i.HDB, i.MSB, i.NVB, i.DAB, i.SHB, i.OJB, i.SEA, i.TPB, i.PGB, i.BIDV, i.AGB, i.SCB, i.VPB, i.VAB, i.GPB, i.SGB, i.NAB, i.BAB {
+    width: 80px;
+    height: 30px;
+    display: block;
+    background: url(https://www.nganluong.vn/webskins/skins/nganluong/checkout/version3/images/bank_logo.png) no-repeat;
+}
+
+i.MASTE {
+    background-position: 0px -31px
+}
+
+i.AMREX {
+    background-position: 0px -62px
+}
+
+i.JCB {
+    background-position: 0px -93px;
+}
+
+i.VCB {
+    background-position: 0px -124px;
+}
+
+i.TCB {
+    background-position: 0px -155px;
+}
+
+i.MB {
+    background-position: 0px -186px;
+}
+
+i.VIB {
+    background-position: 0px -217px;
+}
+
+i.ICB {
+    background-position: 0px -248px;
+}
+
+i.EXB {
+    background-position: 0px -279px;
+}
+
+i.ACB {
+    background-position: 0px -310px;
+}
+
+i.HDB {
+    background-position: 0px -341px;
+}
+
+i.MSB {
+    background-position: 0px -372px;
+}
+
+i.NVB {
+    background-position: 0px -403px;
+}
+
+i.DAB {
+    background-position: 0px -434px;
+}
+
+i.SHB {
+    background-position: 0px -465px;
+}
+
+i.OJB {
+    background-position: 0px -496px;
+}
+
+i.SEA {
+    background-position: 0px -527px;
+}
+
+i.TPB {
+    background-position: 0px -558px;
+}
+
+i.PGB {
+    background-position: 0px -589px;
+}
+
+i.BIDV {
+    background-position: 0px -620px;
+}
+
+i.AGB {
+    background-position: 0px -651px;
+}
+
+i.SCB {
+    background-position: 0px -682px;
+}
+
+i.VPB {
+    background-position: 0px -713px;
+}
+
+i.VAB {
+    background-position: 0px -744px;
+}
+
+i.GPB {
+    background-position: 0px -775px;
+}
+
+i.SGB {
+    background-position: 0px -806px;
+}
+
+i.NAB {
+    background-position: 0px -837px;
+}
+
+i.BAB {
+    background-position: 0px -868px;
+}
+
+ul.cardList li {
+    cursor: pointer;
+    float: left;
+    margin-right: 0;
+    padding: 5px 4px;
+    text-align: center;
+    width: 90px;
+}

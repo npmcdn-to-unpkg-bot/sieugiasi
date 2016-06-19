@@ -38,7 +38,7 @@
                 <?php foreach ($categoryParent as $catePa) { ?>
                     <li class="bc-cate-has-child">
                         <div class="bc-cate-name bc-nowrap-ellipsis">
-                            <a href="" target="_blank"
+                            <a href="<?php echo $this->url->get("category-product/show/").$catePa->ct_seo_link ?>" target="_blank"
                                title="<?php echo $catePa->ct_name ?>"><?php echo $catePa->ct_name ?></a>
                         </div>
                         <div class="bc-sub-cate">
@@ -47,7 +47,7 @@
                                 if ($categoryChild) {
                                     foreach ($categoryChild as $child) { ?>
                                         <li class="bc-nowrap-ellipsis">
-                                            <a href="" target="_blank"
+                                            <a href="<?php echo $this->url->get("category-product/show/").$child->ct_seo_link ?>" target="_blank"
                                                title="<?php echo $child->ct_name ?>"><?php echo $child->ct_name ?></a>
                                         </li>
                                     <?php }
@@ -71,13 +71,13 @@
                                         if ($key < 8) { ?>
                                             <div class="col-lg-15 col-md-20 col-sm-30 bc-cate-row bc-navy-cate-inner">
                                                 <div class="bc-row-wrap">
-                                                    <a href="" target="_blank">
+                                                    <a href="<?php echo $this->url->get("category-product/show/").$catePa->ct_seo_link ?>" target="_blank">
                                                         <img class="bc-not-standard-navy-image"
                                                              src="<?php echo $catePa->ct_image ?>"
                                                              alt="<?php echo $catePa->ct_name ?>"></a>
                                                 </div>
                                                 <p class="bc-main-name bc-nowrap-ellipsis">
-                                                    <a href="" target="_blank"
+                                                    <a href="<?php echo $this->url->get("category-product/show/").$catePa->ct_seo_link ?>" target="_blank"
                                                        title="<?php echo $catePa->ct_name ?>"><?php echo $catePa->ct_name ?></a>
                                                 </p>
                                             </div>
@@ -161,12 +161,12 @@
                                     <div class="col-lg-15 col-md-20 col-sm-30 bc-hot-image-col">
                                         <div class="bc-hot-image-info bc-shadow-wrap">
                                             <div class="bc-hot-image">
-                                                <a href="" target="_blank">
+                                                <a href="<?php echo $this->url->get("category-product/show/").$child->ct_seo_link ?>" target="_blank">
                                                     <img src="<?php echo $child->ct_image ?>"
                                                          alt="<?php echo $child->ct_name ?>"></a>
                                             </div>
                                             <p class="bc-hot-image-title bc-nowrap-ellipsis">
-                                                <a href="" target="_blank"
+                                                <a href="<?php echo $this->url->get("category-product/show/").$child->ct_seo_link ?>" target="_blank"
                                                    title="<?php echo $child->ct_name ?>"><strong><?php echo $child->ct_name ?></strong></a>
                                             </p>
                                             <span class="bc-hot-image-des"><?php echo $child->countProduct(); ?></span>

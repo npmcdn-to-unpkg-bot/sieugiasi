@@ -9,7 +9,8 @@
             <strong>Your Shopping Cart</strong> <span class="main-title-text-nums">(<span class="main-title-text-num">1 Item</span>)</span>
         </div>
         <div style="margin-bottom:10px;">
-            <p><a class="button-submit button button-large" href="<?php echo $this->url->get("shoping-cart/remove-all-cart"); ?>">Xóa giỏ hàng</a></p>
+            <p><a class="button-submit button button-large"
+                  href="<?php echo $this->url->get("shoping-cart/remove-all-cart"); ?>">Xóa giỏ hàng</a></p>
         </div>
         <div class="shoppingcart">
             <div class="shoppingcart-header">
@@ -27,8 +28,6 @@
                     <div class="shop-info" style="position:relative;">
                         <ul>
                             <li class="checkbox"></li>
-                            <li class="shop-name">Người bán: <a href="/shop/37700.html" title="" target="_blank"
-                                                                name="37700"></a></li>
                             <li class="shop-mix-info" style="position:absolute;right:12px;">
                                 Điều kiện đặt hàng:
                                 Tổng tiền hàng ≥ 100.000đ
@@ -82,7 +81,7 @@
                                                         </li>
                                                     <?php }
                                                 } else { ?>
-                                                    <li class="selected" >
+                                                    <li class="selected">
                                                         <dl>
                                                             <dt>
                                                             </dt>
@@ -96,7 +95,8 @@
                                         </li>
                                         <li class="quantity" style="margin-right: 25px;">
                                             <div class="input-number-sc">
-                                                <a data-rel="<?php echo $key; ?>" href="javascript:;" class="minus-cart">
+                                                <a data-rel="<?php echo $key; ?>" href="javascript:;"
+                                                   class="minus-cart">
                                                     <img
                                                         src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-minus.png"
                                                         alt="">
@@ -142,14 +142,14 @@
 					</span>
                             (<a href="/page/view/10" style="text-decoration: none;" target="_blank">chi tiết</a>)
 										<span style="color: #C00; font-style: italic;">
-						(Bạn đang lãng phí <?php echo number_format(ceil($cart['weight']) - $cart['weight'],3); ?>kg
+						(Bạn đang lãng phí <?php echo number_format(ceil($cart['weight']) - $cart['weight'], 3); ?>kg
 												~
                                             <?php echo number_format((ceil($cart['weight']) - $cart['weight']) * \Backend\Models\OrderModel::Fee_tranfer) . " Vnđ" ?>
                                             )
 												Bạn nên chọn thêm sản phẩm ở shop này cho tròn 2kg để tránh lãng phí.
 					</span>
                             <div class="shop-footer-show-more">
-                                <a href="/shop/37700.html">Lựa chọn thêm sản phẩm</a>
+                                <a href="<?php echo $this->url->get() ?>">Lựa chọn thêm sản phẩm</a>
                             </div>
                         </div>
 
@@ -173,7 +173,8 @@
                                 </span>
                             </p>
                             <p><a class="button-submit button button-important button-large"
-                                  href="/shoppingCart/createOrder.html?shopId=37700" data-shop-id="37700">Đặt
+                                  href="<?php echo !empty($user) ? $this->url->get("checkout") : $this->url->get("user?redirect=checkout") ?>"
+                                  data-shop-id="37700">Đặt
                                     hàng</a></p>
                         </div>
                         <div style="clear: both"></div>

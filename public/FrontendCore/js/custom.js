@@ -110,5 +110,11 @@ $(document).ready(function () {
         var id = $(this).val();
         changeProvince(id, "districtOfUser");
     });
-    
+    $(".label-checkout").click(function () {
+
+        $("#accordian-checkout li").removeClass("active");
+        $(".sub-checkout").hide();
+        $(this).next().slideDown();
+        $(this).parent("li").addClass("active");
+    });
 });

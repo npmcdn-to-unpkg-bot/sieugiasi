@@ -314,9 +314,9 @@ function myPage($method, $id) {
 
                 if (result.status == 1) {
                     showPopup('success', 'Thành Công', result.message);
-                    // setTimeout(function () {
-                    //     document.location.reload();
-                    // }, 1300);
+                    setTimeout(function () {
+                        document.location.reload();
+                    }, 1300);
                 }
                 else {
                     showPopup('error', 'Thất Bại', result.message);
