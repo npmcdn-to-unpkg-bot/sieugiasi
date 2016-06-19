@@ -1,0 +1,158 @@
+<?php echo $this->partial('my-page/menu') ?>
+<div class="container me-body-container">
+    <div class="row">
+        <div class="col-xs-60">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="grid-col-container" id="appeal-alert">
+                        <h3 class="page-title">Orders</h3>
+                    </div>
+                    <div class="grid-col-container">
+                        <div class="me-ui-box">
+
+                            <form method="post" name="orderListSearch" action="orderList.htm">
+                                <input name="_csrf_token" value="Xhx4ppQwrWkWyK5gTZQki5" type="hidden">
+                                <input name="_fm.o._0.c" value="" id="contactPersonId" type="hidden">
+                                <input name="action" value="OrderListAction" type="hidden">
+                                <input name="_fm.o._0.s" id="startDate" value="" type="hidden">
+                                <input name="_fm.o._0.e" id="endDate" value="" type="hidden">
+                                <input name="event_submit_do_search_case" id="eventSubmit" value="do_search_case"
+                                       type="hidden">
+                                <div class="order-list-search">
+                                    <div id="simple-search">
+                                        <label class="first-label">
+                                            <span>Order number: </span>
+                                            <input value="" id="order-no" maxlength="20" name="_fm.o._0.o">
+                                        </label>
+
+                                        <label>
+                                            <span>Product: </span>
+                                            <select name="CustomerOrderSearch[order_status]" class="selectbox"
+                                                    style="width:150px;">
+                                                <option value="-1">--Tất cả--</option>
+                                                <option value="0">Chờ thanh toán</option>
+                                                <option value="1">Chờ đặt hàng từ NCC</option>
+                                                <option value="9" selected="selected">Đang đặt hàng từ NCC</option>
+                                                <option value="2">Đã đặt hàng từ NCC</option>
+                                                <option value="3">NCC đã chuyển hàng</option>
+                                                <option value="4">Đã về kho Hà Nội</option>
+                                                <option value="12">Đang chuyển tới Tp.HCM</option>
+                                                <option value="13">Đã ở kho Tp.HCM</option>
+                                                <option value="11">Đang chờ thanh toán phí vận chuyển</option>
+                                                <option value="5">Đang giao hàng cho khách</option>
+                                                <option value="6">Khách hàng đã nhận hàng</option>
+                                                <option value="7">Khách hàng huỷ</option>
+                                                <option value="8">Admin huỷ</option>
+                                                <option value="10">Hệ thống huỷ</option>
+                                                <option value="14">Đã về kho tổng</option>
+                                                <option value="15">Đang chuyển tới kho HN</option>
+                                                <option value="16">Đã về kho TQ</option>
+                                                <option value="17">Đang chuyển từ TQ về kho tổng</option>
+                                                <option value="18">Hàng thất lạc</option>
+                                            </select>
+                                        </label>
+
+                                        <button id="search-btn" class="ui-button ui-button-primary search-btn"
+                                                type="button">Search
+                                        </button>
+
+                                    </div>
+
+                                    <div id="advanced-search">
+                                        <div class="advanced-search-row">
+                                            <label class="first-label">
+                                                <span>Thời gian đặt hàng: </span>
+                                                <input name="us_birthday" id="datepicker"
+                                                       class="input-contact-form datapicker hasDatepicker valid"
+                                                      type="text">
+                                            </label>
+                                            <label class="first-label">
+<!--                                                <input value="2016-06-14" name="us_birthday" id="datepicker"-->
+<!--                                                       class="input-contact-form datapicker hasDatepicker valid"-->
+<!--                                                       placeholder="Ngày Sinh" aria-invalid="false" type="text">-->
+                                            </label>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="grid-col-container">
+                        <div class="me-ui-box">
+                            <form method="post" name="pagerForm" action="orderList.htm">
+                                <input name="_csrf_token" value="Xhx4ppQwrWkWyK5gTZQki5" type="hidden">
+                                <input name="_fm.o._0.s" id="order-status-tips-value" value="" type="hidden">
+                                <input value="OrderListAction" name="action" type="hidden">
+                                <input name="_fm.o._0.e" value="" type="hidden">
+                                <input value="" name="_fm.o._0.co" type="hidden">
+                                <input value="" name="_fm.o._0.l" type="hidden">
+                                <input value="" name="_fm.o._0.or" type="hidden">
+                                <input value="" name="_fm.o._0.p" type="hidden">
+                                <input value="" name="_fm.o._0.o" type="hidden">
+                                <input value="" name="_fm.o._0.c" type="hidden">
+                                <input id="page" name="pageNum" value="" type="hidden">
+                                <input id="current-page" name="_fm.o._0.cu" value="1" type="hidden">
+                                <input name="sortKey" id="sortPage" type="hidden">
+                                <input value="doPage" name="eventSubmitDoPage" type="hidden">
+                            </form>
+
+
+                            <form method="post" name="deleteForm" action="/ajax/ajaxResult.htm">
+                                <input name="_csrf_token" value="Xhx4ppQwrWkWyK5gTZQki5" type="hidden">
+                                <input value="ordertrash/DeleteOrderAction" name="action" type="hidden">
+                                <input value="doBuyerDelete" name="eventSubmitDoBuyerDelete" type="hidden">
+                                <input value="" name="orderId" type="hidden">
+                            </form>
+                            <form action="//shoppingcart.aliexpress.com/re_add_to_cart.htm" method="post" target="_self"
+                                  name="addShopCartForm">
+                                <input name="_csrf_token" value="Xhx4ppQwrWkWyK5gTZQki5" type="hidden">
+                                <input id="_csrf_token_" name="_csrf_token_" value="chd1zvve27tk" type="hidden">
+                                <input name="parentOrderId" value="" type="hidden">
+                                <input name="cartFrom" value="main_order_detail" type="hidden">
+                            </form>
+
+                            <table id="buyer-ordertable" class="util-clearfix">
+                                <colgroup>
+                                    <col class="selector">
+                                    <col class="product-name">
+                                    <col class="product-action">
+                                    <col class="order-status">
+                                    <col class="order-action">
+
+                                </colgroup>
+                                <thead>
+                                <tr class="product-table-title">
+                                    <th class="selector" style="display:none;">
+                                    </th>
+                                    <th class="product-name" colspan="2" style="padding-left:10px;">
+                                        Product
+                                    </th>
+                                    <th class="product-action">Product Action</th>
+                                    <th class="order-status">Order Status</th>
+                                    <th class="order-action">Order Action</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td colspan="9" class="zero-result">Your search didn't match any listings.</td>
+                                </tr>
+                                </tbody>
+
+                                <tfoot>
+                                </tfoot>
+
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

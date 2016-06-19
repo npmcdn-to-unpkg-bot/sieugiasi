@@ -12879,7 +12879,7 @@ span.ui-magnifier-glass {
 	width:14px;
 	height:14px;
 	overflow:hidden;
-	background:url(/ae-search-ui/node_modules/@alife/omega-shophis/src/img/history-icon.24b5d86f.png) no-repeat 0 -100px
+	background:url(../img/history-icon.24b5d86f.png) no-repeat 0 -100px
 }
 #shopping-history .show-history.opened:after {
 	background-position:-50px -100px
@@ -12952,7 +12952,7 @@ span.ui-magnifier-glass {
 	height:22px;
 	text-indent:-9999em;
 	overflow:hidden;
-	background:url(/ae-search-ui/node_modules/@alife/omega-shophis/src/img/history-icon.24b5d86f.png) no-repeat 0 -150px
+	background:url(../img/history-icon.24b5d86f.png) no-repeat 0 -150px
 }
 #shopping-history #history-slidebox .ui-slidebox-prev a span {
 	left:5px

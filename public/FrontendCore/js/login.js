@@ -297,3 +297,36 @@ function getUrlVars() {
     }
     return vars;
 }
+function myPage($method, $id) {
+    if (validator.form()) {
+        var data = $("#" + $id).serializeArray();
+        var x;
+        var temArray = {};
+        for (x in data) {
+            temArray[data[x]['name']] = data[x]['value'];
+        }
+        $.ajax({
+            type: "POST",
+            url: rootUrl + 'user/handle',
+            data: {method: $method, data: JSON.stringify(temArray)},
+            success: function (response) {
+                var result = $.parseJSON(response);
+
+                if (result.status == 1) {
+                    showPopup('success', 'Thành Công', result.message);
+                    // setTimeout(function () {
+                    //     document.location.reload();
+                    // }, 1300);
+                }
+                else {
+                    showPopup('error', 'Thất Bại', result.message);
+                }
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            }
+        });
+    }
+    else {
+        return false;
+    }
+}

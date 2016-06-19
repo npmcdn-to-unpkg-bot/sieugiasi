@@ -45,21 +45,10 @@
                         </div>
                         <ul class="flyout-quick-entry" data-role="quick-entry">
                             <li><a rel="nofollow"
-                                   href="http://us.ae.aliexpress.com/buyer/buyerIndexNew.htm?tracelog=ws_topbar">My
-                                    AliExpress</a></li>
-                            <li><a rel="nofollow" href="http://trade.aliexpress.com/orderList.htm">My Orders</a></li>
-                            <li><a rel="nofollow" href="http://msg.aliexpress.com/buyerMsgList.htm">Message Center</a>
+                                   href="<?php echo $this->url->get("my-page") ?>">Thông Tin Tài Khoản</a></li>
+                            <li><a rel="nofollow" href="<?php echo $this->url->get("my-page/change-password") ?>">Thay Đổi Mật Khẩu</a></li>
+                            <li><a rel="nofollow" href="<?php echo $this->url->get("my-page/order") ?>">My Orders</a>
                             </li>
-                            <li><a rel="nofollow" href="http://my.aliexpress.com/wishlist/wish_list_product_list.htm">Wish
-                                    List</a></li>
-                            <li><a class="js-menu-my-favorite-stores" rel="nofollow"
-                                   href="http://my.aliexpress.com/wishlist/wish_list_store_list.htm">My Favorite
-                                    Stores</a></li>
-                            <li><a rel="nofollow" href="http://my.aliexpress.com/coupon/buyerCouponList.htm?sortBy=2">My
-                                    Coupons</a></li>
-                            <li><a href="http://my.aliexpress.com/points/myPoints.htm" rel="nofollow">My Points</a></li>
-                            <li><a href="http://login.aliexpress.com/alipay_wallet.htm?tracelog=topbar" rel="nofollow">My
-                                    Alipay</a></li>
                         </ul>
                     <?php } else { ?>
                         <div style="display: block;" class="flyout-user-signIn" data-role="user-signIn">

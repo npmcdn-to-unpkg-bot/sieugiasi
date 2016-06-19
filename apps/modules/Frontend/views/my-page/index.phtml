@@ -1,160 +1,141 @@
-<div class="wrapper">
-    <div class="main-loginregister-area">
-        <div class="userprofile-left">
-            <div class="content-userprofile">
-                <img class="logo-userprofile"
-                     src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>logo-user-profile.png"
-                     alt="">
-                <div class="user-info">
-                    <h1 class="full-name"><?php echo $user->us_full_name ?></h1>
-                    <p><span class="label-userinfo">Điện Thoại </span>: <?php echo $user->us_phone ?></p>
-                    <p><span class="label-userinfo">Email </span>: <?php echo $user->us_email ?></p>
-                    <p><span class="label-userinfo">Ngày Sinh </span>: <?php echo $user->us_birthday ?></p>
-                    <p><span class="label-userinfo">Ngày Tạo </span>: <?php echo $user->setDate($user->created_at) ?>
-                    </p>
-                    <p><span
-                            class="label-userinfo">Ngày Cập Nhật </span>: <?php echo $user->setDate($user->update_at) ?>
-                    </p>
-                </div>
-                <div class="tab-userprofile">
-                    <a href="#thongtintaikhoan" class="btn-tab-userprofile active"><i class="fa fa-plus icon-tab"
-                                                                                      aria-hidden="true"></i>Thông Tin
-                        Tài Khoản</a>
-                    <a href="#diachilienhe" class="btn-tab-userprofile "><i class="fa fa-plus icon-tab"
-                                                                            aria-hidden="true"></i>Địa Chỉ Liên Hệ</a>
-                    <a href="#thaydoimatkhau" class="btn-tab-userprofile "><i class="fa fa-plus icon-tab"
-                                                                              aria-hidden="true"></i>Thay Đổi Mật
-                        Khẩu</a>
-                    <a href="#donhangcuatoi" class="btn-tab-userprofile "><i class="fa fa-plus icon-tab"
-                                                                             aria-hidden="true"></i>Đơn Hàng Của Tôi</a>
+<?php echo $this->partial('my-page/menu') ?>
+<div class="container me-body-container">
+    <div class="row">
+        <div class="col-xs-60">
+            <div class="row">
+                <div class="col-xs-60">
+                    <div class="grid-col-container" id="appeal-alert">
+                        <h3 class="page-title">Thông Tin Tài Khoản</h3>
+                    </div>
+                    <div class="grid-col-container">
+                        <div class="me-ui-box">
+                            <div id="main-panel" class="main-panel">
+                                <!--=====================SCREEN BEGIN==============================================================-->
+                                <div class="title-wrap">
+                                    <h1 class="guide">Cập nhật thông tin tài khoản</h1>
+                                </div>
+
+                                <div id="page960" class="main-box">
+                                    <form id="GroupListForm"  class="form-horizontal" onsubmit="return myPage('userInfo','GroupListForm');return false;">
+                                        <div align="right"><span class="required">required information</span></div>
+                                        <table class="tables V" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="required">Họ Và Tên:</span>
+                                                </th>
+                                                <td>
+                                                    <div class="column subHead">
+                                                        <input style="width: 300px" required
+                                                               name="us_full_name"
+                                                               value="<?php echo $user->us_full_name ?>">
+                                                    </div>
+                                                    <div style="clear:both;"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="required">Giới Tính:</span>
+                                                </th>
+                                                <td nowrap="">
+                                                    <input  value="2" <?php if ($user->us_gender == 2) echo " checked "; ?>  name="us_gender" id="mr" type="radio"> <label
+                                                        for="mr">Nam</label>
+                                                    <input  value="1" <?php if ($user->us_gender == 1) echo " checked "; ?> name="us_gender" id="ms" type="radio"> <label
+                                                        for="ms">Nữ</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span class="required">Email :</span></th>
+                                                <td style="color: #E62E04" >
+                                                    asdasd890@yahoo.com
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span class="required">Địa Chỉ Liên Hệ:</span></th>
+                                                <td>
+                                                    <table class="contact-address" width="100%" cellspacing="0"
+                                                           cellpadding="0" border="0">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="subHead" width="23%" valign="top">Địa Chỉ:
+                                                            </td>
+                                                            <td>
+                                                                <input style="width: 300px" name="us_address"
+                                                                       required value="<?php echo $user->us_address ?>" type="text">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="subHead" valign="top">Quận/Huyện:</td>
+                                                            <td nowrap="">
+
+                                                                <select id="districtOfUser" name="zd_id"
+                                                                        class="ProvinceList" style="width: 300px">
+                                                                    <option value="-1">Quận</option>
+                                                                    <?php $userWard = \Backend\Models\UserModel::findFirst($user->us_id); ?>
+                                                                    <option selected value="<?php echo $user->zd_id ?>"><?php echo !empty($userWard->ZoneDistrictModel)? $userWard->ZoneDistrictModel->zd_name : '' ?></option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="provinceWrap" style="">
+                                                            <td class="subHead">Thành Phố/Tỉnh:</td>
+                                                            <td nowrap="">
+
+                                                                <select id="vnProvinceList" name="zp_id"
+                                                                        class="ProvinceList province_user" style="width: 300px">
+                                                                    <option value="-1">Tỉnh/Thành Phố</option>
+                                                                    <?php foreach ($province as $provin) { ?>
+                                                                        <option <?php if ($user->zp_id == $provin->zp_id) {
+                                                                            echo " selected ";
+                                                                        } ?> value="<?php echo $provin->zp_id ?>"><?php echo $provin->zp_name ?></option>
+                                                                    <?php } ?>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th >
+                                                    <span class="required">Điện Thoại:</span> </th>
+                                                <td>
+                                                    <input required style="WIDTH: 300px" value="<?php echo $user->us_phone ?>" number="true"
+                                                           minlength="10" maxlength="11" name="us_phone">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span >Ngày Tạo :</span></th>
+                                                <td >
+                                                    <?php echo $user->setDate($user->created_at) ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th><span >Ngày Cập Nhật :</span></th>
+                                                <td >
+                                                    <?php echo $user->setDate($user->update_at) ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="button-wrap">
+                                                    <button onclick="myPage('userInfo','GroupListForm');" type="button" id="formSubmit" class="dpl-btn">Submit</button>
+                                                    <input style="visibility: hidden"  name="Submit" value=" Submit "
+                                                           class="dpl-btn" type="submit">
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </form>
+                                </div>
+
+                                <div style="clear:both;"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div class="userprofile-right">
-            <div style="float: right" class="content-userprofile">
-                <div id="thongtintaikhoan" class="tab-content-userprofile">
-                    <h1>thông tin tài khoản</h1>
-                    <p>Xin chào <?php echo $user->us_name ?></p>
-                    <p>Trong mục quản lý tài khoản, bạn có thể xem các hoạt động gần đây của bạn cũng như quản lý thông
-                        tin tài khoản. Chọn một link bên dưới để xem hay chỉnh sửa thông tin.</p>
-                    <form id="userInfo1" onsubmit="return myPage('userInfo','userInfo1');"
-                          class="login-register-form form-horizontal">
-                        <p><label>Tên</label><input value="<?php echo $user->us_full_name ?>" required
-                                                    name="us_full_name" type="text" class="input-contact-form"
-                                                    placeholder="Tên"></p>
-                        <p><label>Ngày Sinh</label><input value="<?php echo $user->us_birthday ?>" name="us_birthday"
-                                                          id="datepicker" type="text"
-                                                          class="input-contact-form datapicker" placeholder="Ngày Sinh">
-                        </p>
-                        <p>
-                            <label style="position: relative; top: -10px;">Giới Tính</label>
-                                    <span class="select-style">
-                                        <select name="us_gender">
-                                            <option <?php if ($user->us_gender == 2) echo " selected "; ?>
-                                                value="2">Nam</option>
-                                            <option <?php if ($user->us_gender == 1) echo " selected "; ?>
-                                                value="1">Nữ</option>
-                                        </select>
-                                    </span>
-                        </p>
-                        <p><label></label>
-                            <button onclick="myPage('userInfo','userInfo1');" type="button" class="btn-login-register">
-                                Lưu
-                            </button>
-                        </p>
-                        <input type="hidden" style="visibility: hidden">
-                    </form>
-                </div>
-                <div id="diachilienhe" class="tab-content-userprofile">
-                    <h1>Địa chỉ liên hệ</h1>
-                    <form id="userInfo2" onsubmit="return myPage('userInfo','userInfo2');"
-                          class="login-register-form form-horizontal">
-                        <p><label>Email</label><input value="<?php echo $user->us_email ?>" name="us_email" email="true"
-                                                      required type="text" class="input-contact-form"
-                                                      placeholder="Email"></p>
-                        <p><label>Điện Thoại </label><input value="<?php echo $user->us_phone ?>" number="true"
-                                                            minlength="10" maxlength="11" name="us_phone" type="text"
-                                                            class="input-contact-form" placeholder="Điện Thoại"></p>
-                        <p><label>Địa Chỉ </label><input value="<?php echo $user->us_address ?>" name="us_address"
-                                                         required type="text" class="input-contact-form"
-                                                         placeholder="Địa Chỉ"></p>
-                        <p><label></label>
-                            <button onclick="myPage('userInfo','userInfo2')" type="button" class="btn-login-register">
-                                Lưu
-                            </button>
-                        </p>
-                        <input type="hidden" style="visibility: hidden">
-                    </form>
-                </div>
-                <div id="thaydoimatkhau" class="tab-content-userprofile">
-                    <h1>Thay Đổi mật khẩu</h1>
-                    <form id="userInfo3" onsubmit="return myPage('userInfo','userInfo3');"
-                          class="login-register-form form-horizontal">
-                        <p><label>Mật Khẩu Cũ</label><input required minlength="6" name="current_password"
-                                                            type="password" class="input-contact-form"
-                                                            placeholder="Mật Khẩu Cũ"></p>
-                        <p><label>Mật Khẩu Mới </label><input required minlength="6" name="us_password" type="password"
-                                                              class="input-contact-form" placeholder="Mật Khẩu Mới"></p>
-                        <p><label>Lập Lại Mật Khẩu Mới</label><input required minlength="6" name="us_confirm_password"
-                                                                     type="password" class="input-contact-form"
-                                                                     placeholder="Lập Lại Mật Khẩu Mới"></p>
-                        <p><label></label>
-                            <button onclick="myPage('userInfo','userInfo3')" type="button" class="btn-login-register">
-                                Lưu
-                            </button>
-                        </p>
-                        <input type="hidden" style="visibility: hidden">
-                    </form>
-                </div>
-                <div id="donhangcuatoi" class="tab-content-userprofile">
-                    <h1>Đơn Hàng Của Tôi</h1>
-                    <table class="table-user-order">
-                        <thead>
-                        <tr>
-                            <th></th>
-                            <th>Mã Đơn Hàng</th>
-                            <th>Tổng Tiền</th>
-                            <th>Thời Gian</th>
-                            <th>Trạng Thái</th>
-                            <th>Chi Tiết</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <?php if ($order) {
-                            foreach ($order as $or) { ?>
-                                <tr>
-                                    <td>
-                                        <?php if ($or->os_id == 2) { ?>
-                                            <img
-                                                src="<?php echo $this->config['rootUrl'] . "public/FrontendCore/img/"; ?>icon-sucess.png"
-                                                alt="">
-                                        <?php } ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $or->or_public_id ?>
-                                    </td>
-                                    <td style="font-weight: bold">
-                                        <?php echo $or->showPrice() ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $or->showCreateDate() ?>
-                                    </td>
-                                    <td>
-                                        <?php echo $or->OrderStatusModel->os_name ?>
-                                    </td>
-                                    <td>
-                                        <a class="btn-detailorder-userprofile" href="">Xem Chi Tiết</a>
-                                    </td>
-                                </tr>
-                            <?php }
-                        } ?>
 
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </div>
-
-        <div class="clearfix"></div>
     </div>
 </div>

@@ -6161,7 +6161,7 @@ a.ui-slidebox-item-title {
     margin-bottom: 5px;
     text-decoration: none;
     cursor: pointer;
-    background: url(/ae-search-ui/node_modules/@alife/beta-fixedpanel/src/img/fixed-panel-elements.e4854f23.png) no-repeat
+    background: url(../img/fixed-panel-elements.e4854f23.png) no-repeat
 }
 
 .ui-fixed-panel-tip-popup {

@@ -22,6 +22,14 @@ $(document).ready(function () {
             sync: "#carousel"
         });
     }
+    if ($('#datepicker').length != 0) {
+        $("#datepicker").datepicker({
+            // changeMonth: true,
+            // changeYear: true,
+            // yearRange: '1990:2016',
+            // dateFormat: 'dd/mm/yy'
+        });
+    }
     $(".cl-item").hover(function () {
         $(this).addClass('cl-item-unfold');
     }, function () {
@@ -98,6 +106,9 @@ $(document).ready(function () {
         $(".ms-drawer-mask").fadeOut();
         $(".ms-drawer").removeClass("open");
     });
-
+    $("body").on("change", ".province_user", function () {
+        var id = $(this).val();
+        changeProvince(id, "districtOfUser");
+    });
     
 });

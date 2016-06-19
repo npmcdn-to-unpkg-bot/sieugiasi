@@ -5,6 +5,9 @@ namespace Frontend\Controllers;
 
 use Backend\Models\OrderModel;
 use Backend\Models\ProductModel;
+use Backend\Models\ZoneDistrictModel;
+use Backend\Models\ZoneProvinceModel;
+use Backend\Models\ZoneWardModel;
 
 class MyPageController extends ControllerBase
 {
@@ -27,11 +30,31 @@ class MyPageController extends ControllerBase
 
     public function indexAction()
     {
-        $orderModel = new OrderModel();
-        $this->view->order=$orderModel::find(array("us_id = '{$this->user->us_id}'","order"=>"or_create_date desc"));
+        $provinceModel = new ZoneProvinceModel();
+        $districtModel = new ZoneDistrictModel();
+        $wardModel = new ZoneWardModel();
+        $this->view->province = $provinceModel::find(array("order" => "zp_name asc"));
+        $this->view->district = $districtModel::find();
+        $this->view->ward = $wardModel::find();
+        $this->setScript();
         $this->view->header_title = "My Page";
     }
-
+    public function changePasswordAction(){
+        $this->setScript();
+        $this->view->header_title = "My Page";
+    }
+    public function orderAction()
+    {
+        $orderModel = new OrderModel();
+        $this->view->order=$orderModel::find(array("us_id = '{$this->user->us_id}'","order"=>"or_create_date desc"));
+        $this->setScript();
+        $this->view->header_title = "My Page";
+    }
+    protected function setScript()
+    {
+        $this->assets->addCss('//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', false);
+        $this->assets->addCss('public/FrontendCore/css/mypage.css', true);
+    }
     public function contactMessage($request)
     {
 

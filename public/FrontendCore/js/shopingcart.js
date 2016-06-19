@@ -21,6 +21,7 @@ $(document).ready(function () {
             }
         });
     });
+    
 });
 function addCart() {
     //Add cart
