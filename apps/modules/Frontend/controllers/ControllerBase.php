@@ -29,6 +29,9 @@ class ControllerBase extends Controller
         //Orther Page
         $ortherPageModel = new OrtherPageModel();
         $this->view->orther_page = $ortherPageModel::find(array("p_status=1"));
+        
+        //Cart
+        $this->view->cart = $this->memsession->get('CART', null);
     }
 
     public function createSession($user)
@@ -53,7 +56,7 @@ class ControllerBase extends Controller
 
     public function destroySession()
     {
-        $this->memcache->remove('USERHOME');
+        $this->memcache->delete('USERHOME');
     }
 
     public function kichOut($user_id)

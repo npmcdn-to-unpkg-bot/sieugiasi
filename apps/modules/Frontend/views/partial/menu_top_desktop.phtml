@@ -11,17 +11,12 @@
             </div>
         </div>
         <div class="hm-right">
-            <div class="nav-cart nav-cart-box"><a rel="nofollow"
-                                                  href="http://shoppingcart.aliexpress.com/shopcart/shopcartDetail.htm"><span
-                        class="text hidden-sm">Cart</span></a><span id="nav-cart-num" class="cart-number">0</span></div>
-            <div class="nav-wishlist"><a rel="nofollow"
-                                         href="http://my.aliexpress.com/wishlist/wish_list_product_list.htm"><span
-                        class="text hidden-sm">Wish List</span></a>
-                <div id="navWishlistCtn" class="nav-wishlist-ctn">
-                    <div class="nav-wishlist-msg">
-                        <ul id="navWishListMsg"></ul>
-                    </div>
-                </div>
+            <div class="nav-cart nav-cart-box">
+                <a rel="nofollow" href="<?php echo $this->url->get("shoping-cart") ?>">
+                    <span class="text hidden-sm">Cart</span>
+                </a>
+                <span id="nav-cart-num"
+                      class="cart-number"><?php echo !empty($cart['product']) ? count($cart['product']) : 0 ?></span>
             </div>
             <div data-widget-cid="widget-10" class="nav-user-account" id="nav-user-account">
                 <div class="user-account-info" data-role="user-account-top">
@@ -45,7 +40,7 @@
                 <div class="user-account-main" data-role="user-account-main">
                     <?php if ($user) { ?>
                         <div class="flyout-user-signout" data-role="signout-btn">
-                            <a rel="nofollow" href="<?php echo $this->url->get("user") ?>">
+                            <a rel="nofollow" href="<?php echo $this->url->get("user/logout") ?>">
                                 Thoát</a>
                         </div>
                         <ul class="flyout-quick-entry" data-role="quick-entry">
@@ -70,26 +65,23 @@
                         <div style="display: block;" class="flyout-user-signIn" data-role="user-signIn">
                             <p class="flyout-welcome-text" data-role="flyout-welcome">Welcome to AliExpress.com</p>
                             <p><a rel="nofollow"
-                                  href="https://login.aliexpress.com/express/mulSiteLogin.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
-                                  class="sign-btn" data-role="sign-link">Sign in</a></p>
+                                  href="<?php echo $this->url->get("user") ?>"
+                                  class="sign-btn" data-role="sign-link">Đăng Nhập</a></p>
                             <p class="flyout-signIn-type">
                                 <span>Sign in with</span>
                                 <a class="nus-icon nus-facebook" data-role="login-type" rel="nofollow"
-                                   href="http://thirdparty.aliexpress.com/login.htm?type=fb&amp;tracelog=ws_fb_topbar"
+                                   onclick="facebookLogin();" href="javascript:;"
                                    title="facebook"></a>
-                                <a class="nus-icon nus-vk" data-role="login-type" rel="nofollow"
-                                   href="http://thirdparty.aliexpress.com/login.htm?type=vk&amp;tracelog=ws_vk_topbar"
-                                   title="vk"></a>
                                 <a class="nus-icon nus-google" data-role="login-type" rel="nofollow"
-                                   href="http://thirdparty.aliexpress.com/login.htm?type=gg&amp;tracelog=ws_gg_mainlogin"
+                                   onclick="googleLogin();" href="javascript:;"
                                    title="google"></a>
                             </p>
                         </div>
                         <dl style="display: block;" class="flyout-visitors-login" data-role="user-login">
                             <dt>New Customer?</dt>
                             <dd><a rel="nofollow"
-                                   href="http://us.ae.aliexpress.com/wsuser/buyerJoin/expressJoinIndex.htm?return=http%3A%2F%2Fwww.aliexpress.com%2F%3Fspm%3D2114.55010108.1000001.5.ki22Fd"
-                                   class="join-btn" data-role="join-link">Join Free</a></dd>
+                                   href="<?php echo $this->url->get("user/register") ?>"
+                                   class="join-btn" data-role="join-link">Đăng Ký</a></dd>
                         </dl>
                         <div id="flyout-remind-list" class="flyout-remind-list"></div>
                     <?php } ?>
