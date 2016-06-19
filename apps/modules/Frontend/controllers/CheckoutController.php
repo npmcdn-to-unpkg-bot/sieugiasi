@@ -44,11 +44,9 @@ class CheckoutController extends ControllerBase
     {
         $provinceModel = new ZoneProvinceModel();
         $districtModel = new ZoneDistrictModel();
-        $wardModel = new ZoneWardModel();
         $this->setScript();
         $this->view->province = $provinceModel::find(array("order" => "zp_name asc"));
         $this->view->district = $districtModel::find();
-        $this->view->ward = $wardModel::find();
         $this->view->header_title = "Ninomaxx";
     }
     protected function setScript()

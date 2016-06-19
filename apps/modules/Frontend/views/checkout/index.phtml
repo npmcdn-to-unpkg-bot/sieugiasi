@@ -28,7 +28,7 @@
                                                 <option value="-1">Quận</option>
                                                 <?php $userWard = \Backend\Models\UserModel::findFirst($user->us_id); ?>
                                                 <option selected
-                                                        value="<?php echo $user->zd_id ?>"><?php echo $userWard->ZoneDistrictModel->zd_name ?></option>
+                                                        value="<?php echo $user->zd_id ?>"><?php echo !empty($userWard->ZoneDistrictModel)? $userWard->ZoneDistrictModel->zd_name : '' ?></option>
                                             </select>
                                             <select name="zp_id" class="m-select-filter province_user">
                                                 <option value="-1">Tỉnh/Thành Phố</option>
