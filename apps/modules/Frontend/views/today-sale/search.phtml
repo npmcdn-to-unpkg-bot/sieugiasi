@@ -1,0 +1,28 @@
+<?php if ($todaySale) {
+    foreach ($todaySale as $key => $pro) { ?>
+        <li class="list-items col-lg-15 col-md-15 col-sm-20">
+            <div class="pro-msg">
+                <a class="pro-img"
+                   href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+
+                    <img
+                        src="<?php echo $pro->showImage() ?>"
+                        alt="<?php echo $pro->pr_name ?>"
+                        width="100%"><i></i>
+                </a>
+                <div class="m-today-product">
+                    <a class="pro-name"
+                       href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+                        <?php echo $pro->pr_name ?>
+                    </a>
+                    <span class="pro-price"> <?php echo $pro->showPricePromotion() ?> </span>
+                    <del class="old-price"><?php echo $pro->getMinimumPrice() ?></del>
+                    <span class="order-num">Đã bán (<?php echo $pro->countOrder() ?>)</span>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </li>
+        <?php
+    }
+} ?>
+

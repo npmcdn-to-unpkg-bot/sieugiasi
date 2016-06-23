@@ -169,16 +169,15 @@
                                 <!---->
                                 <!--                                    </div>-->
                                 <!--                                </div>-->
-                                <!--                                <div class="form-group">-->
-                                <!--                                    <label class="control-label col-sm-2">Quantity</label>-->
-                                <!--                                    <div class="col-sm-10">-->
-                                <!---->
-                                <!--                                        <input required type="text" number="true"-->
-                                <!--                                               value="-->
-                                <?php //echo isset($data) ? $data->pr_quantity : '' ?><!--"-->
-                                <!--                                               name="pr_quantity" class="form-control">-->
-                                <!--                                    </div>-->
-                                <!--                                </div>-->
+                                                                <div class="form-group">
+                                                                    <label class="control-label col-sm-2">Quantity</label>
+                                                                    <div class="col-sm-10">
+
+                                                                        <input required type="text" number="true"
+                                                                               value="<?php echo isset($data) ? $data->pr_quantity : '' ?>"
+                                                                               name="pr_quantity" class="form-control">
+                                                                    </div>
+                                                                </div>
                                 <!--                                <div class="form-group">-->
                                 <!--                                    <label class="control-label col-sm-2">Price</label>-->
                                 <!--                                    <div class="col-sm-10">-->
@@ -202,7 +201,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="icon-calendar22"></i></span>
                                         <input name="pr_date_sale_from" class="form-control daterange-single"
-                                               value="<?php echo isset($data) && !is_null($data->pr_date_sale_from) ? $data->pr_date_sale_from : 'null' ?>"
+                                               value="<?php echo isset($data) && !is_null($data->pr_date_sale_from) ? $data->pr_date_sale_from : date("Y-m-d",strtotime ( '-1 month' , time())) ?>"
                                                type="text">
                                     </div>
                                 </div>
@@ -211,7 +210,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon"><i class="icon-calendar22"></i></span>
                                         <input name="pr_date_sale_to" class="form-control daterange-single"
-                                               value="<?php echo isset($data) && !is_null($data->pr_date_sale_to) ? $data->pr_date_sale_to : 'null' ?>"
+                                               value="<?php echo isset($data) && !is_null($data->pr_date_sale_to) ? $data->pr_date_sale_to : date("Y-m-d",strtotime ( '-1 month' , time())) ?>"
                                                type="text">
                                     </div>
                                 </div>

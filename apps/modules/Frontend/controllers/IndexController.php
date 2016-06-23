@@ -22,7 +22,6 @@ class IndexController extends ControllerBase
         $categoryModel = new CategoryModel();
         $productModel = new ProductModel();
         $date = date("Y-m-d");
-        $this->setScript();
         $this->view->productSaleRandom = $productModel::find(array("pr_price_promotion !=0 and pr_status=1 and pr_date_sale_from <= '{$date}' and '{$date}'<=pr_date_sale_to", "order" => "RAND()", "limit" => 10));
         $this->view->countTodaySale= count($productModel::find(array("pr_price_promotion !=0 and pr_status=1 and pr_date_sale_from <= '{$date}' and '{$date}'<=pr_date_sale_to")));
         $this->view->category = $categoryModel::find(array("ct_status = 1 and ct_parent_id=0"));
@@ -45,11 +44,6 @@ class IndexController extends ControllerBase
         $this->view->keyword = isset($arrQuery['search']) ? $arrQuery['search'] : '';
         $this->view->product = $product;
         $this->view->header_title = "Search";
-    }
-    private function setScript()
-    {
-        $this->assets->collection("inline")
-            ->addJs('public/FrontendCore/plugins/jquery.countdown-2.1.0/jquery.countdown.min.js');
     }
 
 }

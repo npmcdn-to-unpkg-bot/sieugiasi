@@ -1,0 +1,230 @@
+<div class="top-container-bg"></div>
+<div id="page">
+    <div id="content">
+        <div class="J_Layout layout grid-m">
+            <div class="col-main">
+                <div class="main-wrap J_Region">
+                    <div class="J_Module skin-default" data-name="mm-ae-channel-header" data-skin="default"
+                         data-guid="14595790496660" id="guid-14595790496660" data-version="12" data-type="3">
+                        <div class="module" data-spm="2529510">
+                            <style type="text/css">
+                                .mm-ae-channel-header .channel-title {
+                                    margin-right: 40px;
+                                }
+
+                                @media (max-width: 1190px) {
+                                    .reponsive-bg {
+                                        background: url('https://img.alicdn.com/tps/TB1arrJKFXXXXaYXVXXXXXXXXXX-1170-80.jpg') no-repeat left top;
+                                        height: 80px;
+                                    }
+                                }
+                            </style>
+                            <div class="tb-module mm-ae-channel-header"
+                                 style="background:url(https://img.alicdn.com/tps/TB14zrDKFXXXXXMaXXXXXXXXXXX-1920-80.jpg) no-repeat center;">
+                                <div class="container reponsive-bg">
+                                    <h2 class="channel-title"><a href="http://superdeals.aliexpress.com/en">SUPER
+                                            DEALS</a></h2>
+                                    <span class="channel-desctions hidden-md hidden-sm">Save BIG on top quality items! Updated daily.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" data-name="press-area" data-skin="default"
+                         data-guid="14592332930630" id="guid-14592332930630" data-version="15" data-type="3">
+                        <div class="module" data-spm="2528541">
+                            <div class="tb-module press-area tb-finish"
+                                 style="background-image:url(//img.alicdn.com/tps/i2/TB10urlMXXXXXcGXXXXktKu3VXX-1920-20.jpg);">
+
+                                <div class="press-area-wrap" style="width:990px;height:20px;">
+                                    <a class="press-area-item" href="#" title="" target="_blank"
+                                       style="left:25px;top:25px;width:140px;height:100px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" data-name="mm-ae-supderdale-single" data-skin="default"
+                         data-guid="14389459895300" id="guid-14389459895300" data-version="26" data-type="3">
+                        <div class="module" data-spm="1998656331">
+                            <link
+                                href="http://style.aliunicorn.com/css/6v/apollo/mod/assets/banner-slider/banner-slider-ws.css"
+                                rel="stylesheet" type="text/css" media="all">
+                            <div data-widget-cid="widget-15" class="tb-module mm-ae-supderdale-single" data-dos-id="101"
+                                 data-buttontext="Submit" data-inputtext="Your email address">
+                                <div class="container">
+                                    <div class="col-lg-40 col-md-40 pro-wrap util-clearfix" id="product-wrap">
+                                        <?php $rand = rand(0, count($todaySale) - 1);
+                                        $featureSale = $todaySale[$rand]; ?>
+                                        <a href="<?php echo $this->url->get("product/show/") . $featureSale->pr_seo_link ?>"
+                                           class="img-box">
+                                            <img
+                                                src="<?php echo $featureSale->showImage() ?>"
+                                                width="100%"><i></i>
+                                        </a>
+                                        <div class="pro-msg">
+                                            <div class="today-only-icon">Today Only</div>
+                                            <div class="pro-box">
+                                                <a class="pro-name"
+                                                   href="<?php echo $this->url->get("product/show/") . $featureSale->pr_seo_link ?>">
+                                                    <?php echo $featureSale->pr_name; ?>
+                                                </a>
+                                                <span class="pro-msg-txt"></span>
+                                                <span
+                                                    class="pro-price"><?php echo $featureSale->showPricePromotion() ?></span>
+                                                            <span class="orgin-price">
+                                                                <span
+                                                                    class="o-price"><?php echo $featureSale->getMinimumPrice() ?></span>
+                                                            </span>
+
+
+                                                            <span class="left-box">
+                                                                Còn lại : <span
+                                                                    class="left-num"><?php echo $featureSale->pr_quantity ?></span>
+                                                            </span>
+                                                <a class="buy-now"
+                                                   href="<?php echo $this->url->get("product/show/") . $featureSale->pr_seo_link ?>">
+                                                    Mua Ngay
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-20 col-md-20 hidden-sm">
+                                        <div class="right-main">
+                                            <div class="banner-box ">
+                                                <div data-widget-cid="widget-16" id="banner-slider"
+                                                     class="ui-banner-slider">
+
+                                                    <div class="ui-banner-slider-wrap">
+                                                        <div class=" ui-banner-slider-container ">
+                                                            <ul class="slides">
+                                                                <?php if ($todaySale) {
+                                                                    foreach ($todaySale as $key => $pro) {
+                                                                        if ($key < 5) { ?>
+                                                                            <li>
+                                                                                <div class="a-pro-msg">
+                                                                                    <a class="a-pro-name"
+                                                                                       href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>"><span><?php echo $pro->pr_name ?>
+                                                                                            <br><span
+                                                                                                class="pro-price"><?php echo $pro->showPricePromotion() ?></span></span><i></i></a>
+                                                                                    <a class="view-more"
+                                                                                       href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">Mua
+                                                                                        Ngay<i></i></a>
+                                                                                </div>
+                                                                                <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>"
+                                                                                   class="a-banner"><img
+                                                                                        src="<?php echo $pro->showImage() ?>"
+                                                                                        width="100%"><i></i></a>
+                                                                            </li>
+                                                                        <?php }
+                                                                    }
+                                                                } ?>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" id="guid-14308106667870">
+                        <div class="module">
+                            <div class="tb-module mm-ae-superdeals-v5">
+                                <div class="superdeals-wrap container">
+                                    <div class="nav-wrap util-clearfix">
+                                        <div style="height: 172px;" class="today-deal col-sm-15 current">
+                                            <div class="deal-wrap">
+                                                <div class="deal-main">
+                                                    <span class="all-today-deal">Today's Deals &gt;</span>
+                                                    <span class="end-in">End in:</span>
+                                                    <div class="count-down"
+                                                         style="font-size: 22px;color: #fff;text-align: center;word-spacing: 10px;">
+
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        $(document).ready(function () {
+                                                            $(".count-down")
+                                                                .countdown("<?php echo date("Y/m/d", strtotime('+2 days', time())); ?>", function (event) {
+                                                                    $(this).text(
+                                                                        event.strftime('%H  %M  %S')
+                                                                    );
+                                                                });
+                                                        });
+                                                    </script>
+                                                </div>
+                                                <i class="v-top"></i>
+                                            </div>
+                                        </div>
+                                        <div class="node-box col-sm-30">
+                                            <div class="node-list-main">
+                                                <ul class="node-list util-clearfix">
+                                                    <?php if ($categorySale) {
+                                                        foreach ($categorySale as $cate) { ?>
+                                                            <li class="node-items col-lg-15 col-md-15 col-sm-20"><a
+                                                                    class=" filter-todaysale" onclick="filterTodaySale('cate',<?php echo $cate->CategoryModel->ct_id ?>,$(this))"
+                                                                    href="javascript:;"><?php echo $cate->CategoryModel->ct_name ?></a>
+                                                            </li>
+                                                        <?php }
+                                                    } ?>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div onclick="filterTodaySale('tomorrow','1',$(this))" style="height: 172px;"  class="tomorrow-deal col-sm-15" >
+                                            <div  class="deal-wrap">
+                                                <div class="deal-main deal-main-1">
+                                                    <span class="all-tomorrow-deal">Tomorrow's Deals &gt;</span>
+                                                    <span class="view-remind-items">Preview Items</span>
+                                                </div>
+                                                <i class="v-top"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dos-list">
+                                        <ul id="filter-today-sale" class="product-list util-clearfix">
+                                            <?php if ($todaySale) {
+                                                foreach ($todaySale as $key => $pro) {
+                                                    if ($key >= 5) { ?>
+                                                        <li class="list-items col-lg-15 col-md-15 col-sm-20">
+                                                            <div class="pro-msg">
+                                                                <a class="pro-img"
+                                                                   href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>" >
+
+                                                                    <img
+                                                                        src="<?php echo $pro->showImage() ?>"
+                                                                        alt="<?php echo $pro->pr_name ?>"
+                                                                        width="100%"><i></i>
+                                                                </a>
+                                                                <div class="m-today-product">
+                                                                    <a class="pro-name"
+                                                                       href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>" >
+                                                                    <?php echo $pro->pr_name ?>
+                                                                    </a>
+                                                                    <span class="pro-price"> <?php echo $pro->showPricePromotion() ?> </span>
+                                                                    <del class="old-price"><?php echo $pro->getMinimumPrice() ?></del>
+                                                                    <span class="order-num">Đã bán (<?php echo $pro->countOrder() ?>)</span>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                            </div>
+                                                        </li>
+                                                    <?php }
+                                                }
+                                            } ?>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

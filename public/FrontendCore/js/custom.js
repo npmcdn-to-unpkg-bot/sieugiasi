@@ -52,7 +52,7 @@ $(document).ready(function () {
             $(".ui-fixed-panel-go-top").css({"visibility": "visible"});
             if ($(".broad-category-fixed-nav").lenght != 0) {
                 $(".broad-category-fixed-nav").show();
-                $(".broad-category-fixed-nav").css("top","85px");
+                $(".broad-category-fixed-nav").css("top", "85px");
             }
         } else {
             $("#header").removeClass("menu-position-fix");
@@ -60,7 +60,7 @@ $(document).ready(function () {
             $(".ui-fixed-panel-go-top").css({"visibility": "hidden"});
             if ($(".broad-category-fixed-nav").lenght != 0) {
                 $(".broad-category-fixed-nav").hide();
-                $(".broad-category-fixed-nav").css("top","0");
+                $(".broad-category-fixed-nav").css("top", "0");
             }
         }
     };
@@ -118,3 +118,17 @@ $(document).ready(function () {
         $(this).parent("li").addClass("active");
     });
 });
+function filterTodaySale($cate, $value, $this) {
+    $(".filter-todaysale").removeClass('current');
+    $this.addClass("current");
+    $.ajax({
+        type: "POST",
+        url: rootUrl + 'today-sale/search',
+        data: {cate: $cate, value: $value},
+        success: function (response) {
+            $("#filter-today-sale").html(response);
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+        }
+    });
+}
