@@ -3,8 +3,8 @@
     <div class="home-firstscreen-main">
         <!--TMS:1717630-->
         <div class="channel-entrance" data-spm="21">
-            <a href="today-deal.html">SuperDeals</a>
-            <a href="http://brands.aliexpress.com/">Today Sale</a>
+            <a href="..">SuperDeals</a>
+            <a href="<?php echo $this->url->get("today-sale") ?>">Today Sale</a>
         </div>
         <div class="categories">
             <!--TMS:2128949-->
@@ -123,15 +123,15 @@
     <div class="today-deal-panel col-lg-15 col-md-15 today-deal-dos-new">
         <div class="title">
             <h2>
-                <a href="today-deal.html"><strong><i>TODAY'S</i> DEALS</strong>
+                <a href="<?php echo $this->url->get("today-sale") ?>"><strong><i>TODAY'S</i> DEALS</strong>
                 </a>
             </h2>
-            <a style="visibility: visible;" href="" class="view-more hidden-md"
+            <a style="visibility: visible;" href="<?php echo $this->url->get("today-sale") ?>" class="view-more hidden-md"
                data-role="viewmore">
                 <?php if ($countTodaySale > 0) { ?>
                     <strong><i><?php echo $countTodaySale ?></i></strong> items <?php } ?> </a>
         </div>
-        <a href="http://superdeals.aliexpress.com/en">
+        <a href="<?php echo $this->url->get("today-sale") ?>">
             <div class="container-main clearfix" data-role="main">
                 <div class="end-time">
                     <span style="visibility: visible;">Ends in:<span style="color:#E62E04" id="end-times"></span></span>
