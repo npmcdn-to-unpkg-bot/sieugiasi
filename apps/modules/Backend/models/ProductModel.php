@@ -19,6 +19,8 @@ class ProductModel extends ModelBase
         $this->hasMany("pr_id", "\Backend\Models\ProductAttributeModel", "pr_id", array('alias' => 'ProductAttributeModel'));
         $this->hasMany("pr_id", "\Backend\Models\ProductImageModel", "pr_id", array('alias' => 'ProductImageModel'));
         $this->hasMany("pr_id", "\Backend\Models\ProductPriceModel", "pr_id", array('alias' => 'ProductPriceModel'));
+        $this->hasMany("pr_id", "\Backend\Models\CollectionModel", "pr_id", array('alias' => 'CollectionModel'));
+
     }
 
     public function beforeCreate()
@@ -211,19 +213,19 @@ class ProductModel extends ModelBase
         }
     }
 
-    public static function getAllPrice($idProduct,$format=true)
+    public static function getAllPrice($idProduct, $format = true)
     {
         $product = self::findFirst($idProduct);
         $date = date("Y-m-d");
         $price = array();
         if ($product->pr_price_promotion != 0 && $product->pr_date_sale_from <= $date && $date <= $product->pr_date_sale_to) {
             $price['promotion'] = 1;
-            if($format){
+            if ($format) {
                 $price['data'] = number_format($product->pr_price_promotion) . " Vnđ";
-            }else{
+            } else {
                 $price['data'] = $product->pr_price_promotion;
             }
-            
+
         } else {
             $productPriceModel = new ProductPriceModel();
             $price['promotion'] = 0;

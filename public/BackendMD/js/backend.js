@@ -364,6 +364,26 @@ $(document).ready(function () {
 
 
     });
+    //chose Collection
+
+    $(".chose-product-collection").change(function () {
+        showLoading();
+        var id = $(this).val();
+        $.ajax({
+            type: "POST",
+            url: queryUrl + '/chose-product',
+            data: {id: id},
+            success: function (response) {
+                hideLoading();
+                $(".product-append").html(response);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                DangerNotice("Nguy Hiểm", "Lỗi hệ thồng");
+            }
+        });
+
+
+    });
 
 
 });

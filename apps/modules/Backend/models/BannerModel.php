@@ -5,7 +5,7 @@ namespace Backend\Models;
 class BannerModel extends ModelBase {
 
     public static $SliderHome = 2;
-    public static $FeatureConcept = 3;
+    public static $SliderCollection = 3;
     public static $FeatureNMPage = 4;
     public static $SliderNinomaxxPage = 5;
 
