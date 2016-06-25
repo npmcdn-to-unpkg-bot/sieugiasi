@@ -1,0 +1,263 @@
+<div class="top-container-bg"></div>
+<div id="page">
+    <div id="content">
+        <div class="J_Layout layout grid-m">
+            <div class="col-main">
+                <div class="main-wrap J_Region">
+                    <div class="J_Module skin-default" data-name="mm-ae-channel-header" data-skin="default"
+                         data-guid="14363265708670" id="guid-14363265708670" data-version="9" data-type="3">
+                        <div class="module" data-spm="1998604686">
+                            <style type="text/css">
+                                @media (max-width: 1190px) {
+                                    .reponsive-bg {
+                                        background: url('https://img.alicdn.com/tps/TB1Io6QKFXXXXcHXpXXXXXXXXXX-1170-80.jpg') no-repeat left top;
+                                    }
+                                }
+                            </style>
+                            <div class="tb-module mm-ae-channel-header"
+                                 style="background:url(https://img.alicdn.com/tps/TB1U3PNKFXXXXapXFXXXXXXXXXX-1920-80.jpg) no-repeat center;">
+                                <div class="container reponsive-bg">
+                                    <h2 class="channel-title"><a href="http://collections.aliexpress.com">ALIEXPRESS
+                                            COLLECTIONS</a></h2>
+                                    <span class="channel-desctions hidden-md hidden-sm">Discover our daily product collections and get inspired!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" data-name="mm-ae-collection-header" data-skin="default"
+                         data-guid="14358190830030" id="guid-14358190830030" data-version="8" data-type="3"
+                         data-hidden="true">
+                        <div class="tb-module mm-ae-collection-header tb-finish" style="display:none"></div>
+                    </div>
+                    <div class="J_Module skin-default-1438831997964" data-name="mm-ae-crumb"
+                         data-skin="default-1438831997964" data-guid="14388314967610" id="guid-14388314967610"
+                         data-version="6" data-type="3">
+                        <div class="module" data-spm="1998650899"><!-- 模块代码开始 -->
+                            <div class="tb-module mm-ae-crumb">
+
+                                <div class="crumb">
+
+                                </div>
+                            </div>
+                            <!-- 模块代码结束 -->
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" id="guid-14370120095240">
+                        <div class="module">
+                            <div class="tb-module mm-ae-html">
+                                <style> .mm-ae-collection-header .img-box {
+                                        width: 300px;
+                                    }
+
+                                    .mm-ae-collection-header .collection-msg {
+                                        margin: 0 0 0 300px;
+                                    } </style>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" id="guid-14358220595520">
+                        <div class="module">
+                            <div class="tb-module mm-ae-collection-list">
+                                <div class="container collectio-product-list-wrap">
+                                    <div class="util-clearfix">
+                                        <div class="col-lg-30 col-md-30 col-sm-60 colection-detail-description">
+                                            <div class="co-banner normal">
+                                                <div id="collection-msg">
+
+                                                    <div style="margin: 0px;" class="collection-msg">
+                                                        <h2 class="collection-name util-clearfix"><?php echo $collection->col_name ?></h2>
+                                                        <p class="collection-desc">
+                                                            <?php echo $collection->col_description ?>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-30 col-md-30  special-list co-list" id="product-first">
+                                            <?php foreach ($product as $key => $pro) {
+                                                if ($key < 2) {
+                                                    ?>
+                                                    <li class="col-lg-30 col-md-30 list-items">
+                                                        <div class="pro-main util-clearfix">
+                                                            <a class="img-box"
+                                                               href="<?php echo $this->url->get("product/show/") . $pro->ProductModel->pr_seo_link ?>">
+                                                                <img src="<?php echo $pro->ProductModel->showImage() ?>"
+                                                                     height="100%"><i></i></a>
+                                                            <div class="pro-msg">
+                                                                <a class="pro-name"
+                                                                   href="<?php echo $this->url->get("product/show/") . $pro->ProductModel->pr_seo_link ?>">
+                                                                    <?php echo $pro->ProductModel->pr_name ?>
+                                                                </a>
+                                                                <div class="p-relative price">
+                                                                    <?php if ($pro->ProductModel->showPricePromotion()) { ?>
+                                                                        <span
+                                                                            class="pro-price"><?php echo $pro->ProductModel->showPricePromotion() ?></span>
+                                                                        <del><?php echo $pro->ProductModel->getMinimumPrice() ?></del>
+                                                                    <?php } else { ?>
+                                                                        <span
+                                                                            class="pro-price"><?php echo $pro->ProductModel->getMinimumPrice() ?></span>
+                                                                    <?php } ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </li>
+                                                <?php }
+                                            } ?>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <ul style="position: relative; " class="product-list" id="tp-main-content">
+                                        <?php foreach ($product as $key => $pro) {
+                                            if ($key >= 2) {
+                                                ?>
+                                                <li class="col-lg-15 col-md-15 col-sm-30 list-items normal-list">
+                                                    <div class="pro-main">
+                                                        <a class="img-box"
+                                                           href="<?php echo $this->url->get("product/show/") . $pro->ProductModel->pr_seo_link ?>">
+                                                            <img
+                                                                src="<?php echo $pro->ProductModel->showImage() ?>"
+                                                                width="100%"><i></i></a>
+                                                        <a class="pro-name"
+                                                           href="<?php echo $this->url->get("product/show/") . $pro->ProductModel->pr_seo_link ?>">
+                                                            <?php echo $pro->ProductModel->pr_name ?>
+                                                        </a>
+                                                        <div class="p-relative price">
+                                                            <?php if ($pro->ProductModel->showPricePromotion()) { ?>
+                                                                <span
+                                                                    class="pro-price"><?php echo $pro->ProductModel->showPricePromotion() ?></span>
+                                                                <del><?php echo $pro->ProductModel->getMinimumPrice() ?></del>
+                                                            <?php } else { ?>
+                                                                <span
+                                                                    class="pro-price"><?php echo $pro->ProductModel->getMinimumPrice() ?></span>
+                                                            <?php } ?>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            <?php }
+                                        } ?>
+
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Module skin-default" id="guid-14361106613420" >
+                        <div class="module" >
+                            <div class="tb-module mm-ae-similar-collections" >
+                                <div class="container">
+                                    <div class="collection-wrap">
+                                        <h2 class="title">OTHER COLLECTIONS</h2>
+                                        <ul class="collection-list util-clearfix" id="collection-list">
+
+                                            <?php if ($ortherCollection) {
+                                                foreach ($ortherCollection as $category) {
+                                                    if (count($category->CollectionModel) > 0) { ?>
+                                                        <li class="collection-items col-lg-20 col-md-20 col-sm-20">
+                                                            <div class="collection-main">
+                                                                <div class="img-box util-clearfix">
+                                                                    <a class="collection-img"
+                                                                       href="<?php echo $this->url->get("collection/show/").$category->col_seo_link ?>">
+                                                                        <img
+                                                                            src="<?php echo $category->CollectionModel[0]->ProductModel->showImage() ?>"><i></i>
+                                                                    </a>
+
+
+                                                                    <a href="<?php echo $this->url->get("collection/show/").$category->col_seo_link ?>"
+                                                                       class="collection-msg uitl-clearfix">
+                                                                        <div class="collectin-description">
+                                                                            <?php echo $category->col_name ?>
+                                                                        </div>
+                                                                        <div class="collection-total">
+                                                                            <b><?php echo count($category->CollectionModel) ?></b>Sản
+                                                                            phẩm
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="pro-list util-clearfix">
+
+                                                                    <a class="list-items-img col-lg-20 col-md-20 col-sm-20"
+                                                                       href="<?php echo $this->url->get("collection/show/").$category->col_seo_link ?>">
+                                                                        <span class="small-product-items">
+                                                                            <img
+                                                                                src="<?php echo isset($category->CollectionModel[1]) ? $category->CollectionModel[1]->ProductModel->showImage() : ''; ?>"
+                                                                                width="100%"><i></i>
+                                                                        </span>
+                                                                    </a>
+
+                                                                    <a class="list-items-img col-lg-20 col-md-20 col-sm-20"
+                                                                       href="<?php echo $this->url->get("collection/show/").$category->col_seo_link ?>">
+                                                                        <span class="small-product-items">
+                                                                            <img
+                                                                                src="<?php echo isset($category->CollectionModel[2]) ? $category->CollectionModel[2]->ProductModel->showImage() : ''; ?>"
+                                                                                width="100%"><i></i>
+                                                                        </span>
+                                                                    </a>
+                                                                    <a class="list-items-img col-lg-20 col-md-20 col-sm-20"
+                                                                       href="<?php echo $this->url->get("collection/show/").$category->col_seo_link ?>">
+                                                                        <span class="small-product-items">
+                                                                            <img
+                                                                                src="<?php echo isset($category->CollectionModel[3]) ? $category->CollectionModel[3]->ProductModel->showImage() : ''; ?>"
+                                                                                width="100%"><i></i>
+                                                                        </span>
+                                                                    </a>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <?php
+                                                    }
+                                                }
+                                            } ?>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <script id="template-tag-product-list" type="text/x-handlebars-template">
+                                    {{#dataList}}
+                                    <li class="collection-items col-lg-20 col-md-20 col-sm-20" data-node-id="{{id}}"
+                                        data-collection-id="{{id}}">
+                                        <div class="collection-main">
+                                            <div class="img-box util-clearfix">
+                                                {{#bigProduct}}
+                                                {{#if bigImg}}
+                                                <a class="collection-img" href="{{detailUrl}}"><img
+                                                        src="{{bigImg}}"><i></i></a>
+                                                {{else}}
+                                                <a class="collection-img" href="{{detailUrl}}"><img
+                                                        src="{{imgUrl}}"><i></i></a>
+                                                {{/if}}
+                                                {{/bigProduct}}
+                                                <div class="collection-msg uitl-clearfix">
+                                                    <div class="collection-icon" style="display:none;"><img
+                                                            src="{{imgUrl}}" width="63" height="63"/></div>
+                                                    <div class="collectin-description">{{displayName}}</div>
+                                                    <div class="collection-total"><b>{{totalCount}}</b>items</div>
+                                                    <span class="by-aliexpress"
+                                                          style="display:none;">{{displayName}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="pro-list util-clearfix">
+                                                {{#smallProduct}}
+                                                <a class="list-items-img col-lg-20 col-md-20 col-sm-20"
+                                                   href="{{detailUrl}}"><span class="small-product-items"><img
+                                                            src="{{imgUrl}}" width="100%"><i></i></span></a>
+                                                {{/smallProduct}}
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {{/dataList}}
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

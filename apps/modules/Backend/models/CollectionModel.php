@@ -13,7 +13,7 @@ class CollectionModel extends ModelBase
     {
         parent::initialize();
         $this->belongsTo("col_id", "\Backend\Models\CategoryCollectionModel", "col_id", array('alias' => 'CategoryCollectionModel'));
-        $this->hasMany("pr_id", "\Backend\Models\ProductModel", "pr_id", array('alias' => 'ProductModel'));
+        $this->belongsTo("pr_id", "\Backend\Models\ProductModel", "pr_id", array('alias' => 'ProductModel'));
     }
 
     public function validation()

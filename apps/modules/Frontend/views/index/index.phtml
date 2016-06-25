@@ -171,55 +171,55 @@
         <div class="collections-panel-inner clearfix">
             <div class="title">
                 <h2>
-                    <a href="collection.html">
+                    <a href="<?php echo $this->url->get("collection") ?>">
                         <span>ALIEXPRESS</span> COLLECTIONS </a>
                 </h2>
-                <a href="collection.html" class="view-more">View more</a>
+                <a href="<?php echo $this->url->get("collection") ?>" class="view-more">View more</a>
             </div>
             <div class="collections col-lg-60" data-role="main">
-                <a href="http://activities.aliexpress.com/aetopcollectionsdetails.php?widgetId=561&amp;collection-id=444775&amp;node-id=108229">
+                <a href="<?php echo $this->url->get("collection/show/").$collection->col_seo_link ?>">
                     <div class="collections-left-panel">
                         <img
-                            src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1P0VgMFXXXXamXpXXzdft9XXX-660-340.jpg"
+                            src="<?php echo isset($collection->CollectionModel[0]) ? $collection->CollectionModel[0]->ProductModel->showImage() : ''; ?>"
                             alt="">
                     </div>
                     <div class="top-items">
                         <div class="top-item">
                             <img
-                                src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1_qRkMFXXXXcJXXXXjrhCTXXX-697-695.jpg"
+                                src="<?php echo isset($collection->CollectionModel[1]) ? $collection->CollectionModel[1]->ProductModel->showImage() : ''; ?>"
                                 alt="">
                         </div>
                         <div class="other-items">
-                            <img src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB10ilgMFXXXXa0XpXXp.jpg"
+                            <img src="<?php echo isset($collection->CollectionModel[2]) ? $collection->CollectionModel[2]->ProductModel->showImage() : ''; ?>"
                                  alt="">
-                            <img src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1MkpkMFXXXXbEXXXXp.jpg"
+                            <img src="<?php echo isset($collection->CollectionModel[3]) ? $collection->CollectionModel[3]->ProductModel->showImage() : ''; ?>"
                                  alt="">
-                            <img src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB18Z70MpXXXXbqXVXXp.jpg"
+                            <img src="<?php echo isset($collection->CollectionModel[4]) ? $collection->CollectionModel[4]->ProductModel->showImage() : ''; ?>"
                                  alt="">
                         </div>
                     </div>
                 </a>
-                <a href="http://activities.aliexpress.com/collectiondetails.php?widgetId=562&amp;collection-id=444788&amp;node-id=108230">
+                <a href="<?php echo $this->url->get("collection/show/").$collection->col_seo_link ?>">
                     <div class="collections-right-panel hidden-sm">
                         <div class="pic-group">
                             <div class="pic rborder bborder">
                                 <div class="desc">
-                                    <span class="subject">Update Your Tech</span>
+                                    <span style="overflow: visible" class="subject"><?php echo $collection->col_name  ?></span>
                                 </div>
                             </div>
                             <div class="pic bborder">
                                 <img class="rpic"
-                                     src="<?php echo $this->url->get("public/FrontendCore/") ?>img/building-block-USB-Flash-Drive-2-0-cartoon-usb-stick-Toy-blo.jpg"
+                                     src="<?php echo isset($collection->CollectionModel[5]) ? $collection->CollectionModel[5]->ProductModel->showImage() : ''; ?>"
                                      alt="">
                             </div>
                             <div class="pic rborder">
                                 <img class="bpic"
-                                     src="<?php echo $this->url->get("public/FrontendCore/") ?>img/Chrismas-Santa-Claus-usb-flash-drive-4g-8g-16g-32g-Creative-.jpg"
+                                     src="<?php echo isset($collection->CollectionModel[6]) ? $collection->CollectionModel[6]->ProductModel->showImage() : ''; ?>"
                                      alt="">
                             </div>
                             <div class="pic">
                                 <img class="bpic rpic"
-                                     src="<?php echo $this->url->get("public/FrontendCore/") ?>img/New-Cartoon-Gray-Microphone-Novelty-Model-usb-2-0-memory-fla.jpg"
+                                     src="<?php echo isset($collection->CollectionModel[7]) ? $collection->CollectionModel[7]->ProductModel->showImage() : ''; ?>"
                                      alt="">
                             </div>
                         </div>
