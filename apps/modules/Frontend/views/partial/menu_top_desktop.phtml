@@ -46,7 +46,8 @@
                         <ul class="flyout-quick-entry" data-role="quick-entry">
                             <li><a rel="nofollow"
                                    href="<?php echo $this->url->get("my-page") ?>">Thông Tin Tài Khoản</a></li>
-                            <li><a rel="nofollow" href="<?php echo $this->url->get("my-page/change-password") ?>">Thay Đổi Mật Khẩu</a></li>
+                            <li><a rel="nofollow" href="<?php echo $this->url->get("my-page/change-password") ?>">Thay
+                                    Đổi Mật Khẩu</a></li>
                             <li><a rel="nofollow" href="<?php echo $this->url->get("my-page/order") ?>">My Orders</a>
                             </li>
                         </ul>
@@ -80,30 +81,25 @@
             </div>
         </div>
         <div class="hm-middle">
-            <form data-widget-cid="widget-6" id="form-searchbar" class="searchbar-form" action="/wholesale"
-                  method="get">
-                <input id="catId" name="catId" value="0" type="hidden">
-                <input id="historyTab" type="hidden">
-                <input id="historySearchInput" type="hidden">
-                <input id="historySearchCountry" type="hidden">
-                <input id="initiative_id" name="initiative_id" value="" type="hidden">
-                <div class="searchbar-operate-box">
-                    <input class="search-button" value="" type="submit">
-                </div>
-                <div class="search-key-box">
-                    <input placeholder="I'm shopping for..." maxlength="50" autocomplete="off" name="SearchText"
-                           class="search-key" id="search-key" type="text">
-                </div>
-                <div style="z-index: 99; display: none; position: absolute; left: -9999px; top: -9999px; width: 588px;"
-                     data-widget-cid="widget-7" class="ui-autocomplete">
-                    <div class="hot-word" data-role="hot-word" id="hot-word">
+            <form id="form-searchbar" class="searchbar-form" action="<?php echo $this->url->get("search") ?>"
+            method="get">
+            <div class="searchbar-operate-box">
+                <input class="search-button" value="" type="submit">
+            </div>
+            <div class="search-key-box">
+                <input placeholder="I'm shopping for..." name="key"
+                       class="search-key" id="search-key" type="text">
+            </div>
+            <div style="z-index: 99; display: none; position: absolute; left: -9999px; top: -9999px; width: 588px;"
+                 data-widget-cid="widget-7" class="ui-autocomplete">
+                <div class="hot-word" data-role="hot-word" id="hot-word">
 
-                    </div>
-
-                    <ul class="ui-autocomplete-ctn " data-role="items">
-
-                    </ul>
                 </div>
+
+                <ul class="ui-autocomplete-ctn " data-role="items">
+
+                </ul>
+            </div>
             </form>
         </div>
     </div>

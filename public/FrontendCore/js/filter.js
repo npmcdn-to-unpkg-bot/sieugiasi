@@ -29,6 +29,6 @@ function filterCategoryProduct($type, $val) {
             url += key + "=" + value + "&";
         });
         url = url.slice(0, -1);
-        window.location.href = rootUrl + "category-product/" + seo + "?" + url;
+        window.location.href = rootUrl + "category-product/show/" + seo + "?" + url;
     }
 }

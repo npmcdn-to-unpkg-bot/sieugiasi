@@ -7,6 +7,7 @@ use Backend\Models\CategoryCollectionModel;
 use Backend\Models\CategoryModel;
 use Backend\Models\ManufacturerModel;
 use Backend\Models\ProductModel;
+use Phalcon\Paginator\Adapter\Model as PaginatorModel;
 
 class IndexController extends ControllerBase
 {
@@ -38,14 +39,23 @@ class IndexController extends ControllerBase
     {
         $arrQuery = $this->request->getQuery();
         $productModel = new \Backend\Models\ProductModel();
-        if (!empty($arrQuery['search'])) {
-            $where = ' pr_name like "%' . $arrQuery['search'] . '%"';
+        $currentPage = $this->request->getQuery('page', 'int');
+        if (!empty($arrQuery['key'])) {
+            $where = ' pr_name like "%' . $arrQuery['key'] . '%"';
             $product = $productModel::find(array($where, "order" => "pr_price asc"));
         } else {
             $product = false;
         }
-        $this->view->keyword = isset($arrQuery['search']) ? $arrQuery['search'] : '';
-        $this->view->product = $product;
+        $paginator = new PaginatorModel(
+            array(
+                "data" => $product,
+                "limit" => 40,
+                "page" => $currentPage
+            )
+        );
+        $this->assets->addCss('public/FrontendCore/css/category-product.css', true);
+        $this->view->keyword = isset($arrQuery['key']) ? $arrQuery['key'] : '';
+        $this->view->products = $paginator->getPaginate();
         $this->view->header_title = "Search";
     }
 
