@@ -193,7 +193,7 @@ function submitLoginGoogle(response) {
 //Login Google / End
 function forgotPasswordUser() {
     if (validator.form()) {
-        var data = $(".form-horizontal").serializeArray();
+        var data = $("#forgot-form").serializeArray();
         var x;
         var temArray = {};
         for (x in data) {
