@@ -370,6 +370,7 @@ class UserController extends ControllerBase
 
     public function forgotPasswordAction()
     {
+        $this->assets->addCss('public/FrontendCore/css/forgot-pass.css', true);
         $this->view->header_title = "Forgot Password User";
     }
 
