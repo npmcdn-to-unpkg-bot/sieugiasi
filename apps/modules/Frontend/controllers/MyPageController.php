@@ -39,22 +39,50 @@ class MyPageController extends ControllerBase
         $this->setScript();
         $this->view->header_title = "My Page";
     }
-    public function changePasswordAction(){
+
+    public function changePasswordAction()
+    {
         $this->setScript();
         $this->view->header_title = "My Page";
     }
+
     public function orderAction()
     {
         $orderModel = new OrderModel();
-        $this->view->order=$orderModel::find(array("us_id = '{$this->user->us_id}'","order"=>"or_create_date desc"));
+        $orderStatusModel = new \Backend\Models\OrderStatusModel();
+        $this->view->order_status = $orderStatusModel::find();
+        if ($this->request->isPost()) {
+            $data = $this->request->getPost();
+            $where = 'us_id ='.$this->user->us_id;
+            foreach ($data as $key => $val) {
+                if (empty($val) || $val == '-1') {
+                    unset($data[$key]);
+                } else {
+                    if ($key == 'date_from') {
+                        $where .= " and DATE(or_create_date) >= '" . date("Y-m-d", strtotime($val))."'";
+                    } elseif ($key == 'date_to') {
+                        $where .= " and DATE(or_create_date) <= '" . date("Y-m-d", strtotime($val))."'";
+                    }else{
+                        $where .=" and ". $key . "='" . $val."'" ;
+                    }
+                    unset($data[$key]);
+                }
+            }
+            $this->view->order = $orderModel::find(array($where));
+
+        }else{
+            $this->view->order = $orderModel::find(array("us_id = '{$this->user->us_id}'", "order" => "or_create_date desc"));
+        }
         $this->setScript();
         $this->view->header_title = "My Page";
     }
+
     protected function setScript()
     {
         $this->assets->addCss('//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css', false);
         $this->assets->addCss('public/FrontendCore/css/mypage.css', true);
     }
+
     public function contactMessage($request)
     {
 
