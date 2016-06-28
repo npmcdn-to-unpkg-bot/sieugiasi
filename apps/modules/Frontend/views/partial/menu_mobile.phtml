@@ -1,24 +1,29 @@
 <!--Menu mobile-->
 <header class="ms-header">
-    <a href="//m.aliexpress.com/" id="ms-outer" class="for-outer" style="padding: 12px 0 9px 0;">
-        <img src="//img.alicdn.com/tps/i4/TB1cCb4HpXXXXcZXVXXyo3wIXXX-220-54.png" alt="AE Logo" style="width:110px;height:27px;">
+    <a href="<?php echo $this->url->get() ?>" id="ms-outer" class="for-outer" style="padding: 12px 0 9px 0;">
+        <img src="//img.alicdn.com/tps/i4/TB1cCb4HpXXXXcZXVXXyo3wIXXX-220-54.png" alt="AE Logo"
+             style="width:110px;height:27px;">
     </a>
     <div class="header-main">
-        <span class="drawer btn-menu-mobile" ></span>
-        <a href="//m.aliexpress.com/" class="logo" id="ms-logo" data-stat="front_page::aecom::aecom_button" style="padding: 12px 0 9px 0;"><img src="img/TB1cCb4HpXXXXcZXVXXyo3wIXXX-220-54.png" alt="AE Logo" style="width:110px;height:27px;"></a>
+        <span class="drawer btn-menu-mobile"></span>
+        <a href="<?php echo $this->url->get() ?>" class="logo" id="ms-logo" data-stat="front_page::aecom::aecom_button"
+           style="padding: 12px 0 9px 0;"><img src="img/TB1cCb4HpXXXXcZXVXXyo3wIXXX-220-54.png" alt="AE Logo"
+                                               style="width:110px;height:27px;"></a>
 
         <div class="position-right">
-            <span class="search" data-stat="all_page::m_search::search_button"></span><a href="//m.aliexpress.com/shopcart/detail.htm" id="ms-cart" class="cart" data-stat="all_page::shoppingcart::shoppingcart_button"><span class="inline-block">0</span></a>
+            <span class="search" data-stat="all_page::m_search::search_button"></span>
+            <a href="<?php echo $this->url->get("shoping-cart") ?>" id="ms-cart" class="cart"
+               data-stat="all_page::shoppingcart::shoppingcart_button"><span class="inline-block">0</span></a>
         </div>
     </div>
 </header>
-<div  class="ms-drawer-mask"><span class="ms-drawer-back"></span></div>
+<div class="ms-drawer-mask"><span class="ms-drawer-back"></span></div>
 <section class="ms-drawer ">
     <div class="ms-drawer-loginInfo">
 
         <div class="drawer-unlogin">
-            <a href="javascript:;" class="drawer-signin" data-stat="menu_page::menu_sign_in::signin_button">Sign In</a>
-            <a href="javascript:;" class="drawer-join" data-stat="menu_page::menu_join_free::joininfree_button">Join Free</a>
+            <a href="<?php echo $this->url->get("user") ?>" class="drawer-signin">Đăng Nhập</a>
+            <a href="<?php echo $this->url->get("user/register") ?>" class="drawer-join">Đăng Ký</a>
         </div>
         <div class="drawer-logined">
             <div class="drawer-username"></div>
@@ -28,28 +33,18 @@
 
     <ul class="drawer-guide">
         <!-- Home -->
-        <li class="drawer-home"><a href="//m.aliexpress.com/" data-stat="menu_page::menu_home::home_button"><i class="ms-icon icon-home"></i><span>Home</span></a></li>
+        <li class="drawer-home"><a href="<?php echo $this->url->get() ?>" data-stat="menu_page::menu_home::home_button"><i
+                    class="fa fa-home "></i><span>Home</span></a></li>
 
-        <!-- Order -->
-        <li class="drawer-myOrder"><a class="drawer-myOrder" href="//m.aliexpress.com/downloadapp/myOrder.htm" data-stat="menu_page::menu_myae::myae_button"><i class="ms-icon icon-order"></i><span>My Orders</span></a></li>
-        <!-- Cart -->
-        <li class="drawer-cart"><a href="//m.aliexpress.com/shopcart/detail.htm" data-stat="menu_page::menu_cart::cart_button"><i class="ms-icon icon-shippingcart"></i><span>Cart</span></a></li>
-        <!-- Wish -->
-        <li class="drawer-wishList"><a href="//m.aliexpress.com/myaccount/wishlist/detail.htm" data-stat="menu_page::menu_wishlist::wishlist_button"><i class="ms-icon icon-wishlist"></i><span>Wish List</span></a></li>
-
-
-        <!-- language -->
-        <li class="drawer-language"><i class="ms-icon icon-translation"></i><b>Language</b><span>English</span></li>
-        <li class="drawer-download"><a href="//m.aliexpress.com/d.do?p=a4&amp;ck=in_msite_download" data-stat="in_msite_download::menu_download::download_button"><i class="ms-icon icon-downward"></i><span>Download APP</span></a></li>
-    </ul>
-    <ul class="drawer-feature">
-        <li class="drawer-help" data-stat="menu_page::menu_helpcenter::helpcenter_button"><a href="//activities.aliexpress.com/h5_help_center.php"><span>Help Center</span></a></li>
-        <li class="drawer-feedback"><a href="http://m.aliexpress.com/app_feedback_form/msite.html" data-stat="all_page::footer::feedback_button::feba_click_button::feba_click"><span>Feedback</span></a></li>
-        <li class="drawer-questionnaire"><a href="https://www.surveymonkey.com/s/8LNTJFB" data-stat="menu_page::menu_questionnaire::quest_button"><span>Questionnaire</span></a></li>
-
-        <li class="drawer-loginout">
-            <a href="javascript:;" data-stat="menu_page::menu_signout::signout_button">Sign Out</a>
-        </li>
+        <?php if ($manufacturer) {
+            foreach ($manufacturer as $key => $manu) { ?>
+                <li class="drawer-myOrder">
+                    <a class="drawer-myOrder" href="<?php echo $this->url->get("manufacturer/").$manu->ma_id ?>" >
+                        <span><?php echo $manu->ma_name ?></span>
+                    </a>
+                </li>
+            <?php }
+        } ?>
     </ul>
 
 </section>

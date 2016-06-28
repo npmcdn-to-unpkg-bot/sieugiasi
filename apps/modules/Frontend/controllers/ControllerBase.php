@@ -20,9 +20,9 @@ class ControllerBase extends Controller
         //Menu page
         $menuModel = new \Backend\Models\MenuModel();
         $this->view->menu_main = $menuModel::find(array("mn_parent_id=0 and mn_status=1", "order" => "mn_sort asc"));
-        //Category News
-        $newsCategoryModel = new \Backend\Models\NewsCategoryModel();
-        $this->view->category_news = $newsCategoryModel::find(array("nc_status=1"));
+        //Category 
+        $manufacturerModel = new \Backend\Models\ManufacturerModel();
+        $this->view->manufacturer = $manufacturerModel::find(array());
         //Information page
         $informationModel = new InformationModel();
         $this->view->information = $informationModel::findFirst();

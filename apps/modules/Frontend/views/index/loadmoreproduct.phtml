@@ -1,0 +1,18 @@
+<?php if ($product) {
+    foreach ($product as $pro) { ?>
+        <li>
+            <a href="<?php echo $this->url->get("product/show/") . $pro->pr_seo_link ?>">
+                <div class="product-image"><img
+                        src="<?php echo $pro->showImage() ?>">
+                </div>
+                <?php if ($pro->showPricePromotion()) { ?>
+                    <div class="product-cost"><b><?php echo $pro->showPricePromotion() ?></b></div>
+                    <del class="g-del-price"><?php echo $pro->getMinimumPrice() ?></del>
+                <?php } else { ?>
+                    <div class="product-cost"><b><?php echo $pro->getMinimumPrice() ?></b></div>
+                <?php } ?>
+                <div class="product-cost">Đã bán (<?php echo $pro->countOrder() ?>)</div>
+            </a>
+        </li>
+    <?php }
+} ?>

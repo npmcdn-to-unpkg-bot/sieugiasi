@@ -1,3 +1,4 @@
+var loadmore_product_mobile=1;
 $(document).ready(function () {
     if ($('#carousel').length != 0) {
         $('#carousel').flexslider({
@@ -116,6 +117,24 @@ $(document).ready(function () {
         $(".sub-checkout").hide();
         $(this).next().slideDown();
         $(this).parent("li").addClass("active");
+    });
+    $("body").on("click", "#load-more-product-mobile", function () {
+        $(".md-loading").show();
+        $.ajax({
+            type: "POST",
+            url: rootUrl + 'index/loadmore-product',
+            data: {pagination:loadmore_product_mobile},
+            success: function (response) {
+                $(".md-loading").hide();
+                $(".list-product-mobile").append(response);
+                if(response==''){
+                    $("#load-more-product-mobile").remove();
+                }
+                loadmore_product_mobile++;
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            }
+        });
     });
 });
 function filterTodaySale($cate, $value, $this) {

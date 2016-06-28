@@ -3,7 +3,7 @@
     <div class="home-firstscreen-main">
         <!--TMS:1717630-->
         <div class="channel-entrance" data-spm="21">
-            <a href="..">SuperDeals</a>
+            <a href="<?php echo $this->url->get("collection") ?>">Collection</a>
             <a href="<?php echo $this->url->get("today-sale") ?>">Today Sale</a>
         </div>
         <div class="categories">
@@ -115,7 +115,7 @@
 </style>
 
 
-<?php echo $this->partial('index/category_product_mobile') ?>
+<?php //echo $this->partial('index/category_product_mobile') ?>
 <?php echo $this->partial('index/sale_product_mobile') ?>
 <?php echo $this->partial('index/list_product_mobile') ?>
 
@@ -370,7 +370,7 @@
                                         src="<?php echo $prsale->showImage() ?>">
                                 </div>
                                 <div class="pro-info">
-                                    <div class="g-orders">133 Orders</div>
+                                    <div class="g-orders">Đã bán (<?php echo $prsale->countOrder() ?>)</div>
                                     <span class="g-price"><?php echo $prsale->showPricePromotion() ?></span>
                                     <del class="g-del-price"><?php echo $prsale->getMinimumPrice() ?></del>
                                 </div>
