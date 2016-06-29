@@ -7,7 +7,7 @@
     <div class="header-main">
         <span class="drawer btn-menu-mobile"></span>
         <a href="<?php echo $this->url->get() ?>" class="logo" id="ms-logo" data-stat="front_page::aecom::aecom_button"
-           style="padding: 12px 0 9px 0;"><img src="img/TB1cCb4HpXXXXcZXVXXyo3wIXXX-220-54.png" alt="AE Logo"
+           style="padding: 12px 0 9px 0;"><img src="<?php echo $this->url->get("public/FrontendCore/") ?>img/TB1cCb4HpXXXXcZXVXXyo3wIXXX-220-54.png" alt="AE Logo"
                                                style="width:110px;height:27px;"></a>
 
         <div class="position-right">
@@ -22,8 +22,14 @@
     <div class="ms-drawer-loginInfo">
 
         <div class="drawer-unlogin">
-            <a href="<?php echo $this->url->get("user") ?>" class="drawer-signin">Đăng Nhập</a>
-            <a href="<?php echo $this->url->get("user/register") ?>" class="drawer-join">Đăng Ký</a>
+            <?php if ($user) { ?>
+                <a href="<?php echo $this->url->get("my-page") ?>" class="drawer-signin">Chào,<?php echo $user->us_name ?></a>
+                <a class="drawer-join" rel="nofollow" href="<?php echo $this->url->get("user/logout") ?>">
+                    Thoát</a>
+            <?php } else { ?>
+                <a href="<?php echo $this->url->get("user") ?>" class="drawer-signin">Đăng Nhập</a>
+                <a href="<?php echo $this->url->get("user/register") ?>" class="drawer-join">Đăng Ký</a>
+            <?php } ?>
         </div>
         <div class="drawer-logined">
             <div class="drawer-username"></div>
@@ -39,7 +45,7 @@
         <?php if ($manufacturer) {
             foreach ($manufacturer as $key => $manu) { ?>
                 <li class="drawer-myOrder">
-                    <a class="drawer-myOrder" href="<?php echo $this->url->get("manufacturer/").$manu->ma_id ?>" >
+                    <a class="drawer-myOrder" href="<?php echo $this->url->get("menu/") . $manu->ma_id ?>">
                         <span><?php echo $manu->ma_name ?></span>
                     </a>
                 </li>

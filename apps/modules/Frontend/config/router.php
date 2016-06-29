@@ -58,5 +58,11 @@ $router->add('/manufacturer/{id}', array(
     'controller' => 'Manufacturer',
     'action' => 'index'
 ));
+$router->add('/menu/{id}', array(
+    'namespace' => $moduleClass,
+    'module' => $module,
+    'controller' => 'Menu',
+    'action' => 'index'
+));
 $router->handle();
 return $router;
