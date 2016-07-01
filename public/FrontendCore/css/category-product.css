@@ -13392,7 +13392,6 @@ span.ui-magnifier-glass {
 }
 body {
 	font-size:13px;
-	min-width:990px
 }
 .en-us,.en-us p {
 	font-size:13px
@@ -14317,4 +14316,8 @@ a.selected .beonsale {
 }
 .bread-block-wrap,.categories-collapse {
     background-color: #fff;
+}
+.filter-category-mobile{
+	display: none;
+	z-index: 99;
 }

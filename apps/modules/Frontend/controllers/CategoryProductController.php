@@ -93,6 +93,7 @@ class CategoryProductController extends ControllerBase
     protected function setScript()
     {
         $this->assets->addCss('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic&subset=latin,vietnamese', false);
+        $this->assets->addCss('public/FrontendCore/css/ae-mobile.css', true);
         $this->assets->addCss('public/FrontendCore/css/category-product.css', true);
         $this->assets->collection("inline")
             ->addJs('public/FrontendCore/js/filter.js');

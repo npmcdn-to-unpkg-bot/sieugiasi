@@ -242,6 +242,7 @@ unset($arrQuery['_url'], $arrQuery['page']);
         </div>
         <?php echo $this->partial('category-product/_left_menu') ?>
     </div>
+    <?php echo $this->partial('category-product/_filter_mobile') ?>
     <script type="text/javascript">
         var seo = '<?php echo $category->ct_seo_link ?>';
         <?php if (!empty($query)) {

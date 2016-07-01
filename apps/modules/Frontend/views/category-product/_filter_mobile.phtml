@@ -1,75 +1,165 @@
-<div  class="m-filter-area">
+<div class="filter-block util-clearfix fadeInUp animated filter-category-mobile">
+    <span class="refine-filtered-pwa ms-rc-ripple" data-type="refine-filter"><i class="fa fa-filter"></i>FILTER</span>
+    <span class="search-attr ms-rc-ripple" data-type="refine-attr"><i class="fa fa-server"></i>ATTRIBUTES</span>
+</div>
+<div class="refine-wrapper fadeInUp animated" id="j-refine-wrapper"
+     style="z-index: 100;display: none; width: 100%; height: 100%; position: fixed; left: 0px;">
+    <div class="refine-wrapper-inner">
+        <div class="search-remind">
+            <span class="action ms-rc-ripple fa fa-close" data-type="close"></span>
+            <span class="number">Search Result</span>
+        </div>
+        <div class="refine-title">
+            <span data-type="filter" class="ms-rc-ripple filter refine-active">
+              <span class="inter-title">FILTER</span>
+            </span>
+            <span data-type="attribute" class="ms-rc-ripple attribute">
+              <span class="inter-title">ATTRIBUTES</span>
+            </span>
+        </div>
+        <div class="refine-main"
+             style="overflow: auto; transition-property: transform; transition-timing-function: cubic-bezier(0, 0, 0.5, 1); transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+            <div class="refine-main-inner">
+                <div class="refine-field refine-main-tab" style="display: none;">
+                    <div class="r-item r-category ms-rc-ripple">
+                        <span class="r-key">Categories</span>
+                        <span class="r-value ">
+                            <select class="m-select-filter m-filter-category">
+                                <option>Chose</option>
+                                <?php if ($categoryChild) {
+                                    foreach ($categoryChild as $cateCh) { ?>
+                                        <option
+                                            data-url="<?php echo $this->url->get("category-product/show/") . $cateCh->ct_seo_link ?>">
+                                            <?php echo $cateCh->ct_name ?>
+                                        </option>
+                                    <?php }
+                                } ?>
+                            </select>
+                            <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="r-item r-category ms-rc-ripple">
+                        <span class="r-key">Size</span>
+                        <span class="r-value ">
+                            <select class="m-select-filter m-filter-size">
+                                <option>Chose</option>
+                                <?php
+                                if ($listOption) {
+                                    foreach ($listOption as $licolor) {
+                                        if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Size) {
+                                            ?>
+                                            <option <?php if (isset($arrQuery['size']) && $arrQuery['size'] == $licolor->plo_id) { ?> selected="selected" <?php } ?>
+                                                value="<?php echo $licolor->plo_id ?>">
+                                                <?php echo $licolor->plo_name ?>
+                                            </option>
+                                            <?php
+                                        }
+                                    }
+                                }
+                                ?>
+                            </select>
+                            <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="r-item r-category ms-rc-ripple">
+                        <span class="r-key">Color</span>
+                        <span class="r-value ">
+                            <select class="m-select-filter m-filter-color">
+                                <option>Chose</option>
+                                <?php
+                                if ($listOption) {
+                                    foreach ($listOption as $licolor) {
+                                        if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Color) {
+                                            ?>
+                                            <option  <?php if (isset($arrQuery['color']) && $arrQuery['color'] == $licolor->plo_id) { ?> selected="selected" <?php } ?>
+                                                value="<?php echo $licolor->plo_id ?>">
+                                                <?php echo $licolor->plo_name ?>
+                                            </option>
+                                            <?php
+                                        }
+                                    }
+                                }
+                                ?>
+                            </select>
+                            <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
+                        </span>
+                    </div>
 
-    <div id="accordian">
-        <ul>
-            <li class="">
-                <h3 style="text-transform: uppercase;">Lọc Sản Phẩm</h3>
-                <ul style="display: none">
-                    <li>
-                        <select class="m-select-filter m-filter-manufacturer">
-                            <?php
-                            if ($manufacturer) {
-                                foreach ($manufacturer as $manu) {
-                                    ?>
-                                    <option  <?php echo $choseManufacture == $manu->ma_id ? ' selected ' : '' ?> value="<?php echo $manu->ma_id ?>" ><?php echo $manu->ma_name ?></option>
-                                    <?php
-                                }
-                            }
-                            ?>
-                        </select>
-                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                        <select class="m-select-filter m-filter-category">
-                            <option value="-1" >Tất Cả</option>
-                            <?php
-                            if ($listCategory) {
-                                foreach ($listCategory as $lica) {
-                                    ?>
-                                    <option value="<?php echo $lica->ct_id ?>" <?php echo isset($category) && $category == $lica->ct_id ? ' selected ' : ''; ?> ><?php echo $lica->ct_name ?></option>
-                                    <?php
-                                }
-                            }
-                            ?>
-                        </select>
-                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                        <select class="m-select-filter m-filter-color">
-                            <option value="-1" >Màu Sắc</option>
-                            <?php
-                            if ($listOption) {
-                                foreach ($listOption as $licolor) {
-                                    if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Color) {
-                                        ?>
-                                        <option value="<?php echo $licolor->plo_id ?>" <?php echo isset($color) && $color == $licolor->plo_id ? ' selected ' : ''; ?> ><?php echo $licolor->plo_name ?></option>
-                                        <?php
-                                    }
-                                }
-                            }
-                            ?>
-                        </select>
-                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                        <select class="m-select-filter m-filter-size">
-                            <option value="-1" >Kích Cỡ</option>
-                            <?php
-                            if ($listOption) {
-                                foreach ($listOption as $licolor) {
-                                    if ($licolor->ProductOptionModel->po_id == Backend\Models\ProductListOptionModel::$Size) {
-                                        ?>
-                                        <option value="<?php echo $licolor->plo_id ?>" <?php echo isset($size) && $size == $licolor->plo_id ? ' selected ' : ''; ?> ><?php echo $licolor->plo_name ?></option>
-                                        <?php
-                                    }
-                                }
-                            }
-                            ?>
-                        </select>
-                        <i class="fa fa-chevron-down m-icon-select" aria-hidden="true"></i>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+                </div>
+                <div class="filter-filed">
+                    <div class="refine-field">
+                        <div class="r-item r-price">
+                            <span class="r-key">Price</span>
+                            <div class="r-priceRange">
+                                <form method="get"
+                                      action="<?php echo $this->url->get("category-product/show/") . $category->ct_seo_link ?>">
+                                    <div class="startprice-wripe">
+                                        <input name="minPrice" placeholder="Min."
+                                               value="<?php echo isset($arrQuery['minPrice']) ? $arrQuery['minPrice'] : ''; ?>"
+                                               class="min-price range-price" required number="true"
+                                               type="text">
+                                        <div class="focus"></div>
+                                    </div>
+                                    <span class="sep-line">-</span>
+                                    <div class="maxprice-wripe">
+                                        <input placeholder="Max."
+                                               value="<?php echo isset($arrQuery['maxPrice']) ? $arrQuery['maxPrice'] : ''; ?>"
+                                               name="maxPrice" class="max-price range-price" required number="true"
+                                               type="text">
+                                        <div class="focus"></div>
+                                    </div>
+                                    <input type="submit" class="ui-button narrow-go" id="filter-submit"
+                                           style="display:none">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="refine-field">
+                        <div class="r-item r-saleItem">
+                            <span class="r-key-onoff">Sale items&nbsp;</span>
+                              <span class="onoff <?php echo isset($arrQuery['promotion']) ? ' leftOn ' : '' ?>"
+                                    id="j-sale-items" onclick="filterCategoryProduct('promotion', '1',$(this));">
+                                  <label></label>
+                                  <i></i>
+                                  <b class="small-round"></b>
+                              </span>
+                        </div>
+                        <div style="margin-top: 7px;float: none" class="n-sort-filter">
+                            <span style="padding: 10px 0;" class="r-key">Giá:</span>
+                            <div style="display: block;width: 185px;float: right;" class="n-sort-lists">
+                                <div class="narrow-down-bg first">
+                                    <a rel="nofollow" data-filter-type="bestMatch" href="javascript:;"
+                                       onclick="filterCategoryProduct('price', 'asc',$(this));">
+                                        <span id="link-best-match"
+                                              class="<?php echo isset($arrQuery['price']) && $arrQuery['price'] == 'asc' ? ' best-match-on ' : '' ?>">Thấp Tới Cao</span>
+                                    </a>
+                                </div>
+
+                                <div class="narrow-down-bg">
+                                    <a rel="nofollow" data-filter-type="orders" href="javascript:;"
+                                       onclick="filterCategoryProduct('price', 'desc',$(this));">
+                                        <span
+                                            class="<?php echo isset($arrQuery['price']) && $arrQuery['price'] == 'desc' ? ' best-match-on ' : '' ?>"
+                                            id="number_of_orders_1">Cao Tới Thấp</span>
+                                    </a>
+                                </div>
+                                <div style="clear: both"></div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="refine-button">
+        <div class="apply-btn ms-rc-ripple">
+            <a class="apply-btn ms-rc-ripple"
+               href="<?php echo $this->url->get("category-product/show/") . $category->ct_seo_link ?>">
+                RESET
+            </a>
+        </div>
     </div>
 </div>

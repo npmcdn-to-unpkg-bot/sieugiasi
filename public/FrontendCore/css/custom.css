@@ -3190,4 +3190,75 @@ a.button-important:hover, a.button-important:active {
     .register-form .left-form {
         width: 80%;
     }
+
+    /* ------------------------------------------------------------- */
+    /* Category */
+    /* ------------------------------------------------------------- */
+    .categories-collapse .col-sub,#hot-tag,#narrow-form,#p4pHotProducts-old{
+        display: none;
+    }
+    .categories-collapse .col-main .gallery-mode{
+        margin: 0 !important;
+    }
+    #page{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .gallery-mode .list-item{
+        width: 100%;
+        min-height: auto;
+        padding: 10px 0;
+    }
+    .gallery-mode .list-item .item{
+        width: 100%;
+        min-height: auto;
+        position: relative;
+        left: 0;
+        margin-left: 0;
+        border: 1px solid transparent;
+        padding: 10px;
+    }
+    .gallery-mode .list-item .img {
+        width: 37%;
+        position: relative;
+        height: auto;
+        margin: 0;
+        float: left;
+    }
+    .gallery-mode .list-item .img .pic,.gallery-mode .list-item .img a,.gallery-mode .list-item .img img{
+        width: 100%;
+        height: auto;
+    }
+    .gallery-mode .list-item .info {
+        width: 62%;
+        padding-top: 10px;
+        margin: 0;
+        position: relative;
+        float: right;
+        clear: inherit;
+    }
+    .gallery-mode .list-item:hover .item {
+        z-index: 2;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    #aliGlobalCrumb {
+        margin: 0;
+    }
+    .filter-category-mobile{
+        display: block;
+    }
+    .m-select-filter {
+        width: 100%;
+        padding: 5px;
+        margin: 3px 0;
+        border: #d3d3d3 solid 1px;
+        font-weight: 300;
+    }
+    .m-icon-select {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+    }
 }

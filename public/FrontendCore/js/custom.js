@@ -1,4 +1,4 @@
-var loadmore_product_mobile=1;
+var loadmore_product_mobile = 1;
 $(document).ready(function () {
     if ($('#carousel').length != 0) {
         $('#carousel').flexslider({
@@ -123,11 +123,11 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             url: rootUrl + 'index/loadmore-product',
-            data: {pagination:loadmore_product_mobile},
+            data: {pagination: loadmore_product_mobile},
             success: function (response) {
                 $(".md-loading").hide();
                 $(".list-product-mobile").append(response);
-                if(response==''){
+                if (response == '') {
                     $("#load-more-product-mobile").remove();
                 }
                 loadmore_product_mobile++;
@@ -136,6 +136,36 @@ $(document).ready(function () {
             }
         });
     });
+    $("body").on("click", ".refine-title .filter,.refine-filtered-pwa ", function () {
+        $("#j-refine-wrapper").show();
+        $(".ms-rc-ripple").removeClass("refine-active");
+        $(".refine-title .filter").addClass("refine-active");
+        $(".refine-main-tab").removeClass("animated fadeInRight").hide();
+        $(".filter-filed").addClass("animated fadeInRight").show();
+    });
+    $("body").on("click", ".refine-title .attribute,.search-attr", function () {
+        $("#j-refine-wrapper").show();
+        $(".ms-rc-ripple").removeClass("refine-active");
+        $(".refine-title .attribute").addClass("refine-active");
+        $(".filter-filed").removeClass("animated fadeInRight").hide();
+        $(".refine-main-tab").addClass("animated fadeInRight").show();
+    });
+    $("body").on("click", ".search-remind .fa-close", function () {
+        $("#j-refine-wrapper").hide();
+    });
+    $("body").on("change", ".m-filter-category", function () {
+        var url = $(".m-filter-category option:selected").attr("data-url");
+        window.location.href = url;
+    });
+    $("body").on("change", ".m-filter-size", function () {
+        var size = $(".m-filter-size option:selected").val();
+        filterCategoryProduct('size',size,$(this));
+    });
+    $("body").on("change", ".m-filter-color", function () {
+        var color = $(".m-filter-color option:selected").val();
+        filterCategoryProduct('color',color,$(this));
+    });
+
 });
 function filterTodaySale($cate, $value, $this) {
     $(".filter-todaysale").removeClass('current');
