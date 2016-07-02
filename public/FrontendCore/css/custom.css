@@ -3194,7 +3194,9 @@ a.button-important:hover, a.button-important:active {
     /* ------------------------------------------------------------- */
     /* Category */
     /* ------------------------------------------------------------- */
-    .categories-collapse .col-sub,#hot-tag,#narrow-form,#p4pHotProducts-old{
+    .categories-collapse .col-sub,#hot-tag,#narrow-form,#p4pHotProducts-old,
+    #carousel
+    {
         display: none;
     }
     .categories-collapse .col-main .gallery-mode{
@@ -3260,5 +3262,55 @@ a.button-important:hover, a.button-important:active {
         position: absolute;
         top: 12px;
         right: 10px;
+    }
+
+    /* ------------------------------------------------------------- */
+    /* Product */
+    /* ------------------------------------------------------------- */
+    .detail-gallery{
+        float: none;
+        width: 100%;
+    }
+    #slider{
+        width: 98%;
+        float: none;
+        margin: 0 auto;
+        height: auto;
+    }
+    .flex-direction-nav a{
+        top: 30%;
+    }
+    .detail-main{
+        width: 100%;
+        float: none;
+    }
+    .detail-wrap {
+        min-height: auto;
+    }
+    .mod-detail-purchasing-multiple .content,.mod-detail-purchasing-multiple .summary {
+        float: none;
+        width: 100%;
+    }
+    .mod-detail-purchasing-multiple .thumb{
+        width: 10%;
+    }
+    .mod-detail-purchasing-multiple .list table{
+        width: 88%;
+    }
+    .popup-main {
+        width: 50%;
+        top: 20%;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 340px) {
+    .popup-main {
+        width: 90%;
+        top: 10%;
+    }
+}
+@media only screen  and (min-width: 340px) and (max-width: 740px) {
+    .popup-main {
+        width: 70%;
+        top: 10%;
     }
 }

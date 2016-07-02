@@ -9,6 +9,37 @@
 </div>
 <div class="detail" id="j-detail-page">
     <div class="detail-bd container util-clearfix detail-image-dynamic" id="j-product-detail-bd">
+        <div class="detail-gallery">
+            <div id="gallery-product" class="imagenes-contenedor">
+                <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                        <?php $gallery = $product->ProductImageModel;
+                        if (isset($gallery) && !empty($gallery)) {
+                            foreach ($gallery as $gla) { ?>
+                                <li>
+                                    <img
+                                        src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                                </li>
+                            <?php }
+                        } ?>
+                    </ul>
+                </div>
+                <div id="slider" class="flexslider">
+                    <ul class="slides">
+                        <?php if (isset($gallery) && !empty($gallery)) {
+                            foreach ($gallery as $gla) { ?>
+                                <li>
+                                    <img id="jzoom" class="jzoom"
+                                         src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"
+                                         data-pimg="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
+                                </li>
+                            <?php }
+                        } ?>
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </div>
         <div class="detail-main">
             <div class="detail-wrap">
                 <h1 class="product-name"><?php echo $product->pr_name ?></h1>
@@ -99,37 +130,6 @@
                 </div>
             </div>
         </div>
-        <div class="detail-gallery">
-            <div id="gallery-product" class="imagenes-contenedor">
-                <div id="carousel" class="flexslider">
-                    <ul class="slides">
-                        <?php $gallery = $product->ProductImageModel;
-                        if (isset($gallery) && !empty($gallery)) {
-                            foreach ($gallery as $gla) { ?>
-                                <li>
-                                    <img
-                                        src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
-                                </li>
-                            <?php }
-                        } ?>
-                    </ul>
-                </div>
-                <div id="slider" class="flexslider">
-                    <ul class="slides">
-                        <?php if (isset($gallery) && !empty($gallery)) {
-                            foreach ($gallery as $gla) { ?>
-                                <li>
-                                    <img id="jzoom" class="jzoom"
-                                         src="<?php echo $this->url->get() . $gla->pi_image_link; ?>"
-                                         data-pimg="<?php echo $this->url->get() . $gla->pi_image_link; ?>"/>
-                                </li>
-                            <?php }
-                        } ?>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
     </div>
     <div class="detail-main-layout container util-clearfix">
         <div class="col-main">
@@ -140,7 +140,7 @@
 
                     <div data-widget-cid="widget-4" id="j-product-tabbed-pane"
                          class="ui-tab ui-tab-normal ui-switchable tabbed-pannel-fixed">
-                        <ul style="width: 988px;" class="ui-tab-nav ui-switchable-nav">
+                        <ul  class="ui-tab-nav ui-switchable-nav">
                             <li data-trigger="pdt" class="ui-tab-active ui-switchable-trigger" data-role="trigger">
                                 <a href="javascript:;">Product Details</a>
                             </li>
@@ -277,7 +277,8 @@
 
                                                 </div>
                                                 <div class="unit-detail-order-action">
-                                                    <a href="javascript:;"  class="blue-btn-adaptive do-cart btn-add-cart" >
+                                                    <a href="javascript:;"
+                                                       class="blue-btn-adaptive do-cart btn-add-cart">
                                                         <span><em>Chọn mua</em></span>
                                                     </a>
                                                     <div style="clear: both"></div>

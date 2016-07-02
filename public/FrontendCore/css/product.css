@@ -6942,7 +6942,7 @@ p.ui-feedback-addon.ui-feedback-success.locked {
 }
 .detail-main {
 	float:left;
-	width:100%;
+	width:55%;
 	background-color:#fff
 }
 .detail-main-layout {
@@ -7026,17 +7026,14 @@ p.ui-feedback-addon.ui-feedback-success.locked {
 	height:46px
 }
 .detail-wrap {
-	margin-left:500px;
-	min-height:450px;
-	/*padding-bottom:20px;*/
-	border-left:1px solid #e9e9e9
+	min-height: 450px;
+	border-left: 1px solid #e9e9e9;
 }
 .detail-gallery {
-	position:relative;
-	float:left;
-	width:500px;
-	margin-left:-100%;
-	z-index:12
+	position: relative;
+	float: left;
+	width: 45%;
+	z-index: 12;
 }
 .detail-gallery-main {
 	position:relative;
@@ -7044,13 +7041,13 @@ p.ui-feedback-addon.ui-feedback-success.locked {
 	z-index:6
 }
 .detail-image-dynamic .detail-gallery {
-	width:568px
+	/*width:568px*/
 }
 .detail-image-dynamic .detail-gallery-main {
 	padding-left:68px
 }
 .detail-image-dynamic .detail-wrap {
-	margin-left:568px
+	/*margin-left:568px*/
 }
 .small-screen-detail .detail-wrap {
 	margin-left:350px
@@ -10768,4 +10765,6 @@ button.alipay-btn:after {
 #slider {
 	width: 79%;
 	float: right;
+	height: 450px;
+	overflow: hidden;
 }
