@@ -87,7 +87,6 @@ a.me-ui-nomarl-link:hover {
     height:46px;
     margin-bottom:20px;
     background:#e62e04;
-    min-width:1200px
 }
 .navigation ul {
     width:1180px;
@@ -1176,6 +1175,7 @@ a.me-ui-nomarl-link:hover {
     width: 150px;
     font-size: 13px;
     padding: 5px;
+    margin: 5px 0;
 }
 .order-list-search #simple-search button.search-btn {
     margin-left:15px
@@ -6485,7 +6485,7 @@ html {
     -webkit-text-size-adjust:none;
     margin:0;
     padding:0;
-    min-width:958px
+    /*min-width:958px*/
 }
 #aliLogo.email-alilogo {
     height:72px

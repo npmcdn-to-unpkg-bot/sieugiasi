@@ -26,7 +26,7 @@
                                                 </th>
                                                 <td>
                                                     <div class="column subHead">
-                                                        <input style="width: 300px" required
+                                                        <input  required
                                                                name="us_full_name"
                                                                value="<?php echo $user->us_full_name ?>">
                                                     </div>
@@ -60,7 +60,7 @@
                                                             <td class="subHead" width="23%" valign="top">Địa Chỉ:
                                                             </td>
                                                             <td>
-                                                                <input style="width: 300px" name="us_address"
+                                                                <input  name="us_address"
                                                                        required value="<?php echo $user->us_address ?>" type="text">
                                                             </td>
                                                         </tr>
@@ -69,7 +69,7 @@
                                                             <td nowrap="">
 
                                                                 <select id="districtOfUser" name="zd_id"
-                                                                        class="ProvinceList" style="width: 300px">
+                                                                        class="ProvinceList" >
                                                                     <option value="-1">Quận</option>
                                                                     <?php $userWard = \Backend\Models\UserModel::findFirst($user->us_id); ?>
                                                                     <option selected value="<?php echo $user->zd_id ?>"><?php echo !empty($userWard->ZoneDistrictModel)? $userWard->ZoneDistrictModel->zd_name : '' ?></option>
@@ -81,7 +81,7 @@
                                                             <td nowrap="">
 
                                                                 <select id="vnProvinceList" name="zp_id"
-                                                                        class="ProvinceList province_user" style="width: 300px">
+                                                                        class="ProvinceList province_user" >
                                                                     <option value="-1">Tỉnh/Thành Phố</option>
                                                                     <?php foreach ($province as $provin) { ?>
                                                                         <option <?php if ($user->zp_id == $provin->zp_id) {
@@ -100,7 +100,7 @@
                                                 <th >
                                                     <span class="required">Điện Thoại:</span> </th>
                                                 <td>
-                                                    <input required style="WIDTH: 300px" value="<?php echo $user->us_phone ?>" number="true"
+                                                    <input required  value="<?php echo $user->us_phone ?>" number="true"
                                                            minlength="10" maxlength="11" name="us_phone">
                                                 </td>
                                             </tr>

@@ -797,8 +797,9 @@ a.ui-button-sblue {
 }
 
 .ui-form-item {
-    padding: 0 5px 20px 190px;
-    zoom: 1
+    text-align: center;
+    zoom: 1;
+    margin-top: 10px;
 }
 
 .ui-form-item select {
@@ -906,12 +907,11 @@ a.ui-button-sblue {
 /*! block alice/form/1.0.0/label-debug.css */
 
 .ui-label {
-    float: left;
     width: 210px;
-    margin-left: -220px;
+    margin-right: 20px;
     padding-top: 5px;
     text-align: right;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .ui-form-required {
@@ -1623,7 +1623,6 @@ a.ui-poptip-close:hover {
 .content-layout {
     margin: 0 auto;
     padding: 30px 0;
-    width: 990px;
     height: auto
 }
 

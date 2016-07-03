@@ -10,16 +10,16 @@
                     <div class="grid-col-container">
                         <div class="me-ui-box">
 
-                            <form method="post"  action="<?php echo $this->url->get("my-page/order") ?>">
+                            <form method="post" action="<?php echo $this->url->get("my-page/order") ?>">
 
                                 <div class="order-list-search">
                                     <div id="simple-search">
-                                        <label class="first-label">
+                                        <label class="first-label row-mobile">
                                             <span>Order number: </span>
                                             <input value="" id="order-no" maxlength="20" name="or_public_id">
                                         </label>
 
-                                        <label>
+                                        <label class="row-mobile">
                                             <span>Product: </span>
                                             <select name="os_id" class="selectbox">
                                                 <option value="-1">Chose</option>
@@ -29,14 +29,17 @@
                                                 <?php } ?>
                                             </select>
                                         </label>
-                                        <label>
+                                        <label class="row-mobile">
                                             <label class="first-label">
                                                 <span>Thời gian đặt hàng: </span>
                                                 <input name="date_from" class="input-contact-form datapicker "
                                                        type="text">
-                                                <input name="date_to" class="input-contact-form datapicker "
-                                                       type="text">
+
                                             </label>
+                                        </label>
+                                        <label class="row-mobile">
+                                            <input name="date_to" class="input-contact-form datapicker "
+                                                   type="text">
                                         </label>
                                         <button id="search-btn" class="ui-button ui-button-primary search-btn"
                                                 type="submit">Search
@@ -65,7 +68,7 @@
                                 </thead>
 
                                 <tbody>
-                                <?php if (count($order)>0) {
+                                <?php if (count($order) > 0) {
                                     foreach ($order as $or) { ?>
                                         <tr class="order-body">
                                             <td class="product-name" colspan="2" style="padding-left:10px;">
