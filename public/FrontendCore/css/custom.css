@@ -2810,7 +2810,6 @@ body {
 .shoppingcart-header {
     height: 30px;
     line-height: 30px;
-    text-align: center;
     background: #7e7c7a;
     margin-bottom: 8px;
     color: #fff;
@@ -2819,12 +2818,13 @@ body {
 }
 
 .shoppingcart-header ul {
-    float: left;
     padding-left: 12px;
 }
 
 .shoppingcart-header ul li {
-    float: left;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
 }
 
 .shoppingcart-header ul li.checkbox {
@@ -2833,21 +2833,20 @@ body {
 }
 
 .shoppingcart-header ul li.item-name {
-    margin-right: 30px;
-    width: 400px;
+    width: 40%;
 }
 
 .shoppingcart-header ul li.price {
-    margin-right: 30px;
-    width: 130px;
-    text-align: left;
+    width: 28%;
+    text-align: center;
 }
 
 .shoppingcart-header ul li.quantity {
-    margin-right: 88px;
-    width: 60px;
+    width: 8%;
 }
-
+.shoppingcart-header ul li.amount {
+    width: 15%;
+}
 .shoppingcart .shoppingcart-shop {
     margin-bottom: 20px;
     border: 1px solid #acb1ba;
@@ -3132,14 +3131,14 @@ a.button-important:hover, a.button-important:active {
 
 .shop-footer-show-more a {
     margin: 10px auto;
-    color: #FFFFFF;
+    color: #FFF;
     font-weight: bold;
     text-align: center;
-    padding-left: 130px;
     line-height: 30px;
     font-size: 13px;
     text-decoration: none !important;
     cursor: pointer;
+    display: block;
 }
 
 .input-number-sc {
@@ -3280,7 +3279,7 @@ a.button-important:hover, a.button-important:active {
     .flex-direction-nav a{
         top: 30%;
     }
-    .detail-main{
+    .detail-main,.segment-box{
         width: 100%;
         float: none;
     }
@@ -3301,11 +3300,96 @@ a.button-important:hover, a.button-important:active {
         width: 50%;
         top: 20%;
     }
+    .shoppingcart-header {
+        height: auto;
+        line-height: 18px;
+        background: #7e7c7a;
+        margin-bottom: 8px;
+        color: #fff;
+        text-transform: uppercase;
+        white-space: normal;
+        padding: 5px 0;
+    }
+    .shoppingcart .shoppingcart-shop .pic {
+        margin: 0;
+        width: 15%;
+        text-align: center;
+    }
+    .shoppingcart .shoppingcart-shop .item-name {
+        margin: 0;
+        width: 27%;
+        text-align: center;
+    }
+    .shoppingcart .shoppingcart-shop .price-range {
+        width: 20% !important;
+        margin: 0 !important;
+    }
+    .shoppingcart .shoppingcart-shop .quantity {
+        width: 15%;
+        margin: 0 !important;
+    }
+    .shoppingcart .shoppingcart-shop .amount {
+        margin: 0 !important;
+        width: 15%;
+    }
+    .shoppingcart .shoppingcart-shop .delete {
+        margin: 0 ;
+        width: 3%;
+    }
+    .mod-create-order .mod-label {
+        width: 15%;
+    }
+    .mod-create-order .mod-content {
+        width: 85%;
+    }
+    .form-area .form-row input {
+        min-width: 165px;
+        width: auto;
+    }
+    #txtCustomerOrderNote{
+        min-width: 220px;
+        width: auto !important;
+    }
+
 }
 @media only screen and (min-width: 0px) and (max-width: 340px) {
     .popup-main {
         width: 90%;
         top: 10%;
+    }
+
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+    .shoppingcart .shoppingcart-shop ul li{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 2px 0;
+    }
+    .shoppingcart .shoppingcart-shop .pic {
+        margin: 0 ;
+        width: 100%;
+    }
+    .shoppingcart .shoppingcart-shop .price-range {
+        width: 100% !important;
+    }
+    .list-price-range.fd-clr {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .shoppingcart .shoppingcart-shop .quantity {
+        width: 100% !important;
+        margin-right: 0;
+    }
+    .shoppingcart .shoppingcart-shop .amount {
+        width: 100%;
+    }
+    .shoppingcart .shoppingcart-shop .item-name {
+        margin-right: 30px;
+        width: 100%;
+    }
+    .shop-footer-col-left,.shop-footer-show-more{
+        width: 100% !important;
     }
 }
 @media only screen  and (min-width: 340px) and (max-width: 740px) {
@@ -3313,4 +3397,5 @@ a.button-important:hover, a.button-important:active {
         width: 70%;
         top: 10%;
     }
+
 }
