@@ -11,12 +11,22 @@
                                                style="width:110px;height:27px;"></a>
 
         <div class="position-right">
-            <span class="search" data-stat="all_page::m_search::search_button"></span>
+            <span class="search m-search-mobile" data-stat="all_page::m_search::search_button"></span>
             <a href="<?php echo $this->url->get("shoping-cart") ?>" id="ms-cart" class="cart"
-               data-stat="all_page::shoppingcart::shoppingcart_button"><span class="inline-block">0</span></a>
+               data-stat="all_page::shoppingcart::shoppingcart_button"><span class="inline-block"><?php echo !empty($cart['product']) ? count($cart['product']) : 0 ?></span></a>
         </div>
     </div>
 </header>
+<div class="search-field m-search">
+    <form method="get" action="<?php echo $this->url->get("search") ?>">
+        <span class="ui-helper-hidden-accessible" aria-live="polite" role="status"></span>
+        <input name="key" placeholder="Tìm Sản Phẩm" type="text">
+        <button style="width: 30px; height: 30px; background: transparent none no-repeat scroll 0% 0%; border: medium none; position: absolute; top: 0px; right: 0px;" type="submit">
+
+        </button>
+
+    </form>
+</div>
 <div class="ms-drawer-mask"><span class="ms-drawer-back"></span></div>
 <section class="ms-drawer ">
     <div class="ms-drawer-loginInfo">

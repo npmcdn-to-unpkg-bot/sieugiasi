@@ -165,6 +165,10 @@ $(document).ready(function () {
         var color = $(".m-filter-color option:selected").val();
         filterCategoryProduct('color',color,$(this));
     });
+    $("body").on("click", ".m-search-mobile", function () {
+        $(".search-field").slideToggle();
+    })
+
 
 });
 function filterTodaySale($cate, $value, $this) {
